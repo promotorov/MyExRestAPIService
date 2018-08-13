@@ -42,6 +42,7 @@ static NSString *const SettingUrl = @"api/setting";
 }
 
 // CountryAPI
+//+
 - (void) getAllCountries:(AllCountriesDTORequest*)dto
             successBlock:(void(^)(AllCountriesDTOResponse *dto))successBlock
             failureBlock:(void(^)(ResponseError *error))failureBlock
@@ -58,7 +59,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getCountry:(GetCountryDTORequest *)dto
        successBlock:(void (^)(GetCountryDTOResponse *))successBlock
        failureBlock:(void (^)(ResponseError *))failureBlock
@@ -79,7 +80,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) deleteCountry:(DeleteCountryDTORequest *)dto
           successBlock:(void (^)(void))successBlock
           failureBlock:(void (^)(ResponseError *))failureBlock
@@ -96,7 +97,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) addCountry:(AddCountryDTORequest *)dto
        successBlock:(void (^)(AddCountryDTOResponse *))successBlock
        failureBlock:(void (^)(ResponseError *))failureBlock
@@ -115,7 +116,7 @@ static NSString *const SettingUrl = @"api/setting";
 }
 
 // ProfileAPI
-
+//+
 - (void) resetPassword:(ResetPasswordDTORequest *)dto
           successBlock:(void (^)(void))successBlock
           failureBlock:(void (^)(ResponseError *))failureBlock
@@ -128,7 +129,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:jsonData toURL:ResetPasswordUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) password:(PasswordDTORequest *)dto
      successBlock:(void (^)(void))successBlock
      failureBlock:(void (^)(ResponseError *))failureBlock
@@ -141,7 +142,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:jsonData toURL:PasswordUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) confirmEmail:(ConfirmEmailDTORequest *)dto
          successBlock:(void (^)(void))successBlock
          failureBlock:(void (^)(ResponseError *))failureBlock
@@ -154,7 +155,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:jsonData toURL:ConfirmEmailUrl  withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) resendConfirmationEmail:(ResendConfirmationEmailDTORequest *)dto
                     successBlock:(void (^)(void))successBlock
                     failureBlock:(void (^)(ResponseError *))failureBlock
@@ -167,7 +168,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:jsonData toURL:ResendConfirmationEmailUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) get2FAOnSuccessBlock:(void (^)(User2FADTOResponse *))successBlock
                  failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -182,7 +183,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:User2FAUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) add2FAOnSuccessBlock:(void (^)(User2FADTOResponse *))successBlock
                  failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -197,7 +198,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:User2FAUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getUserInfoOnSuccessBlock:(void (^)(UserInfoDTOResponse *))successBlock
                       failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -214,7 +215,7 @@ static NSString *const SettingUrl = @"api/setting";
 }
 
 // Refarral API
-
+//+
 - (void) getReferrals:(GetReferralsDTORequest *)dto
          successBlock:(void (^)(ReferralsDTOResponse *))successBlock
          failureBlock:(void (^)(ResponseError *))failureBlock
@@ -231,7 +232,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getReferralInfoOnSuccessBlock:(void (^)(ReferralInfoDTOResponse *))successBlock
                           failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -246,7 +247,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:ReferralInfoUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getReferralDetails:(GetReferralInfoDTORequest *)dto
                successBlock:(void (^)(ReferralDetailsDTOResponse *))successBlock
                failureBlock:(void (^)(ResponseError *))failureBlock
@@ -268,7 +269,7 @@ static NSString *const SettingUrl = @"api/setting";
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 
-
+//+
 - (void) getReferralInfoById:(GetReferralInfoDTORequest *)dto
                 successBlock:(void (^)(ReferralInfoDTOResponse *))successBlock
                 failureBlock:(void (^)(ResponseError *))failureBlock
@@ -291,7 +292,7 @@ static NSString *const SettingUrl = @"api/setting";
 }
 
 // TradeAPI
-
+//+
 - (void) makeOrder:(MakeOrderDTORequest *)dto
       successBlock:(void (^)(MakeOrderDTOResponse *))successBlock
       failureBlock:(void (^)(ResponseError *))failureBlock
@@ -308,7 +309,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:jsonData toURL:MakeOrderUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) deleteOrder:(DeleteOrderDTORequest *)dto
         successBlock:(void (^)(void))successBlock
         failureBlock:(void (^)(ResponseError *))failureBlock
@@ -325,7 +326,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) deleteAllOrdersOnSuccessBlock:(void (^)(DeletedOrdersDTOResponse *))successBlock
                           failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -340,7 +341,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:DeleteOrdersUrl withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getUserOrdersOnSuccessBlock:(void (^)(UserOrdersDTOResponse *))successBlock
                         failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -355,7 +356,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:UserOrdersUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getOrderHistory:(OrderHistoryDTORequest *)dto
             successBlock:(void (^)(OrderHistoryDTOResponse *))successBlock
             failureBlock:(void (^)(ResponseError *))failureBlock
@@ -372,7 +373,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getAssetsOnSuccessBlock:(void (^)(AssetsDTOResponse *))successBlock
                     failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -389,7 +390,7 @@ static NSString *const SettingUrl = @"api/setting";
 }
 
 // LoginAPI
-
+//+
 - (void) login:(LoginDTORequest *)dto
   successBlock:(void (^)(LoginDTOResponse *))successBlock
   failureBlock:(void (^)(ResponseError *))failureBlock
@@ -417,7 +418,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:jsonData toURL:SignInUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) logoutOnSuccessBlock:(void (^)(void))successBlock
                  failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -432,7 +433,7 @@ static NSString *const SettingUrl = @"api/setting";
 }
 
 // AssetAPI
-
+//+
 - (void) getAssetsInfoOnSuccessBlock:(void (^)(AssetsInfoDTOResponse *))successBlock
                         failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -481,7 +482,7 @@ static NSString *const SettingUrl = @"api/setting";
 }
 
 // SettingsAPI
-
+//+
 - (void) getUserSettingsOnSuccessBlock:(void (^)(SettingsDTOResponse *))successBlock
                           failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -496,7 +497,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:nil toURL:SettingsUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) addUserSetting:(AddSettingDTORequest *)dto
            successBlock:(void (^)(void))successBlock
            failureBlock:(void (^)(ResponseError *))failureBlock
@@ -509,7 +510,7 @@ static NSString *const SettingUrl = @"api/setting";
     };
     [self doRequestWithJson:jsonData toURL:SettingUrl withRequestType:@"PUT" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) deleteUserSetting:(DeleteSettingDTORequest *)dto
               successBlock:(void (^)(void))successBlock
               failureBlock:(void (^)(ResponseError *))failureBlock

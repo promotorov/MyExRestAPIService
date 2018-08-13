@@ -346,6 +346,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testReferralInfoById:(UIButton*)sender{
     GetReferralInfoDTORequest *dto = [[GetReferralInfoDTORequest alloc] init];
+    dto.userId = @"00000000-0000-0000-0000-000000000001";
     [_service getReferralInfoById:dto
                      successBlock:^(ReferralInfoDTOResponse *dto) {
                          
@@ -357,6 +358,8 @@ id<DTOResponse> dtoResponse;
 
 - (void) testDeleteSetting:(UIButton*)sender{
     DeleteSettingDTORequest *dto = [[DeleteSettingDTORequest alloc] init];
+    dto.type = @"preset";
+    dto.value = @"weight";
     [_service deleteUserSetting:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
@@ -366,6 +369,8 @@ id<DTOResponse> dtoResponse;
 
 - (void) testPutSetting:(UIButton*)sender{
     AddSettingDTORequest *dto = [[AddSettingDTORequest alloc] init];
+    dto.type = @"preset";
+    dto.value = @"weight";
     [_service addUserSetting:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
@@ -375,6 +380,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testReferralDetails:(UIButton*)sender{
     GetReferralInfoDTORequest *dto = [[GetReferralInfoDTORequest alloc] init];
+    dto.userId = @"00000000-0000-0000-0000-000000000002";
     [_service getReferralDetails:dto successBlock:^(ReferralDetailsDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
@@ -384,6 +390,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testResetPassword:(UIButton*)sender{
     ResetPasswordDTORequest *dto = [[ResetPasswordDTORequest alloc] init];
+    dto.email = @"bobssss@mailinator.com";
     [_service resetPassword:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
@@ -393,6 +400,8 @@ id<DTOResponse> dtoResponse;
 
 - (void) testPassword:(UIButton*)sender{
     PasswordDTORequest *dto = [[PasswordDTORequest alloc] init];
+    dto.account.password = @"Qweqwe_1";
+    dto.account.email = @"bob@mailinator.com";
     [_service password:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
@@ -402,6 +411,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testConfirmEmail:(UIButton*)sender{
     ConfirmEmailDTORequest *dto = [[ConfirmEmailDTORequest alloc] init];
+    dto.email = @"test@mailinator.com";
     [_service confirmEmail:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
@@ -451,6 +461,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testResendEmail:(UIButton*)sender{
     ResendConfirmationEmailDTORequest *dto = [[ResendConfirmationEmailDTORequest alloc] init];
+    dto.email = @"bob@mailinator.com";
     [_service resendConfirmationEmail:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
@@ -468,6 +479,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testCountry:(UIButton*)sender{
     GetCountryDTORequest *dto = [[GetCountryDTORequest alloc] init];
+    dto.countryId = @"da";
     [_service getCountry:dto successBlock:^(GetCountryDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
@@ -477,6 +489,10 @@ id<DTOResponse> dtoResponse;
 
 - (void) testAddCountry:(UIButton*)sender{
     AddCountryDTORequest *dto = [[AddCountryDTORequest alloc] init];
+    dto.countryId = @"da";
+    dto.name = @"db";
+    dto.kyc = @"dc";
+    dto.code = @"dd";
     [_service addCountry:dto successBlock:^(AddCountryDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
@@ -521,6 +537,20 @@ id<DTOResponse> dtoResponse;
 
 - (void) testMakeOrder:(UIButton*)sender{
     MakeOrderDTORequest *dto = [[MakeOrderDTORequest alloc] init];
+    /*"instrument": "string",
+    "type": "string",
+    "amount": 0,
+    "price": 0,
+    "activationPrice": 0,
+    "isLimit": true,
+    "isStop": true */
+    dto.order.instrument = @"ltc_btc";
+    dto.order.type = @"buy";
+    dto.order.amount = 2;
+    dto.order.price = 2;
+    dto.order.activationPrice = 2.1;
+    dto.order.isLimit = @"true";
+    dto.order.isStop = @"true";
     [_service makeOrder:dto successBlock:^(MakeOrderDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
@@ -538,6 +568,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testDeleteOrder:(UIButton*)sender{
     DeleteOrderDTORequest *dto = [[DeleteOrderDTORequest alloc] init];
+    dto.orderId = -144115188075855870;
     [_service deleteOrder:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
@@ -547,6 +578,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testDeleteCountry:(UIButton*)sender{
     DeleteCountryDTORequest *dto = [[DeleteCountryDTORequest alloc] init];
+    dto.countryId = @"da";
     [_service deleteCountry:dto successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
