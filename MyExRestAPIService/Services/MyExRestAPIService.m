@@ -542,7 +542,7 @@ static NSString *const SettingUrl = @"api/setting";
 - (void) doRequestWithJson:(NSData*)jsonData
                      toURL:(NSString*)urlString
            withRequestType:(NSString*)type
-                   successBlock:(void(^)(NSData *responseData, NSHTTPURLResponse *response))successBlock
+                   successBlock:(RequestDidCompleteSuccsess)successBlock
                    failureBlock:(void(^)(ResponseError *error))failureBlock
 {
     NSLog(@"starting request...");
