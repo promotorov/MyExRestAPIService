@@ -1,14 +1,11 @@
-//
-//  ViewController.h
-//  MyExRestAPIService
-//
-//  Created by Guest User on 12.08.2018.
-//  Copyright © 2018 Qoden. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "MyExRestAPIService.h"
+#import "CookieService.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    MyExRestAPIService *_service;
+    CookieService *_cookie;
+}
 
 
 @end

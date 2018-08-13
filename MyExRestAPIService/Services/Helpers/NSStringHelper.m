@@ -1,9 +1,10 @@
-//
-//  NSStringHelper.m
-//  MyExRestAPIService
-//
-//  Created by Guest User on 13.08.2018.
-//  Copyright © 2018 Qoden. All rights reserved.
-//
+#import "NSStringHelper.h"
 
-#import <Foundation/Foundation.h>
+@implementation NSString (Additions)
+
+- (BOOL) isBlank {
+    NSString *trimmed = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return trimmed.length < 1;
+}
+
+@end

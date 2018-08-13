@@ -1,13 +1,7 @@
-//
-//  NSStringHelper.h
-//  MyExRestAPIService
-//
-//  Created by Guest User on 13.08.2018.
-//  Copyright © 2018 Qoden. All rights reserved.
-//
+#import <Foundation/Foundation.h>
 
-#ifndef NSStringHelper_h
-#define NSStringHelper_h
+@interface NSString (Additions)
 
+- (BOOL) isBlank;
 
-#endif /* NSStringHelper_h */
+@end

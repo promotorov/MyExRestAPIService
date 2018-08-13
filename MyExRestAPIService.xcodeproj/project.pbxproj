@@ -7,25 +7,159 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312D9FF42121601500518324 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34C21205FA10003F03A /* ViewController.m */; };
+		312D9FF821217E6100518324 /* NSStringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 312D9FF721217E6100518324 /* NSStringHelper.m */; };
 		31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34921205FA00003F03A /* AppDelegate.m */; };
-		31DCC34D21205FA10003F03A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34C21205FA10003F03A /* ViewController.m */; };
 		31DCC35021205FA10003F03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC34E21205FA10003F03A /* Main.storyboard */; };
 		31DCC35221205FA10003F03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC35121205FA10003F03A /* Assets.xcassets */; };
 		31DCC35521205FA10003F03A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC35321205FA10003F03A /* LaunchScreen.storyboard */; };
 		31DCC35821205FA10003F03A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC35721205FA10003F03A /* main.m */; };
+		31DCC3C921205FB60003F03A /* CookieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC36121205FB60003F03A /* CookieService.m */; };
+		31DCC3CA21205FB60003F03A /* MyExRestAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC36221205FB60003F03A /* MyExRestAPIService.m */; };
+		31DCC3CB21205FB60003F03A /* LoginDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC36821205FB60003F03A /* LoginDTOResponse.m */; };
+		31DCC3CC21205FB60003F03A /* Paging.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC36921205FB60003F03A /* Paging.m */; };
+		31DCC3CD21205FB60003F03A /* ReferralDetailsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC36B21205FB60003F03A /* ReferralDetailsDTOResponse.m */; };
+		31DCC3CE21205FB60003F03A /* ReferralsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC36E21205FB60003F03A /* ReferralsDTOResponse.m */; };
+		31DCC3CF21205FB60003F03A /* ReferralInfoDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37021205FB60003F03A /* ReferralInfoDTOResponse.m */; };
+		31DCC3D021205FB60003F03A /* WalletDepositDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37321205FB60003F03A /* WalletDepositDTOResponse.m */; };
+		31DCC3D121205FB60003F03A /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37521205FB60003F03A /* Country.m */; };
+		31DCC3D221205FB60003F03A /* AddCountryDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37A21205FB60003F03A /* AddCountryDTOResponse.m */; };
+		31DCC3D321205FB60003F03A /* AllCountriesDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37B21205FB60003F03A /* AllCountriesDTOResponse.m */; };
+		31DCC3D421205FB60003F03A /* GetCountryDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37C21205FB60003F03A /* GetCountryDTOResponse.m */; };
+		31DCC3D521205FB60003F03A /* ResponseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37D21205FB60003F03A /* ResponseError.m */; };
+		31DCC3D621205FB60003F03A /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC37E21205FB60003F03A /* Filters.m */; };
+		31DCC3D721205FB60003F03A /* UserInfoDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC38021205FB60003F03A /* UserInfoDTOResponse.m */; };
+		31DCC3D821205FB60003F03A /* User2FADTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC38221205FB60003F03A /* User2FADTOResponse.m */; };
+		31DCC3D921205FB60003F03A /* AssetDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC38421205FB60003F03A /* AssetDTOResponse.m */; };
+		31DCC3DA21205FB60003F03A /* SettingsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC38721205FB60003F03A /* SettingsDTOResponse.m */; };
+		31DCC3DB21205FB60003F03A /* AssetsInfoDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC38C21205FB60003F03A /* AssetsInfoDTOResponse.m */; };
+		31DCC3DC21205FB60003F03A /* OrderDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC38F21205FB60003F03A /* OrderDTOResponse.m */; };
+		31DCC3DD21205FB60003F03A /* MakeOrderDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39021205FB60003F03A /* MakeOrderDTOResponse.m */; };
+		31DCC3DE21205FB60003F03A /* UserOrdersDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39221205FB60003F03A /* UserOrdersDTOResponse.m */; };
+		31DCC3DF21205FB60003F03A /* AssetsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39321205FB60003F03A /* AssetsDTOResponse.m */; };
+		31DCC3E021205FB60003F03A /* OrderHistoryDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39721205FB60003F03A /* OrderHistoryDTOResponse.m */; };
+		31DCC3E121205FB60003F03A /* DeleteOrdersDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39A21205FB60003F03A /* DeleteOrdersDTOResponse.m */; };
+		31DCC3E221205FB60003F03A /* LoginDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39F21205FB60003F03A /* LoginDTORequest.m */; };
+		31DCC3E321205FB60003F03A /* GetReferralInfoDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A121205FB60003F03A /* GetReferralInfoDTORequest.m */; };
+		31DCC3E421205FB60003F03A /* GetReferralsDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A221205FB60003F03A /* GetReferralsDTORequest.m */; };
+		31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A621205FB60003F03A /* WalletDepositDTORequest.m */; };
+		31DCC3E621205FB60003F03A /* WithdrawalDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A921205FB60003F03A /* WithdrawalDTORequest.m */; };
+		31DCC3E721205FB60003F03A /* AddCountryDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3AB21205FB60003F03A /* AddCountryDTORequest.m */; };
+		31DCC3E821205FB60003F03A /* AllCountriesDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3AD21205FB60003F03A /* AllCountriesDTORequest.m */; };
+		31DCC3E921205FB60003F03A /* GetCountryDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3AE21205FB60003F03A /* GetCountryDTORequest.m */; };
+		31DCC3EA21205FB60003F03A /* DeleteCountryDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3AF21205FB60003F03A /* DeleteCountryDTORequest.m */; };
+		31DCC3EB21205FB60003F03A /* ConfirmEmailDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3B521205FB60003F03A /* ConfirmEmailDTORequest.m */; };
+		31DCC3EC21205FB60003F03A /* ResetPasswordDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3B821205FB60003F03A /* ResetPasswordDTORequest.m */; };
+		31DCC3ED21205FB60003F03A /* PasswordRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BA21205FB60003F03A /* PasswordRequestDTO.m */; };
+		31DCC3EE21205FB60003F03A /* ResendConfirmationEmailDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */; };
+		31DCC3EF21205FB60003F03A /* DeleteSettingDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BE21205FB60003F03A /* DeleteSettingDTORequest.m */; };
+		31DCC3F021205FB60003F03A /* AddSettingDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C021205FB60003F03A /* AddSettingDTORequest.m */; };
+		31DCC3F121205FB60003F03A /* DeleteOrderDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C321205FB60003F03A /* DeleteOrderDTORequest.m */; };
+		31DCC3F221205FB60003F03A /* OrderHistoryDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C421205FB60003F03A /* OrderHistoryDTORequest.m */; };
+		31DCC3F321205FB60003F03A /* MakeOrderDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C821205FB60003F03A /* MakeOrderDTORequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312D9FF621217E5200518324 /* NSStringHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringHelper.h; sourceTree = "<group>"; };
+		312D9FF721217E6100518324 /* NSStringHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringHelper.m; sourceTree = "<group>"; };
 		31DCC34521205FA00003F03A /* MyExRestAPIService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExRestAPIService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DCC34821205FA00003F03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31DCC34921205FA00003F03A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		31DCC34B21205FA00003F03A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		31DCC34C21205FA10003F03A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31DCC34C21205FA10003F03A /* ViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		31DCC34F21205FA10003F03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31DCC35121205FA10003F03A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31DCC35421205FA10003F03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31DCC35621205FA10003F03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31DCC35721205FA10003F03A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31DCC35F21205FB60003F03A /* CookieService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookieService.h; sourceTree = "<group>"; };
+		31DCC36021205FB60003F03A /* MyExRestAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyExRestAPIService.h; sourceTree = "<group>"; };
+		31DCC36121205FB60003F03A /* CookieService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookieService.m; sourceTree = "<group>"; };
+		31DCC36221205FB60003F03A /* MyExRestAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyExRestAPIService.m; sourceTree = "<group>"; };
+		31DCC36521205FB60003F03A /* AssetDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetDTOResponse.h; sourceTree = "<group>"; };
+		31DCC36721205FB60003F03A /* LoginDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDTOResponse.h; sourceTree = "<group>"; };
+		31DCC36821205FB60003F03A /* LoginDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDTOResponse.m; sourceTree = "<group>"; };
+		31DCC36921205FB60003F03A /* Paging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paging.m; sourceTree = "<group>"; };
+		31DCC36B21205FB60003F03A /* ReferralDetailsDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralDetailsDTOResponse.m; sourceTree = "<group>"; };
+		31DCC36C21205FB60003F03A /* ReferralsDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralsDTOResponse.h; sourceTree = "<group>"; };
+		31DCC36D21205FB60003F03A /* ReferralInfoDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralInfoDTOResponse.h; sourceTree = "<group>"; };
+		31DCC36E21205FB60003F03A /* ReferralsDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralsDTOResponse.m; sourceTree = "<group>"; };
+		31DCC36F21205FB60003F03A /* ReferralDetailsDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferralDetailsDTOResponse.h; sourceTree = "<group>"; };
+		31DCC37021205FB60003F03A /* ReferralInfoDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferralInfoDTOResponse.m; sourceTree = "<group>"; };
+		31DCC37221205FB60003F03A /* WalletDepositDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletDepositDTOResponse.h; sourceTree = "<group>"; };
+		31DCC37321205FB60003F03A /* WalletDepositDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletDepositDTOResponse.m; sourceTree = "<group>"; };
+		31DCC37521205FB60003F03A /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		31DCC37621205FB60003F03A /* AllCountriesDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllCountriesDTOResponse.h; sourceTree = "<group>"; };
+		31DCC37721205FB60003F03A /* AddCountryDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCountryDTOResponse.h; sourceTree = "<group>"; };
+		31DCC37821205FB60003F03A /* GetCountryDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCountryDTOResponse.h; sourceTree = "<group>"; };
+		31DCC37921205FB60003F03A /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		31DCC37A21205FB60003F03A /* AddCountryDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCountryDTOResponse.m; sourceTree = "<group>"; };
+		31DCC37B21205FB60003F03A /* AllCountriesDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllCountriesDTOResponse.m; sourceTree = "<group>"; };
+		31DCC37C21205FB60003F03A /* GetCountryDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCountryDTOResponse.m; sourceTree = "<group>"; };
+		31DCC37D21205FB60003F03A /* ResponseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseError.m; sourceTree = "<group>"; };
+		31DCC37E21205FB60003F03A /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filters.m; sourceTree = "<group>"; };
+		31DCC38021205FB60003F03A /* UserInfoDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoDTOResponse.m; sourceTree = "<group>"; };
+		31DCC38121205FB60003F03A /* User2FADTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User2FADTOResponse.h; sourceTree = "<group>"; };
+		31DCC38221205FB60003F03A /* User2FADTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User2FADTOResponse.m; sourceTree = "<group>"; };
+		31DCC38321205FB60003F03A /* UserInfoDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoDTOResponse.h; sourceTree = "<group>"; };
+		31DCC38421205FB60003F03A /* AssetDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetDTOResponse.m; sourceTree = "<group>"; };
+		31DCC38621205FB60003F03A /* SettingsDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDTOResponse.h; sourceTree = "<group>"; };
+		31DCC38721205FB60003F03A /* SettingsDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDTOResponse.m; sourceTree = "<group>"; };
+		31DCC38821205FB60003F03A /* Paging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paging.h; sourceTree = "<group>"; };
+		31DCC38921205FB60003F03A /* ResponseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseError.h; sourceTree = "<group>"; };
+		31DCC38A21205FB60003F03A /* DTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTOResponse.h; sourceTree = "<group>"; };
+		31DCC38C21205FB60003F03A /* AssetsInfoDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsInfoDTOResponse.m; sourceTree = "<group>"; };
+		31DCC38D21205FB60003F03A /* AssetsInfoDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsInfoDTOResponse.h; sourceTree = "<group>"; };
+		31DCC38F21205FB60003F03A /* OrderDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDTOResponse.m; sourceTree = "<group>"; };
+		31DCC39021205FB60003F03A /* MakeOrderDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeOrderDTOResponse.m; sourceTree = "<group>"; };
+		31DCC39121205FB60003F03A /* OrderHistoryDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryDTOResponse.h; sourceTree = "<group>"; };
+		31DCC39221205FB60003F03A /* UserOrdersDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserOrdersDTOResponse.m; sourceTree = "<group>"; };
+		31DCC39321205FB60003F03A /* AssetsDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsDTOResponse.m; sourceTree = "<group>"; };
+		31DCC39421205FB60003F03A /* DeleteOrdersDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteOrdersDTOResponse.h; sourceTree = "<group>"; };
+		31DCC39521205FB60003F03A /* MakeOrderDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeOrderDTOResponse.h; sourceTree = "<group>"; };
+		31DCC39621205FB60003F03A /* OrderDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDTOResponse.h; sourceTree = "<group>"; };
+		31DCC39721205FB60003F03A /* OrderHistoryDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryDTOResponse.m; sourceTree = "<group>"; };
+		31DCC39821205FB60003F03A /* UserOrdersDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserOrdersDTOResponse.h; sourceTree = "<group>"; };
+		31DCC39921205FB60003F03A /* AssetsDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsDTOResponse.h; sourceTree = "<group>"; };
+		31DCC39A21205FB60003F03A /* DeleteOrdersDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteOrdersDTOResponse.m; sourceTree = "<group>"; };
+		31DCC39B21205FB60003F03A /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filters.h; sourceTree = "<group>"; };
+		31DCC39E21205FB60003F03A /* LoginDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDTORequest.h; sourceTree = "<group>"; };
+		31DCC39F21205FB60003F03A /* LoginDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDTORequest.m; sourceTree = "<group>"; };
+		31DCC3A121205FB60003F03A /* GetReferralInfoDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetReferralInfoDTORequest.m; sourceTree = "<group>"; };
+		31DCC3A221205FB60003F03A /* GetReferralsDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetReferralsDTORequest.m; sourceTree = "<group>"; };
+		31DCC3A321205FB60003F03A /* GetReferralInfoDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetReferralInfoDTORequest.h; sourceTree = "<group>"; };
+		31DCC3A421205FB60003F03A /* GetReferralsDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetReferralsDTORequest.h; sourceTree = "<group>"; };
+		31DCC3A621205FB60003F03A /* WalletDepositDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletDepositDTORequest.m; sourceTree = "<group>"; };
+		31DCC3A721205FB60003F03A /* WithdrawalDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawalDTORequest.h; sourceTree = "<group>"; };
+		31DCC3A821205FB60003F03A /* WalletDepositDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletDepositDTORequest.h; sourceTree = "<group>"; };
+		31DCC3A921205FB60003F03A /* WithdrawalDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawalDTORequest.m; sourceTree = "<group>"; };
+		31DCC3AB21205FB60003F03A /* AddCountryDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCountryDTORequest.m; sourceTree = "<group>"; };
+		31DCC3AC21205FB60003F03A /* DeleteCountryDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteCountryDTORequest.h; sourceTree = "<group>"; };
+		31DCC3AD21205FB60003F03A /* AllCountriesDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllCountriesDTORequest.m; sourceTree = "<group>"; };
+		31DCC3AE21205FB60003F03A /* GetCountryDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCountryDTORequest.m; sourceTree = "<group>"; };
+		31DCC3AF21205FB60003F03A /* DeleteCountryDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteCountryDTORequest.m; sourceTree = "<group>"; };
+		31DCC3B021205FB60003F03A /* AddCountryDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCountryDTORequest.h; sourceTree = "<group>"; };
+		31DCC3B121205FB60003F03A /* AllCountriesDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllCountriesDTORequest.h; sourceTree = "<group>"; };
+		31DCC3B221205FB60003F03A /* GetCountryDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCountryDTORequest.h; sourceTree = "<group>"; };
+		31DCC3B321205FB60003F03A /* DTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTORequest.h; sourceTree = "<group>"; };
+		31DCC3B521205FB60003F03A /* ConfirmEmailDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmEmailDTORequest.m; sourceTree = "<group>"; };
+		31DCC3B621205FB60003F03A /* ResetPasswordDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordDTORequest.h; sourceTree = "<group>"; };
+		31DCC3B721205FB60003F03A /* ResendConfirmationEmailDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResendConfirmationEmailDTORequest.h; sourceTree = "<group>"; };
+		31DCC3B821205FB60003F03A /* ResetPasswordDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordDTORequest.m; sourceTree = "<group>"; };
+		31DCC3B921205FB60003F03A /* ConfirmEmailDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmEmailDTORequest.h; sourceTree = "<group>"; };
+		31DCC3BA21205FB60003F03A /* PasswordRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordRequestDTO.m; sourceTree = "<group>"; };
+		31DCC3BB21205FB60003F03A /* PasswordDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordDTORequest.h; sourceTree = "<group>"; };
+		31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResendConfirmationEmailDTORequest.m; sourceTree = "<group>"; };
+		31DCC3BE21205FB60003F03A /* DeleteSettingDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSettingDTORequest.m; sourceTree = "<group>"; };
+		31DCC3BF21205FB60003F03A /* AddSettingDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSettingDTORequest.h; sourceTree = "<group>"; };
+		31DCC3C021205FB60003F03A /* AddSettingDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSettingDTORequest.m; sourceTree = "<group>"; };
+		31DCC3C121205FB60003F03A /* DeleteSettingDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteSettingDTORequest.h; sourceTree = "<group>"; };
+		31DCC3C321205FB60003F03A /* DeleteOrderDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteOrderDTORequest.m; sourceTree = "<group>"; };
+		31DCC3C421205FB60003F03A /* OrderHistoryDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryDTORequest.m; sourceTree = "<group>"; };
+		31DCC3C521205FB60003F03A /* MakeOrderDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeOrderDTORequest.h; sourceTree = "<group>"; };
+		31DCC3C621205FB60003F03A /* DeleteOrderDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteOrderDTORequest.h; sourceTree = "<group>"; };
+		31DCC3C721205FB60003F03A /* OrderHistoryDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryDTORequest.h; sourceTree = "<group>"; };
+		31DCC3C821205FB60003F03A /* MakeOrderDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeOrderDTORequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312D9FF521217E2800518324 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				312D9FF621217E5200518324 /* NSStringHelper.h */,
+				312D9FF721217E6100518324 /* NSStringHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		31DCC33C21205FA00003F03A = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +201,8 @@
 		31DCC34721205FA00003F03A /* MyExRestAPIService */ = {
 			isa = PBXGroup;
 			children = (
+				31DCC36321205FB60003F03A /* Model */,
+				31DCC35E21205FB60003F03A /* Services */,
 				31DCC34821205FA00003F03A /* AppDelegate.h */,
 				31DCC34921205FA00003F03A /* AppDelegate.m */,
 				31DCC34B21205FA00003F03A /* ViewController.h */,
@@ -69,6 +214,245 @@
 				31DCC35721205FA10003F03A /* main.m */,
 			);
 			path = MyExRestAPIService;
+			sourceTree = "<group>";
+		};
+		31DCC35E21205FB60003F03A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				312D9FF521217E2800518324 /* Helpers */,
+				31DCC35F21205FB60003F03A /* CookieService.h */,
+				31DCC36121205FB60003F03A /* CookieService.m */,
+				31DCC36021205FB60003F03A /* MyExRestAPIService.h */,
+				31DCC36221205FB60003F03A /* MyExRestAPIService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		31DCC36321205FB60003F03A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC36421205FB60003F03A /* ResponseDTO */,
+				31DCC39C21205FB60003F03A /* RequestDTO */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31DCC36421205FB60003F03A /* ResponseDTO */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC36521205FB60003F03A /* AssetDTOResponse.h */,
+				31DCC36621205FB60003F03A /* LoginAPI */,
+				31DCC36921205FB60003F03A /* Paging.m */,
+				31DCC36A21205FB60003F03A /* ReferralAPI */,
+				31DCC37121205FB60003F03A /* WalletAPI */,
+				31DCC37421205FB60003F03A /* CountryAPI */,
+				31DCC37D21205FB60003F03A /* ResponseError.m */,
+				31DCC37E21205FB60003F03A /* Filters.m */,
+				31DCC37F21205FB60003F03A /* ProfileAPI */,
+				31DCC38421205FB60003F03A /* AssetDTOResponse.m */,
+				31DCC38521205FB60003F03A /* SettingAPI */,
+				31DCC38821205FB60003F03A /* Paging.h */,
+				31DCC38921205FB60003F03A /* ResponseError.h */,
+				31DCC38A21205FB60003F03A /* DTOResponse.h */,
+				31DCC38B21205FB60003F03A /* AssetAPI */,
+				31DCC38E21205FB60003F03A /* TradeAPI */,
+				31DCC39B21205FB60003F03A /* Filters.h */,
+			);
+			path = ResponseDTO;
+			sourceTree = "<group>";
+		};
+		31DCC36621205FB60003F03A /* LoginAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC36721205FB60003F03A /* LoginDTOResponse.h */,
+				31DCC36821205FB60003F03A /* LoginDTOResponse.m */,
+			);
+			path = LoginAPI;
+			sourceTree = "<group>";
+		};
+		31DCC36A21205FB60003F03A /* ReferralAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC36B21205FB60003F03A /* ReferralDetailsDTOResponse.m */,
+				31DCC36C21205FB60003F03A /* ReferralsDTOResponse.h */,
+				31DCC36D21205FB60003F03A /* ReferralInfoDTOResponse.h */,
+				31DCC36E21205FB60003F03A /* ReferralsDTOResponse.m */,
+				31DCC36F21205FB60003F03A /* ReferralDetailsDTOResponse.h */,
+				31DCC37021205FB60003F03A /* ReferralInfoDTOResponse.m */,
+			);
+			path = ReferralAPI;
+			sourceTree = "<group>";
+		};
+		31DCC37121205FB60003F03A /* WalletAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC37221205FB60003F03A /* WalletDepositDTOResponse.h */,
+				31DCC37321205FB60003F03A /* WalletDepositDTOResponse.m */,
+			);
+			path = WalletAPI;
+			sourceTree = "<group>";
+		};
+		31DCC37421205FB60003F03A /* CountryAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC37521205FB60003F03A /* Country.m */,
+				31DCC37621205FB60003F03A /* AllCountriesDTOResponse.h */,
+				31DCC37721205FB60003F03A /* AddCountryDTOResponse.h */,
+				31DCC37821205FB60003F03A /* GetCountryDTOResponse.h */,
+				31DCC37921205FB60003F03A /* Country.h */,
+				31DCC37A21205FB60003F03A /* AddCountryDTOResponse.m */,
+				31DCC37B21205FB60003F03A /* AllCountriesDTOResponse.m */,
+				31DCC37C21205FB60003F03A /* GetCountryDTOResponse.m */,
+			);
+			path = CountryAPI;
+			sourceTree = "<group>";
+		};
+		31DCC37F21205FB60003F03A /* ProfileAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC38021205FB60003F03A /* UserInfoDTOResponse.m */,
+				31DCC38121205FB60003F03A /* User2FADTOResponse.h */,
+				31DCC38221205FB60003F03A /* User2FADTOResponse.m */,
+				31DCC38321205FB60003F03A /* UserInfoDTOResponse.h */,
+			);
+			path = ProfileAPI;
+			sourceTree = "<group>";
+		};
+		31DCC38521205FB60003F03A /* SettingAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC38621205FB60003F03A /* SettingsDTOResponse.h */,
+				31DCC38721205FB60003F03A /* SettingsDTOResponse.m */,
+			);
+			path = SettingAPI;
+			sourceTree = "<group>";
+		};
+		31DCC38B21205FB60003F03A /* AssetAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC38C21205FB60003F03A /* AssetsInfoDTOResponse.m */,
+				31DCC38D21205FB60003F03A /* AssetsInfoDTOResponse.h */,
+			);
+			path = AssetAPI;
+			sourceTree = "<group>";
+		};
+		31DCC38E21205FB60003F03A /* TradeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC38F21205FB60003F03A /* OrderDTOResponse.m */,
+				31DCC39021205FB60003F03A /* MakeOrderDTOResponse.m */,
+				31DCC39121205FB60003F03A /* OrderHistoryDTOResponse.h */,
+				31DCC39221205FB60003F03A /* UserOrdersDTOResponse.m */,
+				31DCC39321205FB60003F03A /* AssetsDTOResponse.m */,
+				31DCC39421205FB60003F03A /* DeleteOrdersDTOResponse.h */,
+				31DCC39521205FB60003F03A /* MakeOrderDTOResponse.h */,
+				31DCC39621205FB60003F03A /* OrderDTOResponse.h */,
+				31DCC39721205FB60003F03A /* OrderHistoryDTOResponse.m */,
+				31DCC39821205FB60003F03A /* UserOrdersDTOResponse.h */,
+				31DCC39921205FB60003F03A /* AssetsDTOResponse.h */,
+				31DCC39A21205FB60003F03A /* DeleteOrdersDTOResponse.m */,
+			);
+			path = TradeAPI;
+			sourceTree = "<group>";
+		};
+		31DCC39C21205FB60003F03A /* RequestDTO */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC39D21205FB60003F03A /* LoginAPI */,
+				31DCC3A021205FB60003F03A /* ReferralAPI */,
+				31DCC3A521205FB60003F03A /* WalletAPI */,
+				31DCC3AA21205FB60003F03A /* CountryAPI */,
+				31DCC3B321205FB60003F03A /* DTORequest.h */,
+				31DCC3B421205FB60003F03A /* ProfileAPI */,
+				31DCC3BD21205FB60003F03A /* SettingAPI */,
+				31DCC3C221205FB60003F03A /* TradeAPI */,
+			);
+			path = RequestDTO;
+			sourceTree = "<group>";
+		};
+		31DCC39D21205FB60003F03A /* LoginAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC39E21205FB60003F03A /* LoginDTORequest.h */,
+				31DCC39F21205FB60003F03A /* LoginDTORequest.m */,
+			);
+			path = LoginAPI;
+			sourceTree = "<group>";
+		};
+		31DCC3A021205FB60003F03A /* ReferralAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC3A121205FB60003F03A /* GetReferralInfoDTORequest.m */,
+				31DCC3A221205FB60003F03A /* GetReferralsDTORequest.m */,
+				31DCC3A321205FB60003F03A /* GetReferralInfoDTORequest.h */,
+				31DCC3A421205FB60003F03A /* GetReferralsDTORequest.h */,
+			);
+			path = ReferralAPI;
+			sourceTree = "<group>";
+		};
+		31DCC3A521205FB60003F03A /* WalletAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC3A621205FB60003F03A /* WalletDepositDTORequest.m */,
+				31DCC3A721205FB60003F03A /* WithdrawalDTORequest.h */,
+				31DCC3A821205FB60003F03A /* WalletDepositDTORequest.h */,
+				31DCC3A921205FB60003F03A /* WithdrawalDTORequest.m */,
+			);
+			path = WalletAPI;
+			sourceTree = "<group>";
+		};
+		31DCC3AA21205FB60003F03A /* CountryAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC3AB21205FB60003F03A /* AddCountryDTORequest.m */,
+				31DCC3AC21205FB60003F03A /* DeleteCountryDTORequest.h */,
+				31DCC3AD21205FB60003F03A /* AllCountriesDTORequest.m */,
+				31DCC3AE21205FB60003F03A /* GetCountryDTORequest.m */,
+				31DCC3AF21205FB60003F03A /* DeleteCountryDTORequest.m */,
+				31DCC3B021205FB60003F03A /* AddCountryDTORequest.h */,
+				31DCC3B121205FB60003F03A /* AllCountriesDTORequest.h */,
+				31DCC3B221205FB60003F03A /* GetCountryDTORequest.h */,
+			);
+			path = CountryAPI;
+			sourceTree = "<group>";
+		};
+		31DCC3B421205FB60003F03A /* ProfileAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC3B521205FB60003F03A /* ConfirmEmailDTORequest.m */,
+				31DCC3B621205FB60003F03A /* ResetPasswordDTORequest.h */,
+				31DCC3B721205FB60003F03A /* ResendConfirmationEmailDTORequest.h */,
+				31DCC3B821205FB60003F03A /* ResetPasswordDTORequest.m */,
+				31DCC3B921205FB60003F03A /* ConfirmEmailDTORequest.h */,
+				31DCC3BA21205FB60003F03A /* PasswordRequestDTO.m */,
+				31DCC3BB21205FB60003F03A /* PasswordDTORequest.h */,
+				31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */,
+			);
+			path = ProfileAPI;
+			sourceTree = "<group>";
+		};
+		31DCC3BD21205FB60003F03A /* SettingAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC3BE21205FB60003F03A /* DeleteSettingDTORequest.m */,
+				31DCC3BF21205FB60003F03A /* AddSettingDTORequest.h */,
+				31DCC3C021205FB60003F03A /* AddSettingDTORequest.m */,
+				31DCC3C121205FB60003F03A /* DeleteSettingDTORequest.h */,
+			);
+			path = SettingAPI;
+			sourceTree = "<group>";
+		};
+		31DCC3C221205FB60003F03A /* TradeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				31DCC3C321205FB60003F03A /* DeleteOrderDTORequest.m */,
+				31DCC3C421205FB60003F03A /* OrderHistoryDTORequest.m */,
+				31DCC3C521205FB60003F03A /* MakeOrderDTORequest.h */,
+				31DCC3C621205FB60003F03A /* DeleteOrderDTORequest.h */,
+				31DCC3C721205FB60003F03A /* OrderHistoryDTORequest.h */,
+				31DCC3C821205FB60003F03A /* MakeOrderDTORequest.m */,
+			);
+			path = TradeAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +525,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31DCC34D21205FA10003F03A /* ViewController.m in Sources */,
+				31DCC3EA21205FB60003F03A /* DeleteCountryDTORequest.m in Sources */,
+				31DCC3EE21205FB60003F03A /* ResendConfirmationEmailDTORequest.m in Sources */,
+				31DCC3E121205FB60003F03A /* DeleteOrdersDTOResponse.m in Sources */,
+				312D9FF821217E6100518324 /* NSStringHelper.m in Sources */,
+				31DCC3ED21205FB60003F03A /* PasswordRequestDTO.m in Sources */,
+				31DCC3CA21205FB60003F03A /* MyExRestAPIService.m in Sources */,
+				31DCC3EB21205FB60003F03A /* ConfirmEmailDTORequest.m in Sources */,
+				31DCC3D021205FB60003F03A /* WalletDepositDTOResponse.m in Sources */,
+				31DCC3D421205FB60003F03A /* GetCountryDTOResponse.m in Sources */,
+				31DCC3E021205FB60003F03A /* OrderHistoryDTOResponse.m in Sources */,
+				31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */,
+				31DCC3EC21205FB60003F03A /* ResetPasswordDTORequest.m in Sources */,
+				31DCC3D521205FB60003F03A /* ResponseError.m in Sources */,
+				31DCC3D621205FB60003F03A /* Filters.m in Sources */,
+				31DCC3C921205FB60003F03A /* CookieService.m in Sources */,
+				31DCC3E621205FB60003F03A /* WithdrawalDTORequest.m in Sources */,
+				31DCC3D221205FB60003F03A /* AddCountryDTOResponse.m in Sources */,
+				31DCC3D321205FB60003F03A /* AllCountriesDTOResponse.m in Sources */,
+				31DCC3E921205FB60003F03A /* GetCountryDTORequest.m in Sources */,
+				31DCC3DD21205FB60003F03A /* MakeOrderDTOResponse.m in Sources */,
+				31DCC3E421205FB60003F03A /* GetReferralsDTORequest.m in Sources */,
+				312D9FF42121601500518324 /* ViewController.m in Sources */,
+				31DCC3DB21205FB60003F03A /* AssetsInfoDTOResponse.m in Sources */,
+				31DCC3D121205FB60003F03A /* Country.m in Sources */,
 				31DCC35821205FA10003F03A /* main.m in Sources */,
+				31DCC3E721205FB60003F03A /* AddCountryDTORequest.m in Sources */,
+				31DCC3F021205FB60003F03A /* AddSettingDTORequest.m in Sources */,
+				31DCC3EF21205FB60003F03A /* DeleteSettingDTORequest.m in Sources */,
+				31DCC3E821205FB60003F03A /* AllCountriesDTORequest.m in Sources */,
+				31DCC3D921205FB60003F03A /* AssetDTOResponse.m in Sources */,
+				31DCC3F121205FB60003F03A /* DeleteOrderDTORequest.m in Sources */,
+				31DCC3DE21205FB60003F03A /* UserOrdersDTOResponse.m in Sources */,
+				31DCC3E221205FB60003F03A /* LoginDTORequest.m in Sources */,
+				31DCC3CB21205FB60003F03A /* LoginDTOResponse.m in Sources */,
+				31DCC3E321205FB60003F03A /* GetReferralInfoDTORequest.m in Sources */,
+				31DCC3F321205FB60003F03A /* MakeOrderDTORequest.m in Sources */,
+				31DCC3CF21205FB60003F03A /* ReferralInfoDTOResponse.m in Sources */,
+				31DCC3F221205FB60003F03A /* OrderHistoryDTORequest.m in Sources */,
+				31DCC3CC21205FB60003F03A /* Paging.m in Sources */,
+				31DCC3CE21205FB60003F03A /* ReferralsDTOResponse.m in Sources */,
+				31DCC3D821205FB60003F03A /* User2FADTOResponse.m in Sources */,
+				31DCC3DC21205FB60003F03A /* OrderDTOResponse.m in Sources */,
+				31DCC3CD21205FB60003F03A /* ReferralDetailsDTOResponse.m in Sources */,
 				31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */,
+				31DCC3DF21205FB60003F03A /* AssetsDTOResponse.m in Sources */,
+				31DCC3D721205FB60003F03A /* UserInfoDTOResponse.m in Sources */,
+				31DCC3DA21205FB60003F03A /* SettingsDTOResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
