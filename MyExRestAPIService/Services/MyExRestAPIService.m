@@ -579,7 +579,16 @@ static NSString *const SettingUrl = @"api/setting";
             }
             else {
                 NSLog(@"%@", httpResponse);
-                if (httpResponse.statusCode != 401) {
+                NSString *code = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
+                if (httpResponse.statusCode == 401) {
+                    if (failureBlock)
+                        failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:code withMessageCode:@""]);
+                }
+                else if ([self isRequestDidCompleteWithServerError:httpResponse.statusCode]) {
+                    if (failureBlock)
+                        failureBlock([[ResponseError alloc] initWithMessage:@"ServerError" withStatusCode:code withMessageCode:@""]);
+                }
+                else {
                     NSDictionary *dictionary = [self toDictionaryFromData:data];
                     for (NSDictionary *subdict in [dictionary objectForKey:@"errors"]) {
                         NSString *message = (NSString*) [subdict objectForKey:@"message"];
@@ -589,10 +598,6 @@ static NSString *const SettingUrl = @"api/setting";
                             failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
                         break;
                     }
-                }
-                else {
-                    if (failureBlock)
-                        failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:@"401" withMessageCode:@""]);
                 }
             }
         }
@@ -616,6 +621,12 @@ static NSString *const SettingUrl = @"api/setting";
 - (BOOL) isRequestSuccess:(NSInteger) statusCode {
     unichar firstNumber = [[NSString stringWithFormat:@"%ld", statusCode] characterAtIndex:0];
     if (firstNumber == '2') return TRUE;
+    else return FALSE;
+}
+
+- (BOOL) isRequestDidCompleteWithServerError:(NSInteger) statusCode {
+    unichar firstNumber = [[NSString stringWithFormat:@"%ld", statusCode] characterAtIndex:0];
+    if (firstNumber == '5') return TRUE;
     else return FALSE;
 }
 
