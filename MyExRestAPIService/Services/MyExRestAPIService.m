@@ -1,6 +1,7 @@
 #import "MyExRestAPIService.h"
 #import "NSStringHelper.h"
 
+typedef void (^RequestDidCompleteSuccsess)(NSData *data, NSHTTPURLResponse *response);
 #define SERVER_ROOT_URL @"https://api.blockbitdev.xyz"
 #define SERVER_API_URL [SERVER_ROOT_URL stringByAppendingString:@"/frontoffice/"]
 static NSString *const UserCountriesUrl = @"backoffice/countries";
@@ -48,8 +49,7 @@ static NSString *const SettingUrl = @"api/setting";
     NSLog(@"getting user countries...");
     NSString *url = [NSString stringWithFormat:@"%@%@", UserCountriesUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", dto.search, dto.page, dto.perPage]];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         AllCountriesDTOResponse *dto = [[AllCountriesDTOResponse alloc]
                                      initFromDictionary:dictionary];
@@ -70,8 +70,7 @@ static NSString *const SettingUrl = @"api/setting";
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, dto.countryId];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         GetCountryDTOResponse *dto = [[GetCountryDTOResponse alloc]
                                         initFromDictionary:dictionary];
@@ -91,8 +90,7 @@ static NSString *const SettingUrl = @"api/setting";
         return;
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, dto.countryId];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -106,8 +104,7 @@ static NSString *const SettingUrl = @"api/setting";
     NSLog(@"starting add country...");
     NSData *jsonData = [self makeRequestBody:dto];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         AddCountryDTOResponse *dto = [[AddCountryDTOResponse alloc]
                                       initFromDictionary:dictionary];
@@ -125,8 +122,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"starting reset a password ...");
     NSData *jsonData = [self makeRequestBody:dto];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -139,8 +135,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"starting ...");
     NSData *jsonData = [self makeRequestBody:dto];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -153,8 +148,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"starting confirm email");
     NSData *jsonData = [self makeRequestBody:dto];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -167,8 +161,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"sending a confirmation email ...");
     NSData *jsonData = [self makeRequestBody:dto];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -180,8 +173,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"getting user's 2fa ...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         User2FADTOResponse *dto = [[User2FADTOResponse alloc]
                                    initFromDictionary:dictionary];
@@ -196,8 +188,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"adding 2fa ...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         User2FADTOResponse *dto = [[User2FADTOResponse alloc]
                                     initFromDictionary:dictionary];
@@ -212,8 +203,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"starting fins user info ...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         UserInfoDTOResponse *dto = [[UserInfoDTOResponse alloc]
                                    initFromDictionary:dictionary];
@@ -232,8 +222,7 @@ static NSString *const SettingUrl = @"api/setting";
     NSLog(@"starting find referrals...");
     NSString *url = [NSString stringWithFormat:@"%@%@", ReferralsUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", dto.search, dto.page, dto.perPage]];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         ReferralsDTOResponse *dto = [[ReferralsDTOResponse alloc]
                                     initFromDictionary:dictionary];
@@ -248,8 +237,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"getting referrals info...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         ReferralInfoDTOResponse *dto = [[ReferralInfoDTOResponse alloc]
                                     initFromDictionary:dictionary];
@@ -270,8 +258,7 @@ static NSString *const SettingUrl = @"api/setting";
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@/details", ReferralDetailsUrl, dto.userId];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         ReferralDetailsDTOResponse *dto = [[ReferralDetailsDTOResponse alloc]
                                         initFromDictionary:dictionary];
@@ -292,8 +279,7 @@ static NSString *const SettingUrl = @"api/setting";
         return;
     }
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         ReferralInfoDTOResponse *dto = [[ReferralInfoDTOResponse alloc]
                                         initFromDictionary:dictionary];
@@ -313,8 +299,7 @@ static NSString *const SettingUrl = @"api/setting";
     NSLog(@"creating an order ...");
     NSData *jsonData = [self makeRequestBody:dto];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         MakeOrderDTOResponse *dto = [[MakeOrderDTOResponse alloc]
                                         initFromDictionary:dictionary];
@@ -334,8 +319,7 @@ static NSString *const SettingUrl = @"api/setting";
         return;
     }
     NSString *url = [NSString stringWithFormat:@"%@/%li", DeleteOrdersUrl, dto.orderId];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -347,8 +331,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"start deleting orders ...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         DeletedOrdersDTOResponse *dto = [[DeletedOrdersDTOResponse alloc]
                                      initFromDictionary:dictionary];
@@ -363,8 +346,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"starting find user orders...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         UserOrdersDTOResponse *dto = [[UserOrdersDTOResponse alloc]
                                          initFromDictionary:dictionary];
@@ -381,8 +363,7 @@ static NSString *const SettingUrl = @"api/setting";
     NSLog(@"starting find user orders...");
     NSString *url = [NSString stringWithFormat:@"%@%@", OrderHistoryUrl, [NSString stringWithFormat:@"?offset=%d&limit=%d", dto.offset, dto.limit]];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         OrderHistoryDTOResponse *dto = [[OrderHistoryDTOResponse alloc]
                                       initFromDictionary:dictionary];
@@ -397,8 +378,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"getting assets...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         AssetsDTOResponse *dto = [[AssetsDTOResponse alloc]
                                         initFromDictionary:dictionary];
@@ -420,8 +400,7 @@ static NSString *const SettingUrl = @"api/setting";
     [_cookieService saveAllCookies:storage];
     NSData *jsonData = [self makeRequestBody:dto];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSArray* authToken = [NSHTTPCookie
                               cookiesWithResponseHeaderFields:[response allHeaderFields]
                               forURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@", SERVER_API_URL, SignInUrl]]];
@@ -443,8 +422,7 @@ static NSString *const SettingUrl = @"api/setting";
                  failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"log out starting...");
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         [self->_cookieService deleteAllCookies];
         [self->_cookieService saveAllCookies:[NSHTTPCookieStorage sharedHTTPCookieStorage]];
         if (successBlock)
@@ -460,8 +438,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"getting assets info...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         AssetsInfoDTOResponse *dto = [[AssetsInfoDTOResponse alloc]
                                   initFromDictionary:dictionary];
@@ -479,8 +456,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"trying get withdrawal...");
     NSData *jsonData = [self makeRequestBody:dto];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -494,8 +470,7 @@ static NSString *const SettingUrl = @"api/setting";
     NSLog(@"creating a wallet deposit...");
     NSData *jsonData = [self makeRequestBody:dto];
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         WalletDepositDTOResponse *dto = [[WalletDepositDTOResponse alloc]
                                       initFromDictionary:dictionary];
@@ -512,8 +487,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"getting settings...");
     __weak typeof(self) weakSelf = self;
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
         SettingsDTOResponse *dto = [[SettingsDTOResponse alloc]
                                          initFromDictionary:dictionary];
@@ -529,8 +503,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"adding a setting...");
     NSData *jsonData = [self makeRequestBody:dto];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
@@ -543,8 +516,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"deleting a setting...");
     NSData *jsonData = [self makeRequestBody:dto];
-    void (^requestSuccessBlock)(NSData *, NSHTTPURLResponse *);
-    requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
     };
