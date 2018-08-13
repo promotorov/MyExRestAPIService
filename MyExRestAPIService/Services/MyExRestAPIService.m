@@ -593,40 +593,40 @@ static NSString *const SettingUrl = @"api/setting";
         [request setHTTPBody: jsonData];
     }
     
+    void (^requestDidCompleteBlock)(NSData *, NSURLResponse *, NSError *);
+    requestDidCompleteBlock = ^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error && failureBlock)
+            failureBlock([[ResponseError alloc] initWithMessage:@"UnknownError" withStatusCode:@"UnknownError" withMessageCode:@"UnknownError"]);
+        else {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
+            if ([self isRequestSuccess:httpResponse.statusCode]) {
+                NSLog(@"Sucseefull");
+                if (successBlock)
+                    successBlock(data, httpResponse);
+            }
+            else {
+                NSLog(@"%@", httpResponse);
+                if (httpResponse.statusCode != 401) {
+                    NSDictionary *dictionary = [self toDictionaryFromData:data];
+                    for (NSDictionary *subdict in [dictionary objectForKey:@"errors"]) {
+                        NSString *message = (NSString*) [subdict objectForKey:@"message"];
+                        NSString *messageCode = (NSString*) [subdict objectForKey:@"code"];
+                        NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
+                        if (failureBlock)
+                            failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
+                        break;
+                    }
+                }
+                else {
+                    if (failureBlock)
+                        failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:@"401" withMessageCode:@""]);
+                }
+            }
+        }
+    };
+    
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request
-                                             completionHandler: ^(NSData * _Nullable data,
-                                                                  NSURLResponse * _Nullable response,
-                                                                  NSError * _Nullable error) {
-                                                 if (error && failureBlock)
-                                                     failureBlock([[ResponseError alloc] initWithMessage:@"UnknownError" withStatusCode:@"UnknownError" withMessageCode:@"UnknownError"]);
-                                                 else {
-                                                     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
-                                                     if ([self isRequestSuccess:httpResponse.statusCode]) {
-                                                         NSLog(@"Sucseefull");
-                                                         if (successBlock)
-                                                             successBlock(data, httpResponse);
-                                                     }
-                                                     else {
-                                                         NSLog(@"%@", httpResponse);
-                                                         if (httpResponse.statusCode != 401) {
-                                                             NSLog(@"%@", data);
-                                                             NSDictionary *dictionary = [self toDictionaryFromData:data];
-                                                             for (NSDictionary *subdict in [dictionary objectForKey:@"errors"]) {
-                                                                 NSString *message = (NSString*) [subdict objectForKey:@"message"];
-                                                                 NSString *messageCode = (NSString*) [subdict objectForKey:@"code"];
-                                                                 NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
-                                                                 if (failureBlock)
-                                                                     failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
-                                                                 break;
-                                                             }
-                                                         }
-                                                         else {
-                                                             if (failureBlock)
-                                                                 failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:@"401" withMessageCode:@""]);
-                                                         }
-                                                     }
-                                                 }
-                                             }];
+                                             completionHandler:requestDidCompleteBlock];
     [task resume];
 }
 

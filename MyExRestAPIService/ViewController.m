@@ -54,13 +54,6 @@ id<DTOResponse> dtoResponse;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *t = nil;
-    NSDictionary *parameters = @{
-                                 @"email" : t,
-                                 @"reset_password_token" : t,
-                                 @"password" : t};
-
-    
     _service = [[MyExRestAPIService alloc] init];
     _cookie = [[CookieService alloc] init];
     [_cookie loadSavedCookies];
