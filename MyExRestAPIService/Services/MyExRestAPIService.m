@@ -568,37 +568,34 @@ static NSString *const SettingUrl = @"api/setting";
     
     void (^requestDidCompleteBlock)(NSData *, NSURLResponse *, NSError *);
     requestDidCompleteBlock = ^(NSData *data, NSURLResponse *response, NSError *error) {
-        if (error && failureBlock)
+        if (error && failureBlock) {
             failureBlock([[ResponseError alloc] initWithMessage:@"UnknownError" withStatusCode:@"UnknownError" withMessageCode:@"UnknownError"]);
+            return;
+        }
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
+        if ([self isRequestSuccess:httpResponse.statusCode]) {
+            NSLog(@"Sucseefull");
+            if (successBlock)
+                successBlock(data, httpResponse);
+            return;
+        }
+        NSLog(@"%@", httpResponse);
+        if (!failureBlock) return;
+        NSString *code = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
+        if (httpResponse.statusCode == 401) {
+            failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:code withMessageCode:@""]);
+        }
+        else if ([self isRequestDidCompleteWithServerError:httpResponse.statusCode]) {
+            failureBlock([[ResponseError alloc] initWithMessage:@"ServerError" withStatusCode:code withMessageCode:@""]);
+        }
         else {
-            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
-            if ([self isRequestSuccess:httpResponse.statusCode]) {
-                NSLog(@"Sucseefull");
-                if (successBlock)
-                    successBlock(data, httpResponse);
-            }
-            else {
-                NSLog(@"%@", httpResponse);
-                NSString *code = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
-                if (httpResponse.statusCode == 401) {
-                    if (failureBlock)
-                        failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:code withMessageCode:@""]);
-                }
-                else if ([self isRequestDidCompleteWithServerError:httpResponse.statusCode]) {
-                    if (failureBlock)
-                        failureBlock([[ResponseError alloc] initWithMessage:@"ServerError" withStatusCode:code withMessageCode:@""]);
-                }
-                else {
-                    NSDictionary *dictionary = [self toDictionaryFromData:data];
-                    for (NSDictionary *subdict in [dictionary objectForKey:@"errors"]) {
-                        NSString *message = (NSString*) [subdict objectForKey:@"message"];
-                        NSString *messageCode = (NSString*) [subdict objectForKey:@"code"];
-                        NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
-                        if (failureBlock)
-                            failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
-                        break;
-                    }
-                }
+            NSDictionary *dictionary = [self toDictionaryFromData:data];
+            for (NSDictionary *subdict in [dictionary objectForKey:@"errors"]) {
+                NSString *message = (NSString*) [subdict objectForKey:@"message"];
+                NSString *messageCode = (NSString*) [subdict objectForKey:@"code"];
+                NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
+                failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
+                break;
             }
         }
     };
