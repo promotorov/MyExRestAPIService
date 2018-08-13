@@ -325,7 +325,23 @@ id<DTOResponse> dtoResponse;
     passwordButton.frame = CGRectMake(30, 590, 150, 25);
     [self.view addSubview:passwordButton];
     
+    UIButton *deleteSettingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [deleteSettingButton addTarget:self
+                       action:@selector(testDeleteSetting:)
+             forControlEvents:UIControlEventTouchUpInside];
+    deleteSettingButton.backgroundColor =[UIColor blackColor];
+    [deleteSettingButton setTitle:@"DeleteSetting" forState:UIControlStateNormal];
+    deleteSettingButton.frame = CGRectMake(200, 590, 150, 25);
+    [self.view addSubview:deleteSettingButton];
     
+    UIButton *putSettingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [putSettingButton addTarget:self
+                            action:@selector(testPutSetting:)
+                  forControlEvents:UIControlEventTouchUpInside];
+    putSettingButton.backgroundColor =[UIColor blackColor];
+    [putSettingButton setTitle:@"PutSetting" forState:UIControlStateNormal];
+    putSettingButton.frame = CGRectMake(30, 620, 150, 25);
+    [self.view addSubview:putSettingButton];
 }
 
 - (void) testReferralInfoById:(UIButton*)sender{
@@ -337,6 +353,24 @@ id<DTOResponse> dtoResponse;
                      failureBlock:^(ResponseError *error) {
                          
                      }];
+}
+
+- (void) testDeleteSetting:(UIButton*)sender{
+    DeleteSettingDTORequest *dto = [[DeleteSettingDTORequest alloc] init];
+    [_service deleteUserSetting:dto successBlock:^{
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testPutSetting:(UIButton*)sender{
+    AddSettingDTORequest *dto = [[AddSettingDTORequest alloc] init];
+    [_service addUserSetting:dto successBlock:^{
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
 }
 
 - (void) testReferralDetails:(UIButton*)sender{
