@@ -119,6 +119,23 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:jsonData toURL:CountryUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 
+- (void) addOrReplaceCountry:(AddOrReplaceCountryDTORequest *)dto
+                successBlock:(void (^)(AddOrReplaceCountryDTOResponse *))successBlock
+                failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"starting add or replace country...");
+    NSData *jsonData = [self makeRequestBody:dto];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        AddOrReplaceCountryDTOResponse *dto = [[AddOrReplaceCountryDTOResponse alloc]
+                                               initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:jsonData toURL:CountryUrl withRequestType:@"PUT" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
 // ProfileAPI
 //+
 - (void) resetPassword:(ResetPasswordDTORequest *)dto

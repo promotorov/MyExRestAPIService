@@ -44,6 +44,8 @@
 #import "AddAvatarDTORequest.h"
 #import "DocumentDTOResponse.h"
 #import "DocumentDTORequest.h"
+#import "AddOrReplaceCountryDTOResponse.h"
+#import "AddOrReplaceCountryDTORequest.h"
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
@@ -66,6 +68,10 @@
 - (void) addCountry:(AddCountryDTORequest*)dto
        successBlock:(void(^)(AddCountryDTOResponse *dto))successBlock
        failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) addOrReplaceCountry:(AddOrReplaceCountryDTORequest*)dto
+                successBlock:(void(^)(AddOrReplaceCountryDTOResponse *dto))successBlock
+                failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (void) resendConfirmationEmail:(ResendConfirmationEmailDTORequest*)dto
                     successBlock:(void(^)(void))successBlock

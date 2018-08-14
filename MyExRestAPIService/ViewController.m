@@ -387,6 +387,15 @@ id<DTOResponse> dtoResponse;
     [documentButton setTitle:@"Document" forState:UIControlStateNormal];
     documentButton.frame = CGRectMake(200, 680, 150, 25);
     [self.view addSubview:documentButton];
+    
+    UIButton *addOrReplaceCountryButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [addOrReplaceCountryButton addTarget:self
+                       action:@selector(testReplaceCountry:)
+             forControlEvents:UIControlEventTouchUpInside];
+    addOrReplaceCountryButton.backgroundColor =[UIColor blackColor];
+    [addOrReplaceCountryButton setTitle:@"AddOrReplaceCountry" forState:UIControlStateNormal];
+    addOrReplaceCountryButton.frame = CGRectMake(30, 710, 150, 25);
+    [self.view addSubview:addOrReplaceCountryButton];
 }
 
 - (void) testReferralInfoById:(UIButton*)sender{
@@ -592,6 +601,19 @@ id<DTOResponse> dtoResponse;
     dto.kyc = @"dc";
     dto.code = @"dd";
     [_service addCountry:dto successBlock:^(AddCountryDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testReplaceCountry:(UIButton*)sender{
+    AddOrReplaceCountryDTORequest *dto = [[AddOrReplaceCountryDTORequest alloc] init];
+    dto.countryId = @"aa";
+    dto.name = @"bb";
+    dto.kyc = @"cc";
+    dto.code = @"dd";
+    [_service addOrReplaceCountry:dto successBlock:^(AddOrReplaceCountryDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
         
