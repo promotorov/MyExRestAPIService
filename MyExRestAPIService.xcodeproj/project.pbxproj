@@ -16,6 +16,9 @@
 		312DA00E2122C63F00518324 /* DocumentDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA00D2122C63F00518324 /* DocumentDTOResponse.m */; };
 		312DA0172122DA2200518324 /* AddOrReplaceCountryDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0162122DA2200518324 /* AddOrReplaceCountryDTOResponse.m */; };
 		312DA01B2122F0F300518324 /* UserDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA01A2122F0F300518324 /* UserDTORequest.m */; };
+		312DA01E21230E0400518324 /* UploadingDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA01D21230E0400518324 /* UploadingDTOResponse.m */; };
+		312DA02321230FC600518324 /* DocumentsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA02221230FC600518324 /* DocumentsDTOResponse.m */; };
+		312DA025212310FB00518324 /* DownloadLinkDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA024212310FB00518324 /* DownloadLinkDTOResponse.m */; };
 		31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34921205FA00003F03A /* AppDelegate.m */; };
 		31DCC35021205FA10003F03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC34E21205FA10003F03A /* Main.storyboard */; };
 		31DCC35221205FA10003F03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC35121205FA10003F03A /* Assets.xcassets */; };
@@ -75,6 +78,12 @@
 		312DA0182122DA3400518324 /* AddOrReplaceCountryDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddOrReplaceCountryDTOResponse.h; sourceTree = "<group>"; };
 		312DA0192122F0E500518324 /* UserDTORequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDTORequest.h; sourceTree = "<group>"; };
 		312DA01A2122F0F300518324 /* UserDTORequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDTORequest.m; sourceTree = "<group>"; };
+		312DA01D21230E0400518324 /* UploadingDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadingDTOResponse.m; sourceTree = "<group>"; };
+		312DA01F21230E1300518324 /* UploadingDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadingDTOResponse.h; sourceTree = "<group>"; };
+		312DA02121230FB800518324 /* DocumentsDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentsDTOResponse.h; sourceTree = "<group>"; };
+		312DA02221230FC600518324 /* DocumentsDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsDTOResponse.m; sourceTree = "<group>"; };
+		312DA024212310FB00518324 /* DownloadLinkDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadLinkDTOResponse.m; sourceTree = "<group>"; };
+		312DA0262123110D00518324 /* DownloadLinkDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadLinkDTOResponse.h; sourceTree = "<group>"; };
 		31DCC34521205FA00003F03A /* MyExRestAPIService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExRestAPIService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DCC34821205FA00003F03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31DCC34921205FA00003F03A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -206,6 +215,19 @@
 			path = DocumentAPI;
 			sourceTree = "<group>";
 		};
+		312DA01C21230DD500518324 /* UploadAPI */ = {
+			isa = PBXGroup;
+			children = (
+				312DA01D21230E0400518324 /* UploadingDTOResponse.m */,
+				312DA01F21230E1300518324 /* UploadingDTOResponse.h */,
+				312DA02121230FB800518324 /* DocumentsDTOResponse.h */,
+				312DA02221230FC600518324 /* DocumentsDTOResponse.m */,
+				312DA024212310FB00518324 /* DownloadLinkDTOResponse.m */,
+				312DA0262123110D00518324 /* DownloadLinkDTOResponse.h */,
+			);
+			path = UploadAPI;
+			sourceTree = "<group>";
+		};
 		31DCC33C21205FA00003F03A = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +286,7 @@
 		31DCC36421205FB60003F03A /* ResponseDTO */ = {
 			isa = PBXGroup;
 			children = (
+				312DA01C21230DD500518324 /* UploadAPI */,
 				312DA00B2122C60800518324 /* DocumentAPI */,
 				312DA0022122B64900518324 /* UploadRequestDTOResponse.m */,
 				312DA0012122B63700518324 /* UploadRequestDTOResponse.h */,
@@ -545,6 +568,7 @@
 				31DCC3D021205FB60003F03A /* WalletDepositDTOResponse.m in Sources */,
 				31DCC3D421205FB60003F03A /* GetCountryDTOResponse.m in Sources */,
 				31DCC3E021205FB60003F03A /* OrderHistoryDTOResponse.m in Sources */,
+				312DA02321230FC600518324 /* DocumentsDTOResponse.m in Sources */,
 				31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */,
 				31DCC3EC21205FB60003F03A /* PasswordReetDTORequest.m in Sources */,
 				312DA0032122B64900518324 /* UploadRequestDTOResponse.m in Sources */,
@@ -579,6 +603,8 @@
 				31DCC3CD21205FB60003F03A /* ReferralDetailsDTOResponse.m in Sources */,
 				312D9FFF2122B50900518324 /* AddAvatarDTORequest.m in Sources */,
 				31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */,
+				312DA025212310FB00518324 /* DownloadLinkDTOResponse.m in Sources */,
+				312DA01E21230E0400518324 /* UploadingDTOResponse.m in Sources */,
 				31DCC3DF21205FB60003F03A /* AssetsDTOResponse.m in Sources */,
 				31DCC3D721205FB60003F03A /* UserInfoDTOResponse.m in Sources */,
 				31DCC3DA21205FB60003F03A /* SettingsDTOResponse.m in Sources */,

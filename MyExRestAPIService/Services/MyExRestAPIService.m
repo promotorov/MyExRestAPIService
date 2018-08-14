@@ -647,6 +647,8 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 
+// UploadAPI
+
 - (NSData*) makeRequestBody:(id <DTORequest>) dto {
     NSLog(@"making request body...");
     NSError *error;
