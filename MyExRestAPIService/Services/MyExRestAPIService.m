@@ -47,12 +47,13 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 
 // CountryAPI
 //+
-- (void) getAllCountries:(AllCountriesDTORequest*)dto
-            successBlock:(void(^)(AllCountriesDTOResponse *dto))successBlock
-            failureBlock:(void(^)(ResponseError *error))failureBlock
+- (void) getAllCountriesWithSearch:(NSString *)search
+                              page:(int)page perPage:(int)perPage
+                      successBlock:(void (^)(AllCountriesDTOResponse *))successBlock
+                      failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting user countries...");
-    NSString *url = [NSString stringWithFormat:@"%@%@", UserCountriesUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", dto.search, dto.page, dto.perPage]];
+    NSString *url = [NSString stringWithFormat:@"%@%@", UserCountriesUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", search, page, perPage]];
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
@@ -64,16 +65,16 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) getCountry:(GetCountryDTORequest *)dto
-       successBlock:(void (^)(GetCountryDTOResponse *))successBlock
-       failureBlock:(void (^)(ResponseError *))failureBlock
+- (void) getCountryById:(NSString *)countryId
+           successBlock:(void (^)(GetCountryDTOResponse *))successBlock
+           failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting a country...");
-    if ([dto.countryId isBlank]) {
+    if ([countryId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"getCountry" userInfo:nil];
         return;
     }
-    NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, dto.countryId];
+    NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, countryId];
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
@@ -85,16 +86,16 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) deleteCountry:(DeleteCountryDTORequest *)dto
-          successBlock:(void (^)(void))successBlock
-          failureBlock:(void (^)(ResponseError *))failureBlock
+- (void) deleteCountryById:(NSString *)countryId
+              successBlock:(void (^)(void))successBlock
+              failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"starting delet a country ...");
-    if ([dto.countryId isBlank]) {
+    if ([countryId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"deleteCountry" userInfo:nil];
         return;
     }
-    NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, dto.countryId];
+    NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, countryId];
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
@@ -102,7 +103,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:nil toURL:url withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) addCountry:(AddCountryDTORequest *)dto
+- (void) addCountry:(CountryDTORequest *)dto
        successBlock:(void (^)(AddCountryDTOResponse *))successBlock
        failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -119,7 +120,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:jsonData toURL:CountryUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) addOrReplaceCountry:(AddOrReplaceCountryDTORequest *)dto
+- (void) addOrReplaceCountry:(CountryDTORequest *)dto
                 successBlock:(void (^)(AddOrReplaceCountryDTOResponse *))successBlock
                 failureBlock:(void (^)(ResponseError *))failureBlock
 {

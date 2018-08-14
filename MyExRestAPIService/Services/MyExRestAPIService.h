@@ -5,10 +5,6 @@
 #import "AddCountryDTOResponse.h"
 #import "GetCountryDTOResponse.h"
 #import "AllCountriesDTOResponse.h"
-#import "DeleteCountryDTORequest.h"
-#import "AllCountriesDTORequest.h"
-#import "GetCountryDTORequest.h"
-#import "AddCountryDTORequest.h"
 #import "ResendConfirmationEmailDTORequest.h"
 #import "ConfirmEmailDTORequest.h"
 #import "PasswordDTORequest.h"
@@ -45,7 +41,7 @@
 #import "DocumentDTOResponse.h"
 #import "DocumentDTORequest.h"
 #import "AddOrReplaceCountryDTOResponse.h"
-#import "AddOrReplaceCountryDTORequest.h"
+#import "CountryDTORequest.h"
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
@@ -53,23 +49,25 @@
     CookieService *_cookieService;
 }
 
-- (void) getCountry:(GetCountryDTORequest*)dto
-       successBlock:(void(^)(GetCountryDTOResponse *dto))successBlock
-       failureBlock:(void(^)(ResponseError *error))failureBlock;
+- (void) getCountryById:(NSString*)countryId
+           successBlock:(void(^)(GetCountryDTOResponse *dto))successBlock
+           failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) getAllCountries:(AllCountriesDTORequest*)dto
-            successBlock:(void(^)(AllCountriesDTOResponse *dto))successBlock
-            failureBlock:(void(^)(ResponseError *error))failureBlock;
+- (void) getAllCountriesWithSearch:(NSString*)search
+                              page:(int)page
+                           perPage:(int)perPage
+                      successBlock:(void(^)(AllCountriesDTOResponse *dto))successBlock
+                      failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) deleteCountry:(DeleteCountryDTORequest*)dto
-          successBlock:(void(^)(void))successBlock
-          failureBlock:(void(^)(ResponseError *error))failureBlock;
+- (void) deleteCountryById:(NSString*)countryId
+              successBlock:(void(^)(void))successBlock
+              failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) addCountry:(AddCountryDTORequest*)dto
+- (void) addCountry:(CountryDTORequest*)dto
        successBlock:(void(^)(AddCountryDTOResponse *dto))successBlock
        failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) addOrReplaceCountry:(AddOrReplaceCountryDTORequest*)dto
+- (void) addOrReplaceCountry:(CountryDTORequest*)dto
                 successBlock:(void(^)(AddOrReplaceCountryDTOResponse *dto))successBlock
                 failureBlock:(void(^)(ResponseError *error))failureBlock;
 

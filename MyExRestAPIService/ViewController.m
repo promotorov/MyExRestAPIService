@@ -6,10 +6,6 @@
 #import "AddCountryDTOResponse.h"
 #import "GetCountryDTOResponse.h"
 #import "AllCountriesDTOResponse.h"
-#import "DeleteCountryDTORequest.h"
-#import "AllCountriesDTORequest.h"
-#import "GetCountryDTORequest.h"
-#import "AddCountryDTORequest.h"
 #import "ResendConfirmationEmailDTORequest.h"
 #import "ConfirmEmailDTORequest.h"
 #import "PasswordDTORequest.h"
@@ -585,9 +581,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testCountry:(UIButton*)sender{
-    GetCountryDTORequest *dto = [[GetCountryDTORequest alloc] init];
-    dto.countryId = @"da";
-    [_service getCountry:dto successBlock:^(GetCountryDTOResponse *dto) {
+    [_service getCountryById:@"da" successBlock:^(GetCountryDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
         
@@ -595,7 +589,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testAddCountry:(UIButton*)sender{
-    AddCountryDTORequest *dto = [[AddCountryDTORequest alloc] init];
+    CountryDTORequest *dto = [[CountryDTORequest alloc] init];
     dto.countryId = @"da";
     dto.name = @"db";
     dto.kyc = @"dc";
@@ -608,7 +602,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testReplaceCountry:(UIButton*)sender{
-    AddOrReplaceCountryDTORequest *dto = [[AddOrReplaceCountryDTORequest alloc] init];
+    CountryDTORequest *dto = [[CountryDTORequest alloc] init];
     dto.countryId = @"aa";
     dto.name = @"bb";
     dto.kyc = @"cc";
@@ -621,8 +615,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testUserCountries:(UIButton*)sender{
-    AllCountriesDTORequest *dto = [[AllCountriesDTORequest alloc] init];
-    [_service getAllCountries:dto successBlock:^(AllCountriesDTOResponse *dto) {
+    [_service getAllCountriesWithSearch:@"" page:2 perPage:10 successBlock:^(AllCountriesDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
         
@@ -697,9 +690,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testDeleteCountry:(UIButton*)sender{
-    DeleteCountryDTORequest *dto = [[DeleteCountryDTORequest alloc] init];
-    dto.countryId = @"da";
-    [_service deleteCountry:dto successBlock:^{
+    [_service deleteCountryById:@"dd" successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
         

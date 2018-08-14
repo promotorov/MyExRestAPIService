@@ -1,6 +1,6 @@
-#import "AddCountryDTORequest.h"
+#import "CountryDTORequest.h"
 
-@implementation AddCountryDTORequest
+@implementation CountryDTORequest
 
 -(instancetype) init {
     if (self = [super init]) {

@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "DTORequest.h"
 
-@interface AddOrReplaceCountryDTORequest : NSObject<DTORequest>
+@interface CountryDTORequest : NSObject<DTORequest>
 
 @property (nonatomic) NSString *countryId;
 @property (nonatomic) NSString *name;
@@ -9,4 +9,3 @@
 @property (nonatomic) NSString *code;
 
 @end
-
