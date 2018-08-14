@@ -315,7 +315,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 
 // TradeAPI
 //+
-- (void) makeOrder:(MakeOrderDTORequest *)dto
+- (void) makeOrder:(NewOrderDTORequest *)dto
       successBlock:(void (^)(MakeOrderDTOResponse *))successBlock
       failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -332,16 +332,16 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:jsonData toURL:MakeOrderUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) deleteOrder:(DeleteOrderDTORequest *)dto
-        successBlock:(void (^)(void))successBlock
-        failureBlock:(void (^)(ResponseError *))failureBlock
+- (void) deleteOrderById:(NSString *)orderId
+            successBlock:(void (^)(void))successBlock
+            failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"start deleting an order ...");
-    if ([[NSString stringWithFormat:@"%li", dto.orderId] isBlank]) {
+    if ([orderId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect orderId" reason:@"deleteOrder" userInfo:nil];
         return;
     }
-    NSString *url = [NSString stringWithFormat:@"%@/%li", DeleteOrdersUrl, dto.orderId];
+    NSString *url = [NSString stringWithFormat:@"%@/%@", DeleteOrdersUrl, orderId];
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         if (successBlock)
             successBlock();
@@ -379,12 +379,13 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:nil toURL:UserOrdersUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) getOrderHistory:(OrderHistoryDTORequest *)dto
-            successBlock:(void (^)(OrderHistoryDTOResponse *))successBlock
-            failureBlock:(void (^)(ResponseError *))failureBlock
+- (void) getOrderHistoryWithLimit:(int)limit
+                           offset:(int)offset
+                     successBlock:(void (^)(OrderHistoryDTOResponse *))successBlock
+                     failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"starting find user orders...");
-    NSString *url = [NSString stringWithFormat:@"%@%@", OrderHistoryUrl, [NSString stringWithFormat:@"?offset=%d&limit=%d", dto.offset, dto.limit]];
+    NSString *url = [NSString stringWithFormat:@"%@%@", OrderHistoryUrl, [NSString stringWithFormat:@"?offset=%d&limit=%d", offset, limit]];
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];

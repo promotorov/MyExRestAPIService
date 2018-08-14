@@ -14,7 +14,7 @@
 @end
 
 
-@interface MakeOrderDTORequest : NSObject<DTORequest>
+@interface NewOrderDTORequest : NSObject<DTORequest>
 
 @property (nonatomic) OrderDTORequest *order;
 

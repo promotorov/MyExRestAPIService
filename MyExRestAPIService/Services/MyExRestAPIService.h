@@ -17,9 +17,7 @@
 #import "UserOrdersDTOResponse.h"
 #import "AssetsDTOResponse.h"
 #import "DeleteOrdersDTOResponse.h"
-#import "OrderHistoryDTORequest.h"
-#import "MakeOrderDTORequest.h"
-#import "DeleteOrderDTORequest.h"
+#import "NewOrderDTORequest.h"
 #import "LoginDTORequest.h"
 #import "LoginDTOResponse.h"
 #import "CookieService.h"
@@ -117,18 +115,19 @@
 - (void) getUserOrdersOnSuccessBlock:(void(^)(UserOrdersDTOResponse *dto))successBlock
                         failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) makeOrder:(MakeOrderDTORequest*)dto
+- (void) makeOrder:(NewOrderDTORequest*)dto
       successBlock:(void(^)(MakeOrderDTOResponse *dto))successBlock
       failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) deleteOrder:(DeleteOrderDTORequest*)dto
-        successBlock:(void(^)(void))successBlock
-        failureBlock:(void(^)(ResponseError *error))failureBlock;
+- (void) deleteOrderById:(NSString*)orderId
+            successBlock:(void(^)(void))successBlock
+            failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (void) deleteAllOrdersOnSuccessBlock:(void(^)(DeletedOrdersDTOResponse *dto))successBlock
                           failureBlock:(void(^)(ResponseError *error))failureBlock;
                       
-- (void) getOrderHistory:(OrderHistoryDTORequest*)dto
+- (void) getOrderHistoryWithLimit:(int)limit
+                           offset:(int)offset
             successBlock:(void(^)(OrderHistoryDTOResponse *dto))successBlock
             failureBlock:(void(^)(ResponseError *error))failureBlock;
 

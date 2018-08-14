@@ -1,4 +1,4 @@
-#import "MakeOrderDTORequest.h"
+#import "NewOrderDTORequest.h"
 
 @implementation OrderDTORequest
 
@@ -29,7 +29,7 @@
 @end
 
 
-@implementation MakeOrderDTORequest
+@implementation NewOrderDTORequest
 
 - (instancetype) init {
     if (self = [super init]) {

@@ -18,9 +18,7 @@
 #import "UserOrdersDTOResponse.h"
 #import "AssetsDTOResponse.h"
 #import "DeleteOrdersDTOResponse.h"
-#import "OrderHistoryDTORequest.h"
-#import "MakeOrderDTORequest.h"
-#import "DeleteOrderDTORequest.h"
+#import "NewOrderDTORequest.h"
 #import "LoginDTORequest.h"
 #import "LoginDTOResponse.h"
 #import "CookieService.h"
@@ -631,8 +629,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testOrderHistory:(UIButton*)sender{
-    OrderHistoryDTORequest *dto = [[OrderHistoryDTORequest alloc] init];
-    [_service getOrderHistory:dto successBlock:^(OrderHistoryDTOResponse *dto) {
+    [_service getOrderHistoryWithLimit:10 offset:0 successBlock:^(OrderHistoryDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
         
@@ -640,7 +637,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testMakeOrder:(UIButton*)sender{
-    MakeOrderDTORequest *dto = [[MakeOrderDTORequest alloc] init];
+    NewOrderDTORequest *dto = [[NewOrderDTORequest alloc] init];
     /*"instrument": "string",
     "type": "string",
     "amount": 0,
@@ -671,9 +668,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testDeleteOrder:(UIButton*)sender{
-    DeleteOrderDTORequest *dto = [[DeleteOrderDTORequest alloc] init];
-    dto.orderId = -144115188075855870;
-    [_service deleteOrder:dto successBlock:^{
+    [_service deleteOrderById:@"-144115188075855870" successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
         

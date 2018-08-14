@@ -56,9 +56,7 @@
 		31DCC3EE21205FB60003F03A /* ResendConfirmationEmailDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */; };
 		31DCC3EF21205FB60003F03A /* DeleteSettingDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BE21205FB60003F03A /* DeleteSettingDTORequest.m */; };
 		31DCC3F021205FB60003F03A /* AddSettingDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C021205FB60003F03A /* AddSettingDTORequest.m */; };
-		31DCC3F121205FB60003F03A /* DeleteOrderDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C321205FB60003F03A /* DeleteOrderDTORequest.m */; };
-		31DCC3F221205FB60003F03A /* OrderHistoryDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C421205FB60003F03A /* OrderHistoryDTORequest.m */; };
-		31DCC3F321205FB60003F03A /* MakeOrderDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C821205FB60003F03A /* MakeOrderDTORequest.m */; };
+		31DCC3F321205FB60003F03A /* NewOrderDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C821205FB60003F03A /* NewOrderDTORequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,12 +158,8 @@
 		31DCC3BF21205FB60003F03A /* AddSettingDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSettingDTORequest.h; sourceTree = "<group>"; };
 		31DCC3C021205FB60003F03A /* AddSettingDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSettingDTORequest.m; sourceTree = "<group>"; };
 		31DCC3C121205FB60003F03A /* DeleteSettingDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteSettingDTORequest.h; sourceTree = "<group>"; };
-		31DCC3C321205FB60003F03A /* DeleteOrderDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteOrderDTORequest.m; sourceTree = "<group>"; };
-		31DCC3C421205FB60003F03A /* OrderHistoryDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryDTORequest.m; sourceTree = "<group>"; };
-		31DCC3C521205FB60003F03A /* MakeOrderDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeOrderDTORequest.h; sourceTree = "<group>"; };
-		31DCC3C621205FB60003F03A /* DeleteOrderDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteOrderDTORequest.h; sourceTree = "<group>"; };
-		31DCC3C721205FB60003F03A /* OrderHistoryDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryDTORequest.h; sourceTree = "<group>"; };
-		31DCC3C821205FB60003F03A /* MakeOrderDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeOrderDTORequest.m; sourceTree = "<group>"; };
+		31DCC3C521205FB60003F03A /* NewOrderDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewOrderDTORequest.h; sourceTree = "<group>"; };
+		31DCC3C821205FB60003F03A /* NewOrderDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewOrderDTORequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,12 +473,8 @@
 		31DCC3C221205FB60003F03A /* TradeAPI */ = {
 			isa = PBXGroup;
 			children = (
-				31DCC3C321205FB60003F03A /* DeleteOrderDTORequest.m */,
-				31DCC3C421205FB60003F03A /* OrderHistoryDTORequest.m */,
-				31DCC3C521205FB60003F03A /* MakeOrderDTORequest.h */,
-				31DCC3C621205FB60003F03A /* DeleteOrderDTORequest.h */,
-				31DCC3C721205FB60003F03A /* OrderHistoryDTORequest.h */,
-				31DCC3C821205FB60003F03A /* MakeOrderDTORequest.m */,
+				31DCC3C521205FB60003F03A /* NewOrderDTORequest.h */,
+				31DCC3C821205FB60003F03A /* NewOrderDTORequest.m */,
 			);
 			path = TradeAPI;
 			sourceTree = "<group>";
@@ -589,14 +579,12 @@
 				312DA0052122B80300518324 /* DeleteAvatarsDTOResponse.m in Sources */,
 				31DCC3D921205FB60003F03A /* AssetDTOResponse.m in Sources */,
 				312DA0172122DA2200518324 /* AddOrReplaceCountryDTOResponse.m in Sources */,
-				31DCC3F121205FB60003F03A /* DeleteOrderDTORequest.m in Sources */,
 				31DCC3DE21205FB60003F03A /* UserOrdersDTOResponse.m in Sources */,
 				31DCC3E221205FB60003F03A /* LoginDTORequest.m in Sources */,
 				31DCC3CB21205FB60003F03A /* LoginDTOResponse.m in Sources */,
 				312DA00E2122C63F00518324 /* DocumentDTOResponse.m in Sources */,
-				31DCC3F321205FB60003F03A /* MakeOrderDTORequest.m in Sources */,
+				31DCC3F321205FB60003F03A /* NewOrderDTORequest.m in Sources */,
 				31DCC3CF21205FB60003F03A /* ReferralInfoDTOResponse.m in Sources */,
-				31DCC3F221205FB60003F03A /* OrderHistoryDTORequest.m in Sources */,
 				31DCC3CC21205FB60003F03A /* Paging.m in Sources */,
 				312D9FFB2121B51A00518324 /* UploadRequestDTORequest.m in Sources */,
 				31DCC3CE21205FB60003F03A /* ReferralsDTOResponse.m in Sources */,
