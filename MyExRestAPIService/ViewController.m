@@ -28,6 +28,19 @@
 #import "WithdrawalDTORequest.h"
 #import "SettingsDTOResponse.h"
 #import "SettingDTORequest.h"
+#import "DeleteAvatarsDTOResponse.h"
+#import "UploadRequestDTOResponse.h"
+#import "UploadRequestDTORequest.h"
+#import "AddAvatarDTORequest.h"
+#import "DocumentDTOResponse.h"
+#import "AddOrReplaceCountryDTOResponse.h"
+#import "CountryDTORequest.h"
+#import "EmailConfirmationDTORequest.h"
+#import "PasswordResetDTORequest.h"
+#import "UserDTORequest.h"
+#import "DownloadLinkDTOResponse.h"
+#import "UploadingDTOResponse.h"
+#import "DocumentsDTOResponse.h"
 
 @interface ViewController ()
 
@@ -394,6 +407,24 @@ id<DTOResponse> dtoResponse;
     [updateUserButton setTitle:@"UpdateUser" forState:UIControlStateNormal];
     updateUserButton.frame = CGRectMake(200, 710, 150, 25);
     [self.view addSubview:updateUserButton];
+    
+    UIButton *downloadLinkButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [downloadLinkButton addTarget:self
+                         action:@selector(testDownloadLink:)
+               forControlEvents:UIControlEventTouchUpInside];
+    downloadLinkButton.backgroundColor =[UIColor blackColor];
+    [downloadLinkButton setTitle:@"DownloadLink" forState:UIControlStateNormal];
+    downloadLinkButton.frame = CGRectMake(30, 740, 150, 25);
+    [self.view addSubview:downloadLinkButton];
+    
+    UIButton *getUploadingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [getUploadingButton addTarget:self
+                         action:@selector(testUploading:)
+               forControlEvents:UIControlEventTouchUpInside];
+    getUploadingButton.backgroundColor =[UIColor blackColor];
+    [getUploadingButton setTitle:@"Uploading" forState:UIControlStateNormal];
+    getUploadingButton.frame = CGRectMake(200, 740, 150, 25);
+    [self.view addSubview:getUploadingButton];
 }
 
 - (void) testReferralInfoById:(UIButton*)sender{
@@ -404,6 +435,22 @@ id<DTOResponse> dtoResponse;
                      failureBlock:^(ResponseError *error) {
                          
                      }];
+}
+
+- (void) testUploading:(UIButton*)sender {
+    [_service getUploadingInfoByUploadUid:@"8ff8776e-c7b9-45aa-9921-96d9bf5dea8b" successBlock:^(UploadingDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testDownloadLink:(UIButton*)sender {
+    [_service downloadLinkByUploadUid:@"8ff8776e-c7b9-45aa-9921-96d9bf5dea8b" successBlock:^(DownloadLinkDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
 }
 
 - (void) testUpdateUser:(UIButton*)sender{

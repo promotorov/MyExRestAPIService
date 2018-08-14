@@ -37,6 +37,9 @@
 #import "EmailConfirmationDTORequest.h"
 #import "PasswordResetDTORequest.h"
 #import "UserDTORequest.h"
+#import "DownloadLinkDTOResponse.h"
+#import "UploadingDTOResponse.h"
+#import "DocumentsDTOResponse.h"
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
@@ -181,6 +184,18 @@
 - (void) getDocumentByUploadUid:(NSString*)uploadUid
                    successBlock:(void(^)(DocumentDTOResponse *dto))successBlock
                    failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) getUploadingInfoByUploadUid:(NSString*)uploadUid
+                    successBlock:(void(^)(UploadingDTOResponse *dto))successBlock
+                    failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) downloadLinkByUploadUid:(NSString*)uploadUid
+                        successBlock:(void(^)(DownloadLinkDTOResponse *dto))successBlock
+                        failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+/*
+  Create method uploadDocuments for DocumentsDTOResponse (/frontoffice/documents)
+ */
 
 - (NSDictionary*) toDictionaryFromData:(NSData*)data;
 - (BOOL) isRequestSuccess:(NSInteger)statusCode;

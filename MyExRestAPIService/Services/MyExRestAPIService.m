@@ -1,5 +1,46 @@
 #import "MyExRestAPIService.h"
 #import "NSStringHelper.h"
+#import "DTORequest.h"
+#import "DTOResponse.h"
+#import "ResponseError.h"
+#import "AddCountryDTOResponse.h"
+#import "GetCountryDTOResponse.h"
+#import "AllCountriesDTOResponse.h"
+#import "ResendConfirmationEmailDTORequest.h"
+#import "PasswordDTORequest.h"
+#import "UserInfoDTOResponse.h"
+#import "User2FADTOResponse.h"
+#import "ReferralsDTOResponse.h"
+#import "ReferralInfoDTOResponse.h"
+#import "ReferralDetailsDTOResponse.h"
+#import "MakeOrderDTOResponse.h"
+#import "OrderHistoryDTOResponse.h"
+#import "UserOrdersDTOResponse.h"
+#import "AssetsDTOResponse.h"
+#import "DeleteOrdersDTOResponse.h"
+#import "NewOrderDTORequest.h"
+#import "LoginDTORequest.h"
+#import "LoginDTOResponse.h"
+#import "CookieService.h"
+#import "AssetsInfoDTOResponse.h"
+#import "WalletDepositDTOResponse.h"
+#import "WalletDepositDTORequest.h"
+#import "WithdrawalDTORequest.h"
+#import "SettingsDTOResponse.h"
+#import "SettingDTORequest.h"
+#import "DeleteAvatarsDTOResponse.h"
+#import "UploadRequestDTOResponse.h"
+#import "UploadRequestDTORequest.h"
+#import "AddAvatarDTORequest.h"
+#import "DocumentDTOResponse.h"
+#import "AddOrReplaceCountryDTOResponse.h"
+#import "CountryDTORequest.h"
+#import "EmailConfirmationDTORequest.h"
+#import "PasswordResetDTORequest.h"
+#import "UserDTORequest.h"
+#import "DownloadLinkDTOResponse.h"
+#import "UploadingDTOResponse.h"
+#import "DocumentsDTOResponse.h"
 
 typedef void (^RequestDidCompleteSuccsess)(NSData *data, NSHTTPURLResponse *response);
 #define SERVER_ROOT_URL @"https://api.blockbitdev.xyz"
@@ -31,6 +72,7 @@ static NSString *const UploadAvatarRequestUrl = @"api/avatars/upload_request";
 static NSString *const AvatarsUrl = @"api/avatars";
 static NSString *const DocumentUrl = @"api/documents";
 static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request";
+static NSString *const DownloadLinkUrl = @"download_link";
 
 @implementation MyExRestAPIService
 
@@ -648,6 +690,44 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 }
 
 // UploadAPI
+//+
+- (void) getUploadingInfoByUploadUid:(NSString *)uploadUid
+                        successBlock:(void (^)(UploadingDTOResponse *))successBlock
+                        failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"getting an uploading info...");
+    if ([uploadUid isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect uploadUid" reason:@"getUploadingInfo" userInfo:nil];
+        return;
+    }
+    NSString *url = [NSString stringWithFormat:@"/%@", uploadUid];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        UploadingDTOResponse *dto = [[UploadingDTOResponse alloc]
+                                     initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+// +
+- (void) downloadLinkByUploadUid:(NSString *)uploadUid
+                    successBlock:(void (^)(DownloadLinkDTOResponse *))successBlock
+                    failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"downloading link...");
+    NSString *url = [NSString stringWithFormat:@"%@?uploadUid=%@", DownloadLinkUrl, uploadUid];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        DownloadLinkDTOResponse *dto = [[DownloadLinkDTOResponse alloc]
+                                         initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
 
 - (NSData*) makeRequestBody:(id <DTORequest>) dto {
     NSLog(@"making request body...");
