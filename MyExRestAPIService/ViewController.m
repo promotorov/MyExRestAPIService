@@ -385,6 +385,15 @@ id<DTOResponse> dtoResponse;
     [addOrReplaceCountryButton setTitle:@"AddOrReplaceCountry" forState:UIControlStateNormal];
     addOrReplaceCountryButton.frame = CGRectMake(30, 710, 150, 25);
     [self.view addSubview:addOrReplaceCountryButton];
+    
+    UIButton *updateUserButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [updateUserButton addTarget:self
+                                  action:@selector(testUpdateUser:)
+                        forControlEvents:UIControlEventTouchUpInside];
+    updateUserButton.backgroundColor =[UIColor blackColor];
+    [updateUserButton setTitle:@"UpdateUser" forState:UIControlStateNormal];
+    updateUserButton.frame = CGRectMake(200, 710, 150, 25);
+    [self.view addSubview:updateUserButton];
 }
 
 - (void) testReferralInfoById:(UIButton*)sender{
@@ -395,6 +404,23 @@ id<DTOResponse> dtoResponse;
                      failureBlock:^(ResponseError *error) {
                          
                      }];
+}
+
+- (void) testUpdateUser:(UIButton*)sender{
+    UserDTORequest *dto = [[UserDTORequest alloc] init];
+    dto.email = @"bob@mailinator.com";
+    dto.nickname = @"bob";
+    dto.firstName = @"firstname";
+    dto.middleName = @"middlename";
+    dto.lastName = @"lastname";
+    dto.countryId = @"AFG";
+    //[dto.documentsUrls addObject:@"http://test.com.ru/test_url"];
+    //[dto.documentsUrls addObject:@"http://test.com.ru/test_url2"];
+    [_service updateUserInfo:dto successBlock:^{
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
 }
 
 - (void) testUploadRequest:(UIButton*)sender{

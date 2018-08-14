@@ -5,6 +5,7 @@
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
         dictionary = [dictionary objectForKey:@"data"];
+        self.country = [[Country alloc] initFromDictionary:[dictionary objectForKey:@"country"]];
         self.avatar_url = (NSString*) [dictionary objectForKey:@"avatar_url"];
         self.userId = (NSString*) [dictionary objectForKey:@"id"];
         self.email = (NSString*) [dictionary objectForKey:@"email"];

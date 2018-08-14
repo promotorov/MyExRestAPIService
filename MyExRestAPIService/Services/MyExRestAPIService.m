@@ -224,7 +224,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 - (void) getUserInfoOnSuccessBlock:(void (^)(UserInfoDTOResponse *))successBlock
                       failureBlock:(void (^)(ResponseError *))failureBlock
 {
-    NSLog(@"starting fins user info ...");
+    NSLog(@"starting find user info ...");
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
@@ -234,6 +234,19 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
             successBlock(dto);
     };
     [self doRequestWithJson:nil toURL:UserInfoUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void) updateUserInfo:(UserDTORequest *)dto
+           successBlock:(void (^)(void))successBlock
+           failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"updating user info ...");
+    NSData *jsonData = [self makeRequestBody:dto];
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        if (successBlock)
+            successBlock();
+    };
+    [self doRequestWithJson:jsonData toURL:UserInfoUrl withRequestType:@"PUT" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 
 // Refarral API

@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "AssetDTOResponse.h"
 #import "DTOResponse.h"
+#import "Country.h"
 
 @interface UserInfoDTOResponse : NSObject<DTOResponse>
 
@@ -19,5 +20,6 @@
 @property (nonatomic) NSString *last_login;
 @property (nonatomic) NSString *referral_id;
 @property (nonatomic) NSString *affiliate_id;
+@property (nonatomic) Country *country;
 
 @end
