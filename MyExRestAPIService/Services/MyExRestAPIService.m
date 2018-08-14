@@ -118,7 +118,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     };
     [self doRequestWithJson:jsonData toURL:CountryUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) addOrReplaceCountry:(AddOrReplaceCountryDTORequest *)dto
                 successBlock:(void (^)(AddOrReplaceCountryDTOResponse *))successBlock
                 failureBlock:(void (^)(ResponseError *))failureBlock
@@ -546,7 +546,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 }
 
 // AvatarAPI
-
+//+
 - (void) addAvatar:(AddAvatarDTORequest *)dto
       successBlock:(void (^)(void))successBlock
       failureBlock:(void (^)(ResponseError *))failureBlock
@@ -559,7 +559,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     };
     [self doRequestWithJson:jsonData toURL:AvatarsUrl withRequestType:@"PUT" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) deleteAvatarsOnSuccessBlock:(void (^)(DeleteAvatarsDTOResponse *))successBlock
                         failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -574,7 +574,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     };
     [self doRequestWithJson:nil toURL:AvatarsUrl withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) createUploadAvatarRequest:(UploadRequestDTORequest *)dto
                       successBlock:(void (^)(UploadRequestDTOResponse *))successBlock
                       failureBlock:(void (^)(ResponseError *))failureBlock
@@ -593,7 +593,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 }
 
 // DocumentAPI
-
+//+
 - (void) createUploadDocumentRequest:(UploadRequestDTORequest *)dto
                         successBlock:(void (^)(UploadRequestDTOResponse *))successBlock
                         failureBlock:(void (^)(ResponseError *))failureBlock
@@ -610,7 +610,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     };
     [self doRequestWithJson:jsonData toURL:UploadDocumentRequestUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
-
+//+
 - (void) getDocument:(DocumentDTORequest *)dto
         successBlock:(void (^)(DocumentDTOResponse *))successBlock
         failureBlock:(void (^)(ResponseError *))failureBlock
