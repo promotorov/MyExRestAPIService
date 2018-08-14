@@ -1,6 +1,6 @@
-#import "AddSettingDTORequest.h"
+#import "SettingDTORequest.h"
 
-@implementation AddSettingDTORequest
+@implementation SettingDTORequest
 
 -(instancetype) init {
     if (self = [super init]) {
@@ -19,3 +19,4 @@
 }
 
 @end
+

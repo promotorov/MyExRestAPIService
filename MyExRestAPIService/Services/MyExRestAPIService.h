@@ -26,8 +26,7 @@
 #import "WalletDepositDTORequest.h"
 #import "WithdrawalDTORequest.h"
 #import "SettingsDTOResponse.h"
-#import "AddSettingDTORequest.h"
-#import "DeleteSettingDTORequest.h"
+#import "SettingDTORequest.h"
 #import "DeleteAvatarsDTOResponse.h"
 #import "UploadRequestDTOResponse.h"
 #import "UploadRequestDTORequest.h"
@@ -152,13 +151,13 @@
 - (void) getUserSettingsOnSuccessBlock:(void(^)(SettingsDTOResponse *dto))successBlock
                           failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) addUserSetting:(AddSettingDTORequest*)dto
+- (void) addUserSetting:(SettingDTORequest*)dto
            successBlock:(void(^)(void))successBlock
            failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) deleteUserSetting:(DeleteSettingDTORequest*)dto
-           successBlock:(void(^)(void))successBlock
-           failureBlock:(void(^)(ResponseError *error))failureBlock;
+- (void) deleteUserSetting:(SettingDTORequest*)dto
+              successBlock:(void(^)(void))successBlock
+              failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (void) createUploadAvatarRequest:(UploadRequestDTORequest*)dto
                 successBlock:(void(^)(UploadRequestDTOResponse *dto))successBlock

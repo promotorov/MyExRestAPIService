@@ -27,8 +27,7 @@
 #import "WalletDepositDTORequest.h"
 #import "WithdrawalDTORequest.h"
 #import "SettingsDTOResponse.h"
-#import "AddSettingDTORequest.h"
-#import "DeleteSettingDTORequest.h"
+#import "SettingDTORequest.h"
 
 @interface ViewController ()
 
@@ -452,7 +451,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testDeleteSetting:(UIButton*)sender{
-    DeleteSettingDTORequest *dto = [[DeleteSettingDTORequest alloc] init];
+    SettingDTORequest *dto = [[SettingDTORequest alloc] init];
     dto.type = @"preset";
     dto.value = @"weight";
     [_service deleteUserSetting:dto successBlock:^{
@@ -463,7 +462,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testPutSetting:(UIButton*)sender{
-    AddSettingDTORequest *dto = [[AddSettingDTORequest alloc] init];
+    SettingDTORequest *dto = [[SettingDTORequest alloc] init];
     dto.type = @"preset";
     dto.value = @"weight";
     [_service addUserSetting:dto successBlock:^{

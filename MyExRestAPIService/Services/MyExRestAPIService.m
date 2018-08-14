@@ -521,7 +521,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:nil toURL:SettingsUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) addUserSetting:(AddSettingDTORequest *)dto
+- (void) addUserSetting:(SettingDTORequest *)dto
            successBlock:(void (^)(void))successBlock
            failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -534,7 +534,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:jsonData toURL:SettingUrl withRequestType:@"PUT" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) deleteUserSetting:(DeleteSettingDTORequest *)dto
+- (void) deleteUserSetting:(SettingDTORequest *)dto
               successBlock:(void (^)(void))successBlock
               failureBlock:(void (^)(ResponseError *))failureBlock
 {
