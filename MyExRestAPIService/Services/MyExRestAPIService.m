@@ -27,6 +27,10 @@ static NSString *const WalletDepositUrl = @"api/wallet/deposit";
 static NSString *const WithdrawalUrl = @"api/wallet/withdrawal";
 static NSString *const SettingsUrl = @"api/settings";
 static NSString *const SettingUrl = @"api/setting";
+static NSString *const UploadAvatarRequestUrl = @"api/avatars/upload_request";
+static NSString *const AvatarsUrl = @"api/avatars";
+static NSString *const DocumentUrl = @"api/documents";
+static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request";
 
 @implementation MyExRestAPIService
 
@@ -524,6 +528,93 @@ static NSString *const SettingUrl = @"api/setting";
     [self doRequestWithJson:jsonData toURL:SettingUrl withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 
+// AvatarAPI
+
+- (void) addAvatar:(AddAvatarDTORequest *)dto
+      successBlock:(void (^)(void))successBlock
+      failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"adding an avatar...");
+    NSData *jsonData = [self makeRequestBody:dto];
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        if (successBlock)
+            successBlock();
+    };
+    [self doRequestWithJson:jsonData toURL:AvatarsUrl withRequestType:@"PUT" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void) deleteAvatarsOnSuccessBlock:(void (^)(DeleteAvatarsDTOResponse *))successBlock
+                        failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"deletting avatars...");
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        DeleteAvatarsDTOResponse *dto = [[DeleteAvatarsDTOResponse alloc]
+                                         initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:AvatarsUrl withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void) createUploadAvatarRequest:(UploadRequestDTORequest *)dto
+                      successBlock:(void (^)(UploadRequestDTOResponse *))successBlock
+                      failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"creating upload avatar request...");
+    NSData *jsonData = [self makeRequestBody:dto];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        UploadRequestDTOResponse *dto = [[UploadRequestDTOResponse alloc]
+                                               initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:jsonData toURL:UploadAvatarRequestUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+// DocumentAPI
+
+- (void) createUploadDocumentRequest:(UploadRequestDTORequest *)dto
+                        successBlock:(void (^)(UploadRequestDTOResponse *))successBlock
+                        failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"creating upload document request...");
+    NSData *jsonData = [self makeRequestBody:dto];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        UploadRequestDTOResponse *dto = [[UploadRequestDTOResponse alloc]
+                                         initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:jsonData toURL:UploadDocumentRequestUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void) getDocument:(DocumentDTORequest *)dto
+        successBlock:(void (^)(DocumentDTOResponse *))successBlock
+        failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"getting a document ...");
+    if ([dto.uploadUid isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect uploadUid" reason:@"getDocument" userInfo:nil];
+        return;
+    }
+    NSString *url = [NSString stringWithFormat:@"%@/%@/%@", DocumentUrl, dto.uploadUid, @"link"];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        DocumentDTOResponse *dto = [[DocumentDTOResponse alloc]
+                                         initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
 - (NSData*) makeRequestBody:(id <DTORequest>) dto {
     NSLog(@"making request body...");
     NSError *error;
@@ -548,6 +639,7 @@ static NSString *const SettingUrl = @"api/setting";
 {
     NSLog(@"starting request...");
     NSURL *requestURL = [NSURL URLWithString:[NSString stringWithFormat: @"%@%@", SERVER_API_URL, urlString]];
+    NSLog(@"%@", requestURL);
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestURL];
     
     NSArray *cookies = [NSHTTPCookieStorage sharedHTTPCookieStorage].cookies;
@@ -591,9 +683,13 @@ static NSString *const SettingUrl = @"api/setting";
         else {
             NSDictionary *dictionary = [self toDictionaryFromData:data];
             for (NSDictionary *subdict in [dictionary objectForKey:@"errors"]) {
+                NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
+                if (!subdict) {
+                    failureBlock([[ResponseError alloc] initWithMessage:@"" withStatusCode:statusCode withMessageCode:@""]);
+                    return;
+                }
                 NSString *message = (NSString*) [subdict objectForKey:@"message"];
                 NSString *messageCode = (NSString*) [subdict objectForKey:@"code"];
-                NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
                 failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
                 break;
             }

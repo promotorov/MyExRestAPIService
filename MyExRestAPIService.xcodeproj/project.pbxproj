@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		312D9FF42121601500518324 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34C21205FA10003F03A /* ViewController.m */; };
 		312D9FF821217E6100518324 /* NSStringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 312D9FF721217E6100518324 /* NSStringHelper.m */; };
+		312D9FFB2121B51A00518324 /* UploadRequestDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 312D9FFA2121B51A00518324 /* UploadRequestDTORequest.m */; };
+		312D9FFF2122B50900518324 /* AddAvatarDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 312D9FFE2122B50900518324 /* AddAvatarDTORequest.m */; };
+		312DA0032122B64900518324 /* UploadRequestDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0022122B64900518324 /* UploadRequestDTOResponse.m */; };
+		312DA0052122B80300518324 /* DeleteAvatarsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0042122B80300518324 /* DeleteAvatarsDTOResponse.m */; };
+		312DA00A2122C56100518324 /* DocumentDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0092122C56100518324 /* DocumentDTORequest.m */; };
+		312DA00E2122C63F00518324 /* DocumentDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA00D2122C63F00518324 /* DocumentDTOResponse.m */; };
 		31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34921205FA00003F03A /* AppDelegate.m */; };
 		31DCC35021205FA10003F03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC34E21205FA10003F03A /* Main.storyboard */; };
 		31DCC35221205FA10003F03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC35121205FA10003F03A /* Assets.xcassets */; };
@@ -62,6 +68,18 @@
 /* Begin PBXFileReference section */
 		312D9FF621217E5200518324 /* NSStringHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringHelper.h; sourceTree = "<group>"; };
 		312D9FF721217E6100518324 /* NSStringHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringHelper.m; sourceTree = "<group>"; };
+		312D9FFA2121B51A00518324 /* UploadRequestDTORequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadRequestDTORequest.m; sourceTree = "<group>"; };
+		312D9FFC2121B52700518324 /* UploadRequestDTORequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadRequestDTORequest.h; sourceTree = "<group>"; };
+		312D9FFD2122B4F600518324 /* AddAvatarDTORequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAvatarDTORequest.h; sourceTree = "<group>"; };
+		312D9FFE2122B50900518324 /* AddAvatarDTORequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAvatarDTORequest.m; sourceTree = "<group>"; };
+		312DA0012122B63700518324 /* UploadRequestDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadRequestDTOResponse.h; sourceTree = "<group>"; };
+		312DA0022122B64900518324 /* UploadRequestDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadRequestDTOResponse.m; sourceTree = "<group>"; };
+		312DA0042122B80300518324 /* DeleteAvatarsDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteAvatarsDTOResponse.m; sourceTree = "<group>"; };
+		312DA0062122B81300518324 /* DeleteAvatarsDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteAvatarsDTOResponse.h; sourceTree = "<group>"; };
+		312DA0082122C55100518324 /* DocumentDTORequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDTORequest.h; sourceTree = "<group>"; };
+		312DA0092122C56100518324 /* DocumentDTORequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDTORequest.m; sourceTree = "<group>"; };
+		312DA00C2122C63100518324 /* DocumentDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDTOResponse.h; sourceTree = "<group>"; };
+		312DA00D2122C63F00518324 /* DocumentDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDTOResponse.m; sourceTree = "<group>"; };
 		31DCC34521205FA00003F03A /* MyExRestAPIService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExRestAPIService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DCC34821205FA00003F03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31DCC34921205FA00003F03A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +200,42 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		312D9FF92121B4BF00518324 /* AvatarAPI */ = {
+			isa = PBXGroup;
+			children = (
+				312D9FFD2122B4F600518324 /* AddAvatarDTORequest.h */,
+				312D9FFE2122B50900518324 /* AddAvatarDTORequest.m */,
+			);
+			path = AvatarAPI;
+			sourceTree = "<group>";
+		};
+		312DA0002122B5FB00518324 /* AvatarAPI */ = {
+			isa = PBXGroup;
+			children = (
+				312DA0042122B80300518324 /* DeleteAvatarsDTOResponse.m */,
+				312DA0062122B81300518324 /* DeleteAvatarsDTOResponse.h */,
+			);
+			path = AvatarAPI;
+			sourceTree = "<group>";
+		};
+		312DA0072122C53C00518324 /* DocumentAPI */ = {
+			isa = PBXGroup;
+			children = (
+				312DA0082122C55100518324 /* DocumentDTORequest.h */,
+				312DA0092122C56100518324 /* DocumentDTORequest.m */,
+			);
+			path = DocumentAPI;
+			sourceTree = "<group>";
+		};
+		312DA00B2122C60800518324 /* DocumentAPI */ = {
+			isa = PBXGroup;
+			children = (
+				312DA00C2122C63100518324 /* DocumentDTOResponse.h */,
+				312DA00D2122C63F00518324 /* DocumentDTOResponse.m */,
+			);
+			path = DocumentAPI;
+			sourceTree = "<group>";
+		};
 		31DCC33C21205FA00003F03A = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +294,10 @@
 		31DCC36421205FB60003F03A /* ResponseDTO */ = {
 			isa = PBXGroup;
 			children = (
+				312DA00B2122C60800518324 /* DocumentAPI */,
+				312DA0022122B64900518324 /* UploadRequestDTOResponse.m */,
+				312DA0012122B63700518324 /* UploadRequestDTOResponse.h */,
+				312DA0002122B5FB00518324 /* AvatarAPI */,
 				31DCC36521205FB60003F03A /* AssetDTOResponse.h */,
 				31DCC36621205FB60003F03A /* LoginAPI */,
 				31DCC36921205FB60003F03A /* Paging.m */,
@@ -358,6 +416,10 @@
 		31DCC39C21205FB60003F03A /* RequestDTO */ = {
 			isa = PBXGroup;
 			children = (
+				312DA0072122C53C00518324 /* DocumentAPI */,
+				312D9FFC2121B52700518324 /* UploadRequestDTORequest.h */,
+				312D9FFA2121B51A00518324 /* UploadRequestDTORequest.m */,
+				312D9FF92121B4BF00518324 /* AvatarAPI */,
 				31DCC39D21205FB60003F03A /* LoginAPI */,
 				31DCC3A021205FB60003F03A /* ReferralAPI */,
 				31DCC3A521205FB60003F03A /* WalletAPI */,
@@ -527,6 +589,7 @@
 			files = (
 				31DCC3EA21205FB60003F03A /* DeleteCountryDTORequest.m in Sources */,
 				31DCC3EE21205FB60003F03A /* ResendConfirmationEmailDTORequest.m in Sources */,
+				312DA00A2122C56100518324 /* DocumentDTORequest.m in Sources */,
 				31DCC3E121205FB60003F03A /* DeleteOrdersDTOResponse.m in Sources */,
 				312D9FF821217E6100518324 /* NSStringHelper.m in Sources */,
 				31DCC3ED21205FB60003F03A /* PasswordRequestDTO.m in Sources */,
@@ -537,6 +600,7 @@
 				31DCC3E021205FB60003F03A /* OrderHistoryDTOResponse.m in Sources */,
 				31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */,
 				31DCC3EC21205FB60003F03A /* ResetPasswordDTORequest.m in Sources */,
+				312DA0032122B64900518324 /* UploadRequestDTOResponse.m in Sources */,
 				31DCC3D521205FB60003F03A /* ResponseError.m in Sources */,
 				31DCC3D621205FB60003F03A /* Filters.m in Sources */,
 				31DCC3C921205FB60003F03A /* CookieService.m in Sources */,
@@ -553,21 +617,25 @@
 				31DCC3E721205FB60003F03A /* AddCountryDTORequest.m in Sources */,
 				31DCC3F021205FB60003F03A /* AddSettingDTORequest.m in Sources */,
 				31DCC3EF21205FB60003F03A /* DeleteSettingDTORequest.m in Sources */,
+				312DA0052122B80300518324 /* DeleteAvatarsDTOResponse.m in Sources */,
 				31DCC3E821205FB60003F03A /* AllCountriesDTORequest.m in Sources */,
 				31DCC3D921205FB60003F03A /* AssetDTOResponse.m in Sources */,
 				31DCC3F121205FB60003F03A /* DeleteOrderDTORequest.m in Sources */,
 				31DCC3DE21205FB60003F03A /* UserOrdersDTOResponse.m in Sources */,
 				31DCC3E221205FB60003F03A /* LoginDTORequest.m in Sources */,
 				31DCC3CB21205FB60003F03A /* LoginDTOResponse.m in Sources */,
+				312DA00E2122C63F00518324 /* DocumentDTOResponse.m in Sources */,
 				31DCC3E321205FB60003F03A /* GetReferralInfoDTORequest.m in Sources */,
 				31DCC3F321205FB60003F03A /* MakeOrderDTORequest.m in Sources */,
 				31DCC3CF21205FB60003F03A /* ReferralInfoDTOResponse.m in Sources */,
 				31DCC3F221205FB60003F03A /* OrderHistoryDTORequest.m in Sources */,
 				31DCC3CC21205FB60003F03A /* Paging.m in Sources */,
+				312D9FFB2121B51A00518324 /* UploadRequestDTORequest.m in Sources */,
 				31DCC3CE21205FB60003F03A /* ReferralsDTOResponse.m in Sources */,
 				31DCC3D821205FB60003F03A /* User2FADTOResponse.m in Sources */,
 				31DCC3DC21205FB60003F03A /* OrderDTOResponse.m in Sources */,
 				31DCC3CD21205FB60003F03A /* ReferralDetailsDTOResponse.m in Sources */,
+				312D9FFF2122B50900518324 /* AddAvatarDTORequest.m in Sources */,
 				31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */,
 				31DCC3DF21205FB60003F03A /* AssetsDTOResponse.m in Sources */,
 				31DCC3D721205FB60003F03A /* UserInfoDTOResponse.m in Sources */,

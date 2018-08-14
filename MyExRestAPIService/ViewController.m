@@ -342,6 +342,51 @@ id<DTOResponse> dtoResponse;
     [putSettingButton setTitle:@"PutSetting" forState:UIControlStateNormal];
     putSettingButton.frame = CGRectMake(30, 620, 150, 25);
     [self.view addSubview:putSettingButton];
+    
+    UIButton *uploadRequestButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [uploadRequestButton addTarget:self
+                         action:@selector(testUploadRequest:)
+               forControlEvents:UIControlEventTouchUpInside];
+    uploadRequestButton.backgroundColor =[UIColor blackColor];
+    [uploadRequestButton setTitle:@"UploadAvatarRequest" forState:UIControlStateNormal];
+    uploadRequestButton.frame = CGRectMake(200, 620, 150, 25);
+    [self.view addSubview:uploadRequestButton];
+    
+    UIButton *deleteAvatarsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [deleteAvatarsButton addTarget:self
+                            action:@selector(testDeleteAvatar:)
+                  forControlEvents:UIControlEventTouchUpInside];
+    deleteAvatarsButton.backgroundColor =[UIColor blackColor];
+    [deleteAvatarsButton setTitle:@"DeleteAvatars" forState:UIControlStateNormal];
+    deleteAvatarsButton.frame = CGRectMake(30, 650, 150, 25);
+    [self.view addSubview:deleteAvatarsButton];
+    
+    UIButton *addAvatarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [addAvatarButton addTarget:self
+                            action:@selector(testAddAvatar:)
+                  forControlEvents:UIControlEventTouchUpInside];
+    addAvatarButton.backgroundColor =[UIColor blackColor];
+    [addAvatarButton setTitle:@"AddAvatar" forState:UIControlStateNormal];
+    addAvatarButton.frame = CGRectMake(200, 650, 150, 25);
+    [self.view addSubview:addAvatarButton];
+    
+    UIButton *uploadDocumentRequestButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [uploadDocumentRequestButton addTarget:self
+                        action:@selector(testUploadDocument:)
+              forControlEvents:UIControlEventTouchUpInside];
+    uploadDocumentRequestButton.backgroundColor =[UIColor blackColor];
+    [uploadDocumentRequestButton setTitle:@"UploadDocument" forState:UIControlStateNormal];
+    uploadDocumentRequestButton.frame = CGRectMake(30, 680, 150, 25);
+    [self.view addSubview:uploadDocumentRequestButton];
+    
+    UIButton *documentButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [documentButton addTarget:self
+                                    action:@selector(testGetDocument:)
+                          forControlEvents:UIControlEventTouchUpInside];
+    documentButton.backgroundColor =[UIColor blackColor];
+    [documentButton setTitle:@"Document" forState:UIControlStateNormal];
+    documentButton.frame = CGRectMake(200, 680, 150, 25);
+    [self.view addSubview:documentButton];
 }
 
 - (void) testReferralInfoById:(UIButton*)sender{
@@ -354,6 +399,59 @@ id<DTOResponse> dtoResponse;
                      failureBlock:^(ResponseError *error) {
                          
                      }];
+}
+
+- (void) testUploadRequest:(UIButton*)sender{
+    UploadRequestDTORequest *dto = [[UploadRequestDTORequest alloc] init];
+    dto.mimeType = @"type";
+    dto.fileSize = @"1024";
+    dto.fileName = @"name.jpg";
+    [_service createUploadAvatarRequest:dto successBlock:^(UploadRequestDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testUploadDocument:(UIButton*)sender{
+    UploadRequestDTORequest *dto = [[UploadRequestDTORequest alloc] init];
+    dto.mimeType = @"type2";
+    dto.fileSize = @"512";
+    dto.fileName = @"document.jpg";
+    [_service createUploadDocumentRequest:dto successBlock:^(UploadRequestDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testGetDocument:(UIButton*)sender{
+    DocumentDTORequest *dto = [[DocumentDTORequest alloc] init];
+    //dto.uploadUid = @"8ff8776e-c7b9-45aa-9921-96d9bf5dea8b";
+    [_service getDocument:dto successBlock:^(DocumentDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testDeleteAvatar:(UIButton*)sender{
+    [_service deleteAvatarsOnSuccessBlock:^(DeleteAvatarsDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testAddAvatar:(UIButton*)sender{
+    AddAvatarDTORequest *dto = [[AddAvatarDTORequest alloc] init];
+    dto.fileUploadUid = @"7689e60f-ff07-42b0-a5de-62d138857501";
+    dto.imageUrl = @"https://blockbitcdnstorage.blob.core.windows.net/avatars/00000000-0000-0000-0000-000000000002/b71ff685-bc32-46bb-8e24-30f5e8aa9851-fff.jpg";
+    [_service addAvatar:dto successBlock:^{
+    
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
 }
 
 - (void) testDeleteSetting:(UIButton*)sender{

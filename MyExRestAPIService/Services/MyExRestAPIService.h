@@ -38,6 +38,12 @@
 #import "SettingsDTOResponse.h"
 #import "AddSettingDTORequest.h"
 #import "DeleteSettingDTORequest.h"
+#import "DeleteAvatarsDTOResponse.h"
+#import "UploadRequestDTOResponse.h"
+#import "UploadRequestDTORequest.h"
+#import "AddAvatarDTORequest.h"
+#import "DocumentDTOResponse.h"
+#import "DocumentDTORequest.h"
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
@@ -150,6 +156,25 @@
 - (void) deleteUserSetting:(DeleteSettingDTORequest*)dto
            successBlock:(void(^)(void))successBlock
            failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) createUploadAvatarRequest:(UploadRequestDTORequest*)dto
+                successBlock:(void(^)(UploadRequestDTOResponse *dto))successBlock
+                failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) addAvatar:(AddAvatarDTORequest*)dto
+      successBlock:(void(^)(void))successBlock
+      failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) deleteAvatarsOnSuccessBlock:(void(^)(DeleteAvatarsDTOResponse *dto))successBlock
+                        failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) createUploadDocumentRequest:(UploadRequestDTORequest*)dto
+                        successBlock:(void(^)(UploadRequestDTOResponse *dto))successBlock
+                        failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) getDocument:(DocumentDTORequest*)dto
+        successBlock:(void(^)(DocumentDTOResponse *dto))successBlock
+        failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (NSDictionary*) toDictionaryFromData:(NSData*)data;
 - (BOOL) isRequestSuccess:(NSInteger)statusCode;
