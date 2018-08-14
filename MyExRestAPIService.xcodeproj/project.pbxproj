@@ -52,9 +52,9 @@
 		31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A621205FB60003F03A /* WalletDepositDTORequest.m */; };
 		31DCC3E621205FB60003F03A /* WithdrawalDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A921205FB60003F03A /* WithdrawalDTORequest.m */; };
 		31DCC3E721205FB60003F03A /* CountryDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3AB21205FB60003F03A /* CountryDTORequest.m */; };
-		31DCC3EB21205FB60003F03A /* ConfirmEmailDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3B521205FB60003F03A /* ConfirmEmailDTORequest.m */; };
-		31DCC3EC21205FB60003F03A /* ResetPasswordDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3B821205FB60003F03A /* ResetPasswordDTORequest.m */; };
-		31DCC3ED21205FB60003F03A /* PasswordRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BA21205FB60003F03A /* PasswordRequestDTO.m */; };
+		31DCC3EB21205FB60003F03A /* EmailConfirmationDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3B521205FB60003F03A /* EmailConfirmationDTORequest.m */; };
+		31DCC3EC21205FB60003F03A /* PasswordReetDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3B821205FB60003F03A /* PasswordReetDTORequest.m */; };
+		31DCC3ED21205FB60003F03A /* PasswordDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BA21205FB60003F03A /* PasswordDTORequest.m */; };
 		31DCC3EE21205FB60003F03A /* ResendConfirmationEmailDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */; };
 		31DCC3EF21205FB60003F03A /* DeleteSettingDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BE21205FB60003F03A /* DeleteSettingDTORequest.m */; };
 		31DCC3F021205FB60003F03A /* AddSettingDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C021205FB60003F03A /* AddSettingDTORequest.m */; };
@@ -154,12 +154,12 @@
 		31DCC3AB21205FB60003F03A /* CountryDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryDTORequest.m; sourceTree = "<group>"; };
 		31DCC3B021205FB60003F03A /* CountryDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryDTORequest.h; sourceTree = "<group>"; };
 		31DCC3B321205FB60003F03A /* DTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTORequest.h; sourceTree = "<group>"; };
-		31DCC3B521205FB60003F03A /* ConfirmEmailDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmEmailDTORequest.m; sourceTree = "<group>"; };
-		31DCC3B621205FB60003F03A /* ResetPasswordDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordDTORequest.h; sourceTree = "<group>"; };
+		31DCC3B521205FB60003F03A /* EmailConfirmationDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailConfirmationDTORequest.m; sourceTree = "<group>"; };
+		31DCC3B621205FB60003F03A /* PasswordResetDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordResetDTORequest.h; sourceTree = "<group>"; };
 		31DCC3B721205FB60003F03A /* ResendConfirmationEmailDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResendConfirmationEmailDTORequest.h; sourceTree = "<group>"; };
-		31DCC3B821205FB60003F03A /* ResetPasswordDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordDTORequest.m; sourceTree = "<group>"; };
-		31DCC3B921205FB60003F03A /* ConfirmEmailDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmEmailDTORequest.h; sourceTree = "<group>"; };
-		31DCC3BA21205FB60003F03A /* PasswordRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordRequestDTO.m; sourceTree = "<group>"; };
+		31DCC3B821205FB60003F03A /* PasswordReetDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordReetDTORequest.m; sourceTree = "<group>"; };
+		31DCC3B921205FB60003F03A /* EmailConfirmationDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailConfirmationDTORequest.h; sourceTree = "<group>"; };
+		31DCC3BA21205FB60003F03A /* PasswordDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordDTORequest.m; sourceTree = "<group>"; };
 		31DCC3BB21205FB60003F03A /* PasswordDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordDTORequest.h; sourceTree = "<group>"; };
 		31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResendConfirmationEmailDTORequest.m; sourceTree = "<group>"; };
 		31DCC3BE21205FB60003F03A /* DeleteSettingDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSettingDTORequest.m; sourceTree = "<group>"; };
@@ -412,15 +412,15 @@
 		31DCC39C21205FB60003F03A /* RequestDTO */ = {
 			isa = PBXGroup;
 			children = (
-				312DA0072122C53C00518324 /* DocumentAPI */,
+				31DCC3B321205FB60003F03A /* DTORequest.h */,
 				312D9FFC2121B52700518324 /* UploadRequestDTORequest.h */,
 				312D9FFA2121B51A00518324 /* UploadRequestDTORequest.m */,
+				312DA0072122C53C00518324 /* DocumentAPI */,
 				312D9FF92121B4BF00518324 /* AvatarAPI */,
 				31DCC39D21205FB60003F03A /* LoginAPI */,
 				31DCC3A021205FB60003F03A /* ReferralAPI */,
 				31DCC3A521205FB60003F03A /* WalletAPI */,
 				31DCC3AA21205FB60003F03A /* CountryAPI */,
-				31DCC3B321205FB60003F03A /* DTORequest.h */,
 				31DCC3B421205FB60003F03A /* ProfileAPI */,
 				31DCC3BD21205FB60003F03A /* SettingAPI */,
 				31DCC3C221205FB60003F03A /* TradeAPI */,
@@ -471,14 +471,14 @@
 		31DCC3B421205FB60003F03A /* ProfileAPI */ = {
 			isa = PBXGroup;
 			children = (
-				31DCC3B521205FB60003F03A /* ConfirmEmailDTORequest.m */,
-				31DCC3B621205FB60003F03A /* ResetPasswordDTORequest.h */,
+				31DCC3B521205FB60003F03A /* EmailConfirmationDTORequest.m */,
+				31DCC3B921205FB60003F03A /* EmailConfirmationDTORequest.h */,
+				31DCC3B621205FB60003F03A /* PasswordResetDTORequest.h */,
+				31DCC3B821205FB60003F03A /* PasswordReetDTORequest.m */,
 				31DCC3B721205FB60003F03A /* ResendConfirmationEmailDTORequest.h */,
-				31DCC3B821205FB60003F03A /* ResetPasswordDTORequest.m */,
-				31DCC3B921205FB60003F03A /* ConfirmEmailDTORequest.h */,
-				31DCC3BA21205FB60003F03A /* PasswordRequestDTO.m */,
-				31DCC3BB21205FB60003F03A /* PasswordDTORequest.h */,
 				31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */,
+				31DCC3BA21205FB60003F03A /* PasswordDTORequest.m */,
+				31DCC3BB21205FB60003F03A /* PasswordDTORequest.h */,
 			);
 			path = ProfileAPI;
 			sourceTree = "<group>";
@@ -581,14 +581,14 @@
 				312DA00A2122C56100518324 /* DocumentDTORequest.m in Sources */,
 				31DCC3E121205FB60003F03A /* DeleteOrdersDTOResponse.m in Sources */,
 				312D9FF821217E6100518324 /* NSStringHelper.m in Sources */,
-				31DCC3ED21205FB60003F03A /* PasswordRequestDTO.m in Sources */,
+				31DCC3ED21205FB60003F03A /* PasswordDTORequest.m in Sources */,
 				31DCC3CA21205FB60003F03A /* MyExRestAPIService.m in Sources */,
-				31DCC3EB21205FB60003F03A /* ConfirmEmailDTORequest.m in Sources */,
+				31DCC3EB21205FB60003F03A /* EmailConfirmationDTORequest.m in Sources */,
 				31DCC3D021205FB60003F03A /* WalletDepositDTOResponse.m in Sources */,
 				31DCC3D421205FB60003F03A /* GetCountryDTOResponse.m in Sources */,
 				31DCC3E021205FB60003F03A /* OrderHistoryDTOResponse.m in Sources */,
 				31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */,
-				31DCC3EC21205FB60003F03A /* ResetPasswordDTORequest.m in Sources */,
+				31DCC3EC21205FB60003F03A /* PasswordReetDTORequest.m in Sources */,
 				312DA0032122B64900518324 /* UploadRequestDTOResponse.m in Sources */,
 				31DCC3D521205FB60003F03A /* ResponseError.m in Sources */,
 				31DCC3D621205FB60003F03A /* Filters.m in Sources */,

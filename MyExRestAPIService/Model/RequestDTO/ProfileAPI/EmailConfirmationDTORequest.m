@@ -1,6 +1,6 @@
-#import "ConfirmEmailDTORequest.h"
+#import "EmailConfirmationDTORequest.h"
 
-@implementation ConfirmEmailDTORequest
+@implementation EmailConfirmationDTORequest
 
 -(instancetype) init {
     if (self = [super init]) {

@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "723"
             endingLineNumber = "723"
-            landmarkName = "-testLoginCorrect:"
+            landmarkName = "-testLogout:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "725"
             endingLineNumber = "725"
-            landmarkName = "-testLoginCorrect:"
+            landmarkName = "-testLogout:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "745"
             endingLineNumber = "745"
-            landmarkName = "-testLoginInCorrect:"
+            landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "7">
             <Locations>
                <Location
@@ -127,8 +127,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "747"
             endingLineNumber = "747"
-            landmarkName = "-testLoginInCorrect:"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -143,8 +143,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "748"
             endingLineNumber = "748"
-            landmarkName = "-testLoginInCorrect:"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -159,7 +159,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "733"
             endingLineNumber = "733"
-            landmarkName = "-testLogout:"
+            landmarkName = "-testLoginInCorrect:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -207,7 +207,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "735"
             endingLineNumber = "735"
-            landmarkName = "-testLogout:"
+            landmarkName = "-testLoginInCorrect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -223,8 +223,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "741"
             endingLineNumber = "741"
-            landmarkName = "-testLoginInCorrect:"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -239,7 +239,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "724"
             endingLineNumber = "724"
-            landmarkName = "-testLoginCorrect:"
+            landmarkName = "-testLogout:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -287,7 +287,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "722"
             endingLineNumber = "722"
-            landmarkName = "-testLoginCorrect:"
+            landmarkName = "-testLogout:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -335,7 +335,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "410"
             endingLineNumber = "410"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-testUploadRequest:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -383,7 +383,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "411"
             endingLineNumber = "411"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-testUploadRequest:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -399,7 +399,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "410"
             endingLineNumber = "410"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-testUploadRequest:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -463,7 +463,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "494"
             endingLineNumber = "494"
-            landmarkName = "-testReferralDetails:"
+            landmarkName = "-testResetPassword:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -527,7 +527,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "515"
             endingLineNumber = "515"
-            landmarkName = "-testPassword:"
+            landmarkName = "-testConfirmEmail:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -591,7 +591,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "533"
             endingLineNumber = "533"
-            landmarkName = "-testAssetsInfo:"
+            landmarkName = "-testReferralInfo:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -655,7 +655,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "541"
             endingLineNumber = "541"
-            landmarkName = "-testReferralInfo:"
+            landmarkName = "-testUserSettings:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -719,7 +719,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "549"
             endingLineNumber = "549"
-            landmarkName = "-testUserSettings:"
+            landmarkName = "-testUser2FA:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -783,7 +783,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "557"
             endingLineNumber = "557"
-            landmarkName = "-testUser2FA:"
+            landmarkName = "-testAdd2FA:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -847,7 +847,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "565"
             endingLineNumber = "565"
-            landmarkName = "-testAdd2FA:"
+            landmarkName = "-testResendEmail:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -911,7 +911,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "575"
             endingLineNumber = "575"
-            landmarkName = "-testResendEmail:"
+            landmarkName = "-testUserOrders:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -975,7 +975,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "583"
             endingLineNumber = "583"
-            landmarkName = "-testUserOrders:"
+            landmarkName = "-testCountry:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1007,7 +1007,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "604"
             endingLineNumber = "604"
-            landmarkName = "-testAddCountry:"
+            landmarkName = "-testReplaceCountry:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1055,7 +1055,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "606"
             endingLineNumber = "606"
-            landmarkName = "-testAddCountry:"
+            landmarkName = "-testReplaceCountry:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1119,7 +1119,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "504"
             endingLineNumber = "504"
-            landmarkName = "-testResetPassword:"
+            landmarkName = "-testPassword:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1135,7 +1135,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "409"
             endingLineNumber = "409"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-testUploadRequest:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1199,7 +1199,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "525"
             endingLineNumber = "525"
-            landmarkName = "-testConfirmEmail:"
+            landmarkName = "-testAssetsInfo:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1215,7 +1215,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "635"
             endingLineNumber = "635"
-            landmarkName = "-testReferrals:"
+            landmarkName = "-testAssets:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1263,7 +1263,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "637"
             endingLineNumber = "637"
-            landmarkName = "-testReferrals:"
+            landmarkName = "-testAssets:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1279,7 +1279,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "643"
             endingLineNumber = "643"
-            landmarkName = "-testAssets:"
+            landmarkName = "-testOrderHistory:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1327,7 +1327,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "645"
             endingLineNumber = "645"
-            landmarkName = "-testAssets:"
+            landmarkName = "-testOrderHistory:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1343,7 +1343,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "652"
             endingLineNumber = "652"
-            landmarkName = "-testOrderHistory:"
+            landmarkName = "-testMakeOrder:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1391,7 +1391,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "654"
             endingLineNumber = "654"
-            landmarkName = "-testOrderHistory:"
+            landmarkName = "-testMakeOrder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1407,7 +1407,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "675"
             endingLineNumber = "675"
-            landmarkName = "-testMakeOrder:"
+            landmarkName = "-testDeleteAllOrders:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1455,7 +1455,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "677"
             endingLineNumber = "677"
-            landmarkName = "-testMakeOrder:"
+            landmarkName = "-testDeleteAllOrders:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1471,7 +1471,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "683"
             endingLineNumber = "683"
-            landmarkName = "-testDeleteAllOrders:"
+            landmarkName = "-testDeleteOrder:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1519,7 +1519,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "685"
             endingLineNumber = "685"
-            landmarkName = "-testDeleteAllOrders:"
+            landmarkName = "-testDeleteOrder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1535,7 +1535,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "695"
             endingLineNumber = "695"
-            landmarkName = "-testDeleteOrder:"
+            landmarkName = "-testDeleteCountry:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1551,7 +1551,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "693"
             endingLineNumber = "693"
-            landmarkName = "-testDeleteOrder:"
+            landmarkName = "-testDeleteCountry:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1599,7 +1599,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "711"
             endingLineNumber = "711"
-            landmarkName = "-testUser:"
+            landmarkName = "-testLoginCorrect:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1647,7 +1647,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "713"
             endingLineNumber = "713"
-            landmarkName = "-testUser:"
+            landmarkName = "-testLoginCorrect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1663,7 +1663,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "723"
             endingLineNumber = "723"
-            landmarkName = "-testLoginCorrect:"
+            landmarkName = "-testLogout:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1711,7 +1711,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "725"
             endingLineNumber = "725"
-            landmarkName = "-testLoginCorrect:"
+            landmarkName = "-testLogout:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1727,7 +1727,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "733"
             endingLineNumber = "733"
-            landmarkName = "-testLogout:"
+            landmarkName = "-testLoginInCorrect:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1775,7 +1775,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "735"
             endingLineNumber = "735"
-            landmarkName = "-testLogout:"
+            landmarkName = "-testLoginInCorrect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1791,7 +1791,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "745"
             endingLineNumber = "745"
-            landmarkName = "-testLoginInCorrect:"
+            landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1839,8 +1839,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "747"
             endingLineNumber = "747"
-            landmarkName = "-testLoginInCorrect:"
-            landmarkType = "7">
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1871,7 +1871,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "-getAllCountries:successBlock:failureBlock:"
+            landmarkName = "-getAllCountriesWithSearch:page:perPage:successBlock:failureBlock:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1934,7 +1934,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "-getAllCountries:successBlock:failureBlock:"
+            landmarkName = "-getAllCountriesWithSearch:page:perPage:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1950,7 +1950,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
-            landmarkName = "-getCountry:successBlock:failureBlock:"
+            landmarkName = "-getCountryById:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2030,7 +2030,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "473"
             endingLineNumber = "473"
-            landmarkName = "-testDeleteSetting:"
+            landmarkName = "-testPutSetting:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2062,7 +2062,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "421"
             endingLineNumber = "421"
-            landmarkName = "-testUploadRequest:"
+            landmarkName = "-testUploadDocument:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2206,7 +2206,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "451"
             endingLineNumber = "451"
-            landmarkName = "-testDeleteAvatar:"
+            landmarkName = "-testAddAvatar:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2270,7 +2270,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "462"
             endingLineNumber = "462"
-            landmarkName = "-testAddAvatar:"
+            landmarkName = "-testDeleteSetting:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2334,7 +2334,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "433"
             endingLineNumber = "433"
-            landmarkName = "-testUploadDocument:"
+            landmarkName = "-testGetDocument:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2350,7 +2350,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "443"
             endingLineNumber = "443"
-            landmarkName = "-testGetDocument:"
+            landmarkName = "-testDeleteAvatar:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2414,7 +2414,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "617"
             endingLineNumber = "617"
-            landmarkName = "-testReplaceCountry:"
+            landmarkName = "-testUserCountries:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -2462,7 +2462,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "619"
             endingLineNumber = "619"
-            landmarkName = "-testReplaceCountry:"
+            landmarkName = "-testUserCountries:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

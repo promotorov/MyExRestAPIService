@@ -139,7 +139,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 
 // ProfileAPI
 //+
-- (void) resetPassword:(ResetPasswordDTORequest *)dto
+- (void) resetPassword:(PasswordResetDTORequest *)dto
           successBlock:(void (^)(void))successBlock
           failureBlock:(void (^)(ResponseError *))failureBlock
 {
@@ -165,7 +165,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:jsonData toURL:PasswordUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) confirmEmail:(ConfirmEmailDTORequest *)dto
+- (void) confirmEmail:(EmailConfirmationDTORequest *)dto
          successBlock:(void (^)(void))successBlock
          failureBlock:(void (^)(ResponseError *))failureBlock
 {

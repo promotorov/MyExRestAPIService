@@ -1,6 +1,6 @@
-#import "ResetPasswordDTORequest.h"
+#import "PasswordResetDTORequest.h"
 
-@implementation ResetPasswordDTORequest
+@implementation PasswordResetDTORequest
 
 -(instancetype) init {
     if (self = [super init]) self.email = @"";

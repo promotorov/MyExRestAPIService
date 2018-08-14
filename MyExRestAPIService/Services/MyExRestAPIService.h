@@ -6,9 +6,7 @@
 #import "GetCountryDTOResponse.h"
 #import "AllCountriesDTOResponse.h"
 #import "ResendConfirmationEmailDTORequest.h"
-#import "ConfirmEmailDTORequest.h"
 #import "PasswordDTORequest.h"
-#import "ResetPasswordDTORequest.h"
 #import "UserInfoDTOResponse.h"
 #import "User2FADTOResponse.h"
 #import "GetReferralsDTORequest.h"
@@ -42,6 +40,8 @@
 #import "DocumentDTORequest.h"
 #import "AddOrReplaceCountryDTOResponse.h"
 #import "CountryDTORequest.h"
+#import "EmailConfirmationDTORequest.h"
+#import "PasswordResetDTORequest.h"
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
@@ -75,11 +75,11 @@
                     successBlock:(void(^)(void))successBlock
                     failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) confirmEmail:(ConfirmEmailDTORequest*)dto
+- (void) confirmEmail:(EmailConfirmationDTORequest*)dto
          successBlock:(void(^)(void))successBlock
          failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) resetPassword:(ResetPasswordDTORequest*)dto
+- (void) resetPassword:(PasswordResetDTORequest*)dto
           successBlock:(void(^)(void))successBlock
           failureBlock:(void(^)(ResponseError *error))failureBlock;
 

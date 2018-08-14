@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "DTORequest.h"
 
-@interface ResetPasswordDTORequest : NSObject<DTORequest>
+@interface PasswordResetDTORequest : NSObject<DTORequest>
 
 @property (nonatomic) NSString *email;
 

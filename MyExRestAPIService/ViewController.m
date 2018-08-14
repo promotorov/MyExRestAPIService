@@ -7,9 +7,7 @@
 #import "GetCountryDTOResponse.h"
 #import "AllCountriesDTOResponse.h"
 #import "ResendConfirmationEmailDTORequest.h"
-#import "ConfirmEmailDTORequest.h"
 #import "PasswordDTORequest.h"
-#import "ResetPasswordDTORequest.h"
 #import "UserInfoDTOResponse.h"
 #import "User2FADTOResponse.h"
 #import "GetReferralsDTORequest.h"
@@ -492,7 +490,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testResetPassword:(UIButton*)sender{
-    ResetPasswordDTORequest *dto = [[ResetPasswordDTORequest alloc] init];
+    PasswordResetDTORequest *dto = [[PasswordResetDTORequest alloc] init];
     dto.email = @"bobssss@mailinator.com";
     [_service resetPassword:dto successBlock:^{
         
@@ -513,7 +511,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testConfirmEmail:(UIButton*)sender{
-    ConfirmEmailDTORequest *dto = [[ConfirmEmailDTORequest alloc] init];
+    EmailConfirmationDTORequest *dto = [[EmailConfirmationDTORequest alloc] init];
     dto.email = @"test@mailinator.com";
     [_service confirmEmail:dto successBlock:^{
         

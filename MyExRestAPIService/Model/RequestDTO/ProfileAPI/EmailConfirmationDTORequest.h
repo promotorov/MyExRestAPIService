@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "DTORequest.h"
 
-@interface ConfirmEmailDTORequest : NSObject<DTORequest>
+@interface EmailConfirmationDTORequest : NSObject<DTORequest>
 
 @property(nonatomic) NSString *token;
 @property(nonatomic) NSString *email;
