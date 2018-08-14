@@ -9,8 +9,6 @@
 #import "PasswordDTORequest.h"
 #import "UserInfoDTOResponse.h"
 #import "User2FADTOResponse.h"
-#import "GetReferralsDTORequest.h"
-#import "GetReferralInfoDTORequest.h"
 #import "ReferralsDTOResponse.h"
 #import "ReferralInfoDTOResponse.h"
 #import "ReferralDetailsDTOResponse.h"
@@ -99,17 +97,19 @@
 - (void) getReferralInfoOnSuccessBlock:(void(^)(ReferralInfoDTOResponse *dto))successBlock
                           failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) getReferralInfoById:(GetReferralInfoDTORequest*)dto
+- (void) getReferralInfoById:(NSString*)userId
                 successBlock:(void(^)(ReferralInfoDTOResponse *dto))successBlock
                 failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) getReferrals:(GetReferralsDTORequest*)dto
+- (void) getReferralsWithSearch:(NSString*)search
+                           page:(int)page
+                        perPage:(int)perPage
          successBlock:(void(^)(ReferralsDTOResponse *dto))successBlock
          failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) getReferralDetails:(GetReferralInfoDTORequest*)dto
-                successBlock:(void(^)(ReferralDetailsDTOResponse *dto))successBlock
-               failureBlock:(void(^)(ResponseError *error))failureBlock;
+- (void) getReferralDetailsById:(NSString*)userId
+                   successBlock:(void(^)(ReferralDetailsDTOResponse *dto))successBlock
+                   failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (void) getAssetsOnSuccessBlock:(void(^)(AssetsDTOResponse *dto))successBlock
                     failureBlock:(void(^)(ResponseError *error))failureBlock;

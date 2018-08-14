@@ -47,8 +47,6 @@
 		31DCC3E021205FB60003F03A /* OrderHistoryDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39721205FB60003F03A /* OrderHistoryDTOResponse.m */; };
 		31DCC3E121205FB60003F03A /* DeleteOrdersDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39A21205FB60003F03A /* DeleteOrdersDTOResponse.m */; };
 		31DCC3E221205FB60003F03A /* LoginDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC39F21205FB60003F03A /* LoginDTORequest.m */; };
-		31DCC3E321205FB60003F03A /* GetReferralInfoDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A121205FB60003F03A /* GetReferralInfoDTORequest.m */; };
-		31DCC3E421205FB60003F03A /* GetReferralsDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A221205FB60003F03A /* GetReferralsDTORequest.m */; };
 		31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A621205FB60003F03A /* WalletDepositDTORequest.m */; };
 		31DCC3E621205FB60003F03A /* WithdrawalDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3A921205FB60003F03A /* WithdrawalDTORequest.m */; };
 		31DCC3E721205FB60003F03A /* CountryDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3AB21205FB60003F03A /* CountryDTORequest.m */; };
@@ -143,10 +141,6 @@
 		31DCC39B21205FB60003F03A /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filters.h; sourceTree = "<group>"; };
 		31DCC39E21205FB60003F03A /* LoginDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDTORequest.h; sourceTree = "<group>"; };
 		31DCC39F21205FB60003F03A /* LoginDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDTORequest.m; sourceTree = "<group>"; };
-		31DCC3A121205FB60003F03A /* GetReferralInfoDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetReferralInfoDTORequest.m; sourceTree = "<group>"; };
-		31DCC3A221205FB60003F03A /* GetReferralsDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetReferralsDTORequest.m; sourceTree = "<group>"; };
-		31DCC3A321205FB60003F03A /* GetReferralInfoDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetReferralInfoDTORequest.h; sourceTree = "<group>"; };
-		31DCC3A421205FB60003F03A /* GetReferralsDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetReferralsDTORequest.h; sourceTree = "<group>"; };
 		31DCC3A621205FB60003F03A /* WalletDepositDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletDepositDTORequest.m; sourceTree = "<group>"; };
 		31DCC3A721205FB60003F03A /* WithdrawalDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawalDTORequest.h; sourceTree = "<group>"; };
 		31DCC3A821205FB60003F03A /* WalletDepositDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletDepositDTORequest.h; sourceTree = "<group>"; };
@@ -418,7 +412,6 @@
 				312DA0072122C53C00518324 /* DocumentAPI */,
 				312D9FF92121B4BF00518324 /* AvatarAPI */,
 				31DCC39D21205FB60003F03A /* LoginAPI */,
-				31DCC3A021205FB60003F03A /* ReferralAPI */,
 				31DCC3A521205FB60003F03A /* WalletAPI */,
 				31DCC3AA21205FB60003F03A /* CountryAPI */,
 				31DCC3B421205FB60003F03A /* ProfileAPI */,
@@ -435,17 +428,6 @@
 				31DCC39F21205FB60003F03A /* LoginDTORequest.m */,
 			);
 			path = LoginAPI;
-			sourceTree = "<group>";
-		};
-		31DCC3A021205FB60003F03A /* ReferralAPI */ = {
-			isa = PBXGroup;
-			children = (
-				31DCC3A121205FB60003F03A /* GetReferralInfoDTORequest.m */,
-				31DCC3A221205FB60003F03A /* GetReferralsDTORequest.m */,
-				31DCC3A321205FB60003F03A /* GetReferralInfoDTORequest.h */,
-				31DCC3A421205FB60003F03A /* GetReferralsDTORequest.h */,
-			);
-			path = ReferralAPI;
 			sourceTree = "<group>";
 		};
 		31DCC3A521205FB60003F03A /* WalletAPI */ = {
@@ -597,7 +579,6 @@
 				31DCC3D221205FB60003F03A /* AddCountryDTOResponse.m in Sources */,
 				31DCC3D321205FB60003F03A /* AllCountriesDTOResponse.m in Sources */,
 				31DCC3DD21205FB60003F03A /* MakeOrderDTOResponse.m in Sources */,
-				31DCC3E421205FB60003F03A /* GetReferralsDTORequest.m in Sources */,
 				312D9FF42121601500518324 /* ViewController.m in Sources */,
 				31DCC3DB21205FB60003F03A /* AssetsInfoDTOResponse.m in Sources */,
 				31DCC3D121205FB60003F03A /* Country.m in Sources */,
@@ -613,7 +594,6 @@
 				31DCC3E221205FB60003F03A /* LoginDTORequest.m in Sources */,
 				31DCC3CB21205FB60003F03A /* LoginDTOResponse.m in Sources */,
 				312DA00E2122C63F00518324 /* DocumentDTOResponse.m in Sources */,
-				31DCC3E321205FB60003F03A /* GetReferralInfoDTORequest.m in Sources */,
 				31DCC3F321205FB60003F03A /* MakeOrderDTORequest.m in Sources */,
 				31DCC3CF21205FB60003F03A /* ReferralInfoDTOResponse.m in Sources */,
 				31DCC3F221205FB60003F03A /* OrderHistoryDTORequest.m in Sources */,

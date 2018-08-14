@@ -238,12 +238,12 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 
 // Refarral API
 //+
-- (void) getReferrals:(GetReferralsDTORequest *)dto
-         successBlock:(void (^)(ReferralsDTOResponse *))successBlock
-         failureBlock:(void (^)(ResponseError *))failureBlock
+- (void) getReferralsWithSearch:(NSString *)search page:(int)page perPage:(int)perPage
+                   successBlock:(void (^)(ReferralsDTOResponse *))successBlock
+                   failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"starting find referrals...");
-    NSString *url = [NSString stringWithFormat:@"%@%@", ReferralsUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", dto.search, dto.page, dto.perPage]];
+    NSString *url = [NSString stringWithFormat:@"%@%@", ReferralsUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", search, page, perPage]];
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
@@ -270,16 +270,16 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:nil toURL:ReferralInfoUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) getReferralDetails:(GetReferralInfoDTORequest *)dto
-               successBlock:(void (^)(ReferralDetailsDTOResponse *))successBlock
-               failureBlock:(void (^)(ResponseError *))failureBlock
+- (void) getReferralDetailsById:(NSString *)userId
+                   successBlock:(void (^)(ReferralDetailsDTOResponse *))successBlock
+                   failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting referral details...");
-    if ([dto.userId isBlank]) {
+    if ([userId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect userId" reason:@"getReferralDetails" userInfo:nil];
         return;
     }
-    NSString *url = [NSString stringWithFormat:@"%@/%@/details", ReferralDetailsUrl, dto.userId];
+    NSString *url = [NSString stringWithFormat:@"%@/%@/details", ReferralDetailsUrl, userId];
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
@@ -292,12 +292,12 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
 }
 
 //+
-- (void) getReferralInfoById:(GetReferralInfoDTORequest *)dto
+- (void) getReferralInfoById:(NSString *)userId
                 successBlock:(void (^)(ReferralInfoDTOResponse *))successBlock
                 failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting referral info by userId...");
-    if ([dto.userId isBlank]) {
+    if ([userId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"getReferralInfoById" userInfo:nil];
         return;
     }
@@ -309,7 +309,7 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
         if (successBlock)
             successBlock(dto);
     };
-    NSString *url = [NSString stringWithFormat:@"%@/%@", ReferralInfoUrl, dto.userId];
+    NSString *url = [NSString stringWithFormat:@"%@/%@", ReferralInfoUrl, userId];
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 

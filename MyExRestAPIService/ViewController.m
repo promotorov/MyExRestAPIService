@@ -10,8 +10,6 @@
 #import "PasswordDTORequest.h"
 #import "UserInfoDTOResponse.h"
 #import "User2FADTOResponse.h"
-#import "GetReferralsDTORequest.h"
-#import "GetReferralInfoDTORequest.h"
 #import "ReferralsDTOResponse.h"
 #import "ReferralInfoDTOResponse.h"
 #import "ReferralDetailsDTOResponse.h"
@@ -393,9 +391,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testReferralInfoById:(UIButton*)sender{
-    GetReferralInfoDTORequest *dto = [[GetReferralInfoDTORequest alloc] init];
-    dto.userId = @"00000000-0000-0000-0000-000000000001";
-    [_service getReferralInfoById:dto
+    [_service getReferralInfoById:@"00000000-0000-0000-0000-000000000001"
                      successBlock:^(ReferralInfoDTOResponse *dto) {
                          
                      }
@@ -480,9 +476,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testReferralDetails:(UIButton*)sender{
-    GetReferralInfoDTORequest *dto = [[GetReferralInfoDTORequest alloc] init];
-    dto.userId = @"00000000-0000-0000-0000-000000000002";
-    [_service getReferralDetails:dto successBlock:^(ReferralDetailsDTOResponse *dto) {
+    [_service getReferralDetailsById:@"00000000-0000-0000-0000-000000000001" successBlock:^(ReferralDetailsDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
         
@@ -621,8 +615,7 @@ id<DTOResponse> dtoResponse;
 }
 
 - (void) testReferrals:(UIButton*)sender{
-    GetReferralsDTORequest *dto = [[GetReferralsDTORequest alloc] init];
-    [_service getReferrals:dto successBlock:^(ReferralsDTOResponse *dto) {
+    [_service getReferralsWithSearch:@"" page:2 perPage:10 successBlock:^(ReferralsDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
         
