@@ -32,7 +32,6 @@
 #import "UploadRequestDTORequest.h"
 #import "AddAvatarDTORequest.h"
 #import "DocumentDTOResponse.h"
-#import "DocumentDTORequest.h"
 #import "AddOrReplaceCountryDTOResponse.h"
 #import "CountryDTORequest.h"
 #import "EmailConfirmationDTORequest.h"
@@ -174,9 +173,9 @@
                         successBlock:(void(^)(UploadRequestDTOResponse *dto))successBlock
                         failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (void) getDocument:(DocumentDTORequest*)dto
-        successBlock:(void(^)(DocumentDTOResponse *dto))successBlock
-        failureBlock:(void(^)(ResponseError *error))failureBlock;
+- (void) getDocumentByUploadUid:(NSString*)uploadUid
+                   successBlock:(void(^)(DocumentDTOResponse *dto))successBlock
+                   failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (NSDictionary*) toDictionaryFromData:(NSData*)data;
 - (BOOL) isRequestSuccess:(NSInteger)statusCode;

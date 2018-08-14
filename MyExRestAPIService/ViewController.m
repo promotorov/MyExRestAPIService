@@ -421,10 +421,9 @@ id<DTOResponse> dtoResponse;
     }];
 }
 
-- (void) testGetDocument:(UIButton*)sender{
-    DocumentDTORequest *dto = [[DocumentDTORequest alloc] init];
-    //dto.uploadUid = @"8ff8776e-c7b9-45aa-9921-96d9bf5dea8b";
-    [_service getDocument:dto successBlock:^(DocumentDTOResponse *dto) {
+- (void) testGetDocument:(UIButton*)sender{;
+    [_service getDocumentByUploadUid:@"8ff8776e-c7b9-45aa-9921-96d9bf5dea8b"
+                        successBlock:^(DocumentDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
         

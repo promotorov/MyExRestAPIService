@@ -613,16 +613,16 @@ static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request
     [self doRequestWithJson:jsonData toURL:UploadDocumentRequestUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 //+
-- (void) getDocument:(DocumentDTORequest *)dto
-        successBlock:(void (^)(DocumentDTOResponse *))successBlock
-        failureBlock:(void (^)(ResponseError *))failureBlock
+- (void) getDocumentByUploadUid:(NSString *)uploadUid
+                   successBlock:(void (^)(DocumentDTOResponse *))successBlock
+                   failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting a document ...");
-    if ([dto.uploadUid isBlank]) {
+    if ([uploadUid isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect uploadUid" reason:@"getDocument" userInfo:nil];
         return;
     }
-    NSString *url = [NSString stringWithFormat:@"%@/%@/%@", DocumentUrl, dto.uploadUid, @"link"];
+    NSString *url = [NSString stringWithFormat:@"%@/%@/%@", DocumentUrl, uploadUid, @"link"];
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];

@@ -13,7 +13,6 @@
 		312D9FFF2122B50900518324 /* AddAvatarDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 312D9FFE2122B50900518324 /* AddAvatarDTORequest.m */; };
 		312DA0032122B64900518324 /* UploadRequestDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0022122B64900518324 /* UploadRequestDTOResponse.m */; };
 		312DA0052122B80300518324 /* DeleteAvatarsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0042122B80300518324 /* DeleteAvatarsDTOResponse.m */; };
-		312DA00A2122C56100518324 /* DocumentDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0092122C56100518324 /* DocumentDTORequest.m */; };
 		312DA00E2122C63F00518324 /* DocumentDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA00D2122C63F00518324 /* DocumentDTOResponse.m */; };
 		312DA0172122DA2200518324 /* AddOrReplaceCountryDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA0162122DA2200518324 /* AddOrReplaceCountryDTOResponse.m */; };
 		31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34921205FA00003F03A /* AppDelegate.m */; };
@@ -69,8 +68,6 @@
 		312DA0022122B64900518324 /* UploadRequestDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadRequestDTOResponse.m; sourceTree = "<group>"; };
 		312DA0042122B80300518324 /* DeleteAvatarsDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteAvatarsDTOResponse.m; sourceTree = "<group>"; };
 		312DA0062122B81300518324 /* DeleteAvatarsDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteAvatarsDTOResponse.h; sourceTree = "<group>"; };
-		312DA0082122C55100518324 /* DocumentDTORequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDTORequest.h; sourceTree = "<group>"; };
-		312DA0092122C56100518324 /* DocumentDTORequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDTORequest.m; sourceTree = "<group>"; };
 		312DA00C2122C63100518324 /* DocumentDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentDTOResponse.h; sourceTree = "<group>"; };
 		312DA00D2122C63F00518324 /* DocumentDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDTOResponse.m; sourceTree = "<group>"; };
 		312DA0162122DA2200518324 /* AddOrReplaceCountryDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddOrReplaceCountryDTOResponse.m; sourceTree = "<group>"; };
@@ -195,15 +192,6 @@
 				312DA0062122B81300518324 /* DeleteAvatarsDTOResponse.h */,
 			);
 			path = AvatarAPI;
-			sourceTree = "<group>";
-		};
-		312DA0072122C53C00518324 /* DocumentAPI */ = {
-			isa = PBXGroup;
-			children = (
-				312DA0082122C55100518324 /* DocumentDTORequest.h */,
-				312DA0092122C56100518324 /* DocumentDTORequest.m */,
-			);
-			path = DocumentAPI;
 			sourceTree = "<group>";
 		};
 		312DA00B2122C60800518324 /* DocumentAPI */ = {
@@ -400,7 +388,6 @@
 				31DCC3B321205FB60003F03A /* DTORequest.h */,
 				312D9FFC2121B52700518324 /* UploadRequestDTORequest.h */,
 				312D9FFA2121B51A00518324 /* UploadRequestDTORequest.m */,
-				312DA0072122C53C00518324 /* DocumentAPI */,
 				312D9FF92121B4BF00518324 /* AvatarAPI */,
 				31DCC39D21205FB60003F03A /* LoginAPI */,
 				31DCC3A521205FB60003F03A /* WalletAPI */,
@@ -545,7 +532,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31DCC3EE21205FB60003F03A /* ResendConfirmationEmailDTORequest.m in Sources */,
-				312DA00A2122C56100518324 /* DocumentDTORequest.m in Sources */,
 				31DCC3E121205FB60003F03A /* DeleteOrdersDTOResponse.m in Sources */,
 				312D9FF821217E6100518324 /* NSStringHelper.m in Sources */,
 				31DCC3ED21205FB60003F03A /* PasswordDTORequest.m in Sources */,
