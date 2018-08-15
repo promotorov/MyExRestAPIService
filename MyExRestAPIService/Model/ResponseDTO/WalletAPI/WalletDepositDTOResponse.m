@@ -5,7 +5,7 @@
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary
 {
     if (self = [super init])
-        self.address = [dictionary objectForKey:@"address"];
+        self.address = dictionary[@"address"];
     return self;
 }
 

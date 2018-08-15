@@ -1,46 +1,5 @@
 #import "MyExRestAPIService.h"
 #import "NSStringHelper.h"
-#import "DTORequest.h"
-#import "DTOResponse.h"
-#import "ResponseError.h"
-#import "AddCountryDTOResponse.h"
-#import "GetCountryDTOResponse.h"
-#import "AllCountriesDTOResponse.h"
-#import "ResendConfirmationEmailDTORequest.h"
-#import "PasswordDTORequest.h"
-#import "UserInfoDTOResponse.h"
-#import "User2FADTOResponse.h"
-#import "ReferralsDTOResponse.h"
-#import "ReferralInfoDTOResponse.h"
-#import "ReferralDetailsDTOResponse.h"
-#import "MakeOrderDTOResponse.h"
-#import "OrderHistoryDTOResponse.h"
-#import "UserOrdersDTOResponse.h"
-#import "AssetsDTOResponse.h"
-#import "DeleteOrdersDTOResponse.h"
-#import "NewOrderDTORequest.h"
-#import "LoginDTORequest.h"
-#import "LoginDTOResponse.h"
-#import "CookieService.h"
-#import "AssetsInfoDTOResponse.h"
-#import "WalletDepositDTOResponse.h"
-#import "WalletDepositDTORequest.h"
-#import "WithdrawalDTORequest.h"
-#import "SettingsDTOResponse.h"
-#import "SettingDTORequest.h"
-#import "DeleteAvatarsDTOResponse.h"
-#import "UploadRequestDTOResponse.h"
-#import "UploadRequestDTORequest.h"
-#import "AddAvatarDTORequest.h"
-#import "DocumentDTOResponse.h"
-#import "AddOrReplaceCountryDTOResponse.h"
-#import "CountryDTORequest.h"
-#import "EmailConfirmationDTORequest.h"
-#import "PasswordResetDTORequest.h"
-#import "UserDTORequest.h"
-#import "DownloadLinkDTOResponse.h"
-#import "UploadingDTOResponse.h"
-#import "DocumentsDTOResponse.h"
 
 typedef void (^RequestDidCompleteSuccsess)(NSData *data, NSHTTPURLResponse *response);
 #define SERVER_ROOT_URL @"https://api.blockbitdev.xyz"
@@ -114,7 +73,6 @@ static NSString *const DownloadLinkUrl = @"download_link";
     NSLog(@"getting a country...");
     if ([countryId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"getCountry" userInfo:nil];
-        return;
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, countryId];
     __weak typeof(self) weakSelf = self;
@@ -134,8 +92,7 @@ static NSString *const DownloadLinkUrl = @"download_link";
 {
     NSLog(@"starting delet a country ...");
     if ([countryId isBlank]) {
-        @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"deleteCountry" userInfo:nil];
-        return;
+        @throw [NSException exceptionWithName:@"Incorrect countryId" reason:@"deleteCountry" userInfo:nil];
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, countryId];
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
@@ -154,10 +111,10 @@ static NSString *const DownloadLinkUrl = @"download_link";
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
-        AddCountryDTOResponse *dto = [[AddCountryDTOResponse alloc]
+        AddCountryDTOResponse *responseDto = [[AddCountryDTOResponse alloc]
                                       initFromDictionary:dictionary];
         if (successBlock)
-            successBlock(dto);
+            successBlock(responseDto);
     };
     [self doRequestWithJson:jsonData toURL:CountryUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -171,10 +128,10 @@ static NSString *const DownloadLinkUrl = @"download_link";
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
-        AddOrReplaceCountryDTOResponse *dto = [[AddOrReplaceCountryDTOResponse alloc]
+        AddOrReplaceCountryDTOResponse *responseDto = [[AddOrReplaceCountryDTOResponse alloc]
                                                initFromDictionary:dictionary];
         if (successBlock)
-            successBlock(dto);
+            successBlock(responseDto);
     };
     [self doRequestWithJson:jsonData toURL:CountryUrl withRequestType:@"PUT" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -332,7 +289,6 @@ static NSString *const DownloadLinkUrl = @"download_link";
     NSLog(@"getting referral details...");
     if ([userId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect userId" reason:@"getReferralDetails" userInfo:nil];
-        return;
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@/details", ReferralDetailsUrl, userId];
     __weak typeof(self) weakSelf = self;
@@ -354,7 +310,6 @@ static NSString *const DownloadLinkUrl = @"download_link";
     NSLog(@"getting referral info by userId...");
     if ([userId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"getReferralInfoById" userInfo:nil];
-        return;
     }
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
@@ -379,10 +334,10 @@ static NSString *const DownloadLinkUrl = @"download_link";
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
-        MakeOrderDTOResponse *dto = [[MakeOrderDTOResponse alloc]
+        MakeOrderDTOResponse *responseDto = [[MakeOrderDTOResponse alloc]
                                         initFromDictionary:dictionary];
         if (successBlock)
-            successBlock(dto);
+            successBlock(responseDto);
     };
     [self doRequestWithJson:jsonData toURL:MakeOrderUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -394,7 +349,6 @@ static NSString *const DownloadLinkUrl = @"download_link";
     NSLog(@"start deleting an order ...");
     if ([orderId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect orderId" reason:@"deleteOrder" userInfo:nil];
-        return;
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@", DeleteOrdersUrl, orderId];
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
@@ -489,10 +443,10 @@ static NSString *const DownloadLinkUrl = @"download_link";
         }
         
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
-        LoginDTOResponse *dto = [[LoginDTOResponse alloc]
+        LoginDTOResponse *responseDto = [[LoginDTOResponse alloc]
                                   initFromDictionary:dictionary];
         if (successBlock)
-            successBlock(dto);
+            successBlock(responseDto);
     };
     [self doRequestWithJson:jsonData toURL:SignInUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -551,10 +505,10 @@ static NSString *const DownloadLinkUrl = @"download_link";
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
-        WalletDepositDTOResponse *dto = [[WalletDepositDTOResponse alloc]
+        WalletDepositDTOResponse *responseDto = [[WalletDepositDTOResponse alloc]
                                       initFromDictionary:dictionary];
         if (successBlock)
-            successBlock(dto);
+            successBlock(responseDto);
     };
     [self doRequestWithJson:jsonData toURL:WalletDepositUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -641,10 +595,10 @@ static NSString *const DownloadLinkUrl = @"download_link";
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
-        UploadRequestDTOResponse *dto = [[UploadRequestDTOResponse alloc]
+        UploadRequestDTOResponse *responseDto = [[UploadRequestDTOResponse alloc]
                                                initFromDictionary:dictionary];
         if (successBlock)
-            successBlock(dto);
+            successBlock(responseDto);
     };
     [self doRequestWithJson:jsonData toURL:UploadAvatarRequestUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -660,10 +614,10 @@ static NSString *const DownloadLinkUrl = @"download_link";
     __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
-        UploadRequestDTOResponse *dto = [[UploadRequestDTOResponse alloc]
+        UploadRequestDTOResponse *responseDto = [[UploadRequestDTOResponse alloc]
                                          initFromDictionary:dictionary];
         if (successBlock)
-            successBlock(dto);
+            successBlock(responseDto);
     };
     [self doRequestWithJson:jsonData toURL:UploadDocumentRequestUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -675,7 +629,6 @@ static NSString *const DownloadLinkUrl = @"download_link";
     NSLog(@"getting a document ...");
     if ([uploadUid isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect uploadUid" reason:@"getDocument" userInfo:nil];
-        return;
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@/%@", DocumentUrl, uploadUid, @"link"];
     __weak typeof(self) weakSelf = self;
@@ -698,7 +651,6 @@ static NSString *const DownloadLinkUrl = @"download_link";
     NSLog(@"getting an uploading info...");
     if ([uploadUid isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect uploadUid" reason:@"getUploadingInfo" userInfo:nil];
-        return;
     }
     NSString *url = [NSString stringWithFormat:@"/%@", uploadUid];
     __weak typeof(self) weakSelf = self;
@@ -796,14 +748,14 @@ static NSString *const DownloadLinkUrl = @"download_link";
         }
         else {
             NSDictionary *dictionary = [self toDictionaryFromData:data];
-            for (NSDictionary *subdict in [dictionary objectForKey:@"errors"]) {
+            for (NSDictionary *subdict in dictionary[@"errors"]) {
                 NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
                 if (!subdict) {
                     failureBlock([[ResponseError alloc] initWithMessage:@"" withStatusCode:statusCode withMessageCode:@""]);
                     return;
                 }
-                NSString *message = (NSString*) [subdict objectForKey:@"message"];
-                NSString *messageCode = (NSString*) [subdict objectForKey:@"code"];
+                NSString *message = (NSString*) subdict[@"message"];
+                NSString *messageCode = (NSString*) subdict[@"code"];
                 failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
                 break;
             }

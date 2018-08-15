@@ -5,9 +5,9 @@
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary
 {
     if (self = [super init]) {
-        dictionary = [dictionary objectForKey:@"data"];
-        self.presets = [dictionary objectForKey:@"presets"];
-        self.favoriteMarkets = [[NSMutableArray alloc] initWithArray:[dictionary objectForKey:@"favoriteMarkets"]];
+        dictionary = dictionary[@"data"];
+        self.presets = dictionary[@"presets"];
+        self.favoriteMarkets = [[NSMutableArray alloc] initWithArray:dictionary[@"favoriteMarkets"]];
     }
     return self;
 }

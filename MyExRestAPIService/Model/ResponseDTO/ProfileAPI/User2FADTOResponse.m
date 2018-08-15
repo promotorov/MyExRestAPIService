@@ -4,10 +4,10 @@
 
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
-        self.secret = (NSString*) [dictionary objectForKey:@"secret"];
-        self.otpUrl = (NSString*) [dictionary objectForKey:@"otpUrl"];
-        self.provider = (NSString*) [dictionary objectForKey:@"provider"];
-        self.enabled = (NSString*) [dictionary objectForKey:@"enabled"];
+        self.secret = (NSString*) dictionary[@"secret"];
+        self.otpUrl = (NSString*) dictionary[@"otpUrl"];
+        self.provider = (NSString*) dictionary[@"provider"];
+        self.enabled = (NSString*) dictionary[@"enabled"];
     }
     return self;
 }

@@ -4,10 +4,10 @@
 
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
-        self.affiliateId = (NSString*) [dictionary objectForKey:@"affiliateId"];
-        self.email = (NSString*) [dictionary objectForKey:@"email"];
-        self.nickname = (NSString*) [dictionary objectForKey:@"nickname"];
-        self.userId = (NSString*) [dictionary objectForKey:@"id"];
+        self.affiliateId = (NSString*) dictionary[@"affiliateId"];
+        self.email = (NSString*) dictionary[@"email"];
+        self.nickname = (NSString*) dictionary[@"nickname"];
+        self.userId = (NSString*) dictionary[@"id"];
     }
     return self;
 }
@@ -20,10 +20,10 @@
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary
 {
     if (self = [super init]) {
-        self.account = [[Account alloc] initFromDictionary:[dictionary objectForKey:@"account"]];
-        self.message = (NSString*) [dictionary objectForKey:@"message"];
-        self.provider = (NSString*) [dictionary objectForKey:@"provider"];
-        self.secondFactorRequired = (NSString*) [dictionary objectForKey:@"secondFactorRequired"];
+        self.account = [[Account alloc] initFromDictionary:dictionary[@"account"]];
+        self.message = (NSString*) dictionary[@"message"];
+        self.provider = (NSString*) dictionary[@"provider"];
+        self.secondFactorRequired = (NSString*) dictionary[@"secondFactorRequired"];
     }
     return self;
 }

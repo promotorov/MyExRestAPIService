@@ -4,11 +4,11 @@
 
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
-        self.affiliate_id = (NSString*) [dictionary objectForKey:@"affiliate_id"];
-        self.email = (NSString*) [dictionary objectForKey:@"email"];
-        self.user_name = (NSString*) [dictionary objectForKey:@"user_name"];
-        self.user_id = (NSString*) [dictionary objectForKey:@"user_id"];
-        self.registration_date = (NSString*) [dictionary objectForKey:@"registration_date"];
+        self.affiliate_id = (NSString*) dictionary[@"affiliate_id"];
+        self.email = (NSString*) dictionary[@"email"];
+        self.user_name = (NSString*) dictionary[@"user_name"];
+        self.user_id = (NSString*) dictionary[@"user_id"];
+        self.registration_date = (NSString*) dictionary[@"registration_date"];
     }
     return self;
 }
@@ -21,10 +21,10 @@
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary
 {
     if (self = [super init]) {
-        self.paging = [[Paging alloc] initFromDictionary:[dictionary objectForKey:@"paging"]];
-        NSDictionary *referrals = [dictionary objectForKey:@"data"];
+        self.paging = [[Paging alloc] initFromDictionary:dictionary[@"paging"]];
+        NSDictionary *referrals = dictionary[@"data"];
         self.referrals = [[NSMutableArray alloc] initWithCapacity:[referrals count]];
-        self.filters = [[Filters alloc] initFromDictionary:[dictionary objectForKey:@"filters"]];
+        self.filters = [[Filters alloc] initFromDictionary:dictionary[@"filters"]];
         for (NSDictionary *subdict in referrals)
             [self.referrals addObject:[[Referral alloc] initFromDictionary:subdict]];
     }

@@ -5,7 +5,7 @@
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary
 {
     if (self = [super init])
-        self.data = [[NSMutableArray alloc] initWithArray:[dictionary objectForKey:@"data"]];
+        self.data = [[NSMutableArray alloc] initWithArray:dictionary[@"data"]];
     return self;
 }
 

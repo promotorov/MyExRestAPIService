@@ -4,7 +4,7 @@
 
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {
-        self.search = (NSString*) [dictionary objectForKey:@"search"];
+        self.search = (NSString*) dictionary[@"search"];
     }
     return self;
 }

@@ -59,7 +59,6 @@ id<DTOResponse> dtoResponse;
     _service = [[MyExRestAPIService alloc] init];
     _cookie = [[CookieService alloc] init];
     [_cookie loadSavedCookies];
-    
     UILabel *loadedCookieNumber = [[UILabel alloc] init];
     loadedCookieNumber.textColor = [UIColor blackColor];
     [loadedCookieNumber setFrame:CGRectMake(30, 105, 250, 30)];

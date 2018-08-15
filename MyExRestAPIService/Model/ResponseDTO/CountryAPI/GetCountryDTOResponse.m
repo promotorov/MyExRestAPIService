@@ -4,7 +4,7 @@
 
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary {
     if (self = [super init])
-        self.country = [[Country alloc] initFromDictionary:[dictionary objectForKey:@"data"]];
+        self.country = [[Country alloc] initFromDictionary:dictionary[@"data"]];
     return self;
 }
 

@@ -5,13 +5,13 @@
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary
 {
     if (self = [super init]) {
-        dictionary = [dictionary objectForKey:@"data"];
-        self.uid = (NSString*) [dictionary objectForKey:@"uid"];
-        self.expiresAt = (NSString*) [dictionary objectForKey:@"expiresAt"];
-        self.cloudStorageKind = (NSString*) [dictionary objectForKey:@"cloudStorageKind"];
-        self.linkUrl = (NSString*) [dictionary objectForKey:@"linkUrl"];
-        self.mimeType = (NSString*) [dictionary objectForKey:@"mimeType"];
-        self.status = (NSString*) [dictionary objectForKey:@"status"];
+        dictionary = dictionary[@"data"];
+        self.uid = (NSString*) dictionary[@"uid"];
+        self.expiresAt = (NSString*) dictionary[@"expiresAt"];
+        self.cloudStorageKind = (NSString*) dictionary[@"cloudStorageKind"];
+        self.linkUrl = (NSString*) dictionary[@"linkUrl"];
+        self.mimeType = (NSString*) dictionary[@"mimeType"];
+        self.status = (NSString*) dictionary[@"status"];
     }
     return self;
 }
