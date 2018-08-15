@@ -40,6 +40,10 @@
 #import "DownloadLinkDTOResponse.h"
 #import "UploadingDTOResponse.h"
 #import "DocumentsDTOResponse.h"
+#import "VerificationDTOResponse.h"
+#import "VerificationRequestDTORequest.h"
+#import "VerificationRequestInfoDTOResponse.h"
+
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
@@ -196,6 +200,29 @@
 /*
   Create method uploadDocuments for DocumentsDTOResponse (/frontoffice/documents)
  */
+
+- (void) createVerificationRequest:(VerificationRequestDTORequest *)dto
+                      successBlock:(void(^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                      failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) getVerificationRequestInfoByUid:(NSString *)uid
+                            successBlock:(void(^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                            failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) getVerificationRequestInfoByUserUid:(NSString *)userUid
+                                  requestUid:(NSString *)requestUid
+                             verificationUid:(NSString *)verificationUid
+                                successBlock:(void(^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                                failureBlock:(void(^)(ResponseError *error))failureBlock;;
+
+- (void) verifyByVerificationUid:(NSString *)uid
+                    successBlock:(void(^)(VerificationDTOResponse *dto))successBlock
+                    failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) getLatestVerificationRequestInfoByUserId:(NSString *)userUid
+                                       kindString:(NSString *)kindString
+                                     successBlock:(void(^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                                     failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (NSDictionary*) toDictionaryFromData:(NSData*)data;
 - (BOOL) isRequestSuccess:(NSInteger)statusCode;

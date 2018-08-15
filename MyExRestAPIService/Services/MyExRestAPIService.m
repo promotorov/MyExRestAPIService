@@ -32,6 +32,7 @@ static NSString *const AvatarsUrl = @"api/avatars";
 static NSString *const DocumentUrl = @"api/documents";
 static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request";
 static NSString *const DownloadLinkUrl = @"download_link";
+static NSString *const VerificationRequestUrl = @"api/profile/verification_request";
 
 @implementation MyExRestAPIService
 
@@ -679,6 +680,118 @@ static NSString *const DownloadLinkUrl = @"download_link";
             successBlock(dto);
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+// ProfileVerificationAPI
+
+- (void)getVerificationRequestInfoByUid:(NSString *)uid
+                           successBlock:(void (^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                           failureBlock:(void (^)(ResponseError *error))failureBlock
+{
+    NSLog(@"getting a verification request info...");
+    if ([uid isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect verificationUid" reason:@"getVerificationRequestInfo" userInfo:nil];
+    }
+    NSString *url = [NSString stringWithFormat:@"%@/%@", VerificationRequestUrl, uid];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        VerificationRequestInfoDTOResponse *dto = [[VerificationRequestInfoDTOResponse alloc]
+                initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void)getVerificationRequestInfoByUserUid:(NSString *)userUid
+                                 requestUid:(NSString *)requestUid
+                            verificationUid:(NSString *)verificationUid
+                               successBlock:(void (^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                               failureBlock:(void (^)(ResponseError *error))failureBlock
+{
+    NSLog(@"getting a verification request info...");
+    if ([userUid isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect userUid" reason:@"getVerificationRequestInfo" userInfo:nil];
+    }
+    if ([requestUid isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect requestUid" reason:@"getVerificationRequestInfo" userInfo:nil];
+    }
+    NSString *url =
+            [NSString stringWithFormat:@"api/profile/%@/verification_request/%@?verificationUid=%@", userUid, requestUid, verificationUid];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        VerificationRequestInfoDTOResponse *dto = [[VerificationRequestInfoDTOResponse alloc]
+                initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void)getLatestVerificationRequestInfoByUserId:(NSString *)userUid
+                                      kindString:(NSString *)kindString
+                                    successBlock:(void (^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                                    failureBlock:(void (^)(ResponseError *error))failureBlock
+{
+    NSLog(@"getting latest verification request info...");
+    if ([userUid isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect userUid" reason:@"getLatestVerificationRequestInfo" userInfo:nil];
+    }
+    if ([kindString isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect kindString" reason:@"getLatestVerificationRequestInfo" userInfo:nil];
+    }
+    NSString *url =
+            [NSString stringWithFormat:@"api/profile/%@/verification_request/latest/%@", userUid, kindString];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        VerificationRequestInfoDTOResponse *dto = [[VerificationRequestInfoDTOResponse alloc]
+                initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void)createVerificationRequest:(VerificationRequestDTORequest *)dto
+                     successBlock:(void (^)(VerificationRequestInfoDTOResponse *dto))successBlock
+                     failureBlock:(void (^)(ResponseError *error))failureBlock
+{
+    NSLog(@"creating a verification request...");
+    NSData *jsonData = [self makeRequestBody:dto];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        VerificationRequestInfoDTOResponse *responseDto = [[VerificationRequestInfoDTOResponse alloc]
+                initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(responseDto);
+    };
+    [self doRequestWithJson:jsonData toURL:VerificationRequestUrl withRequestType:@"POST"
+               successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+- (void)verifyByVerificationUid:(NSString *)uid
+                   successBlock:(void (^)(VerificationDTOResponse *dto))successBlock
+                   failureBlock:(void (^)(ResponseError *error))failureBlock
+{
+    NSLog(@"start verifying...");
+    if ([uid isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect uid" reason:@"verifyByVerificationUid" userInfo:nil];
+    }
+    NSString *url =
+            [NSString stringWithFormat:@"%@/%@/verify", VerificationRequestUrl, uid];
+    __weak typeof(self) weakSelf = self;
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        VerificationDTOResponse *dto = [[VerificationDTOResponse alloc]
+                initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 
 - (NSData*) makeRequestBody:(id <DTORequest>) dto {

@@ -59,6 +59,10 @@
 		31DCC3EE21205FB60003F03A /* ResendConfirmationEmailDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BC21205FB60003F03A /* ResendConfirmationEmailDTORequest.m */; };
 		31DCC3EF21205FB60003F03A /* SettingDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3BE21205FB60003F03A /* SettingDTORequest.m */; };
 		31DCC3F321205FB60003F03A /* NewOrderDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC3C821205FB60003F03A /* NewOrderDTORequest.m */; };
+		CB1E62D40F673598D2298282 /* VerificationRequestInfoDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1E68614AA73D3A932E7A42 /* VerificationRequestInfoDTOResponse.m */; };
+		CB1E6A9ADBC475976D91B78B /* VerificationDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1E6F0EBAF3E2F2355828B5 /* VerificationDTOResponse.m */; };
+		CB1E6B0176EB637746FBD576 /* VerificationRequestDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1E68A55CEE7B348393428D /* VerificationRequestDTORequest.m */; };
+		CB1E6E57383F7711B3AA853C /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1E6C9AA18186F3DF0F5744 /* Document.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +170,14 @@
 		31DCC3C121205FB60003F03A /* SettingDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingDTORequest.h; sourceTree = "<group>"; };
 		31DCC3C521205FB60003F03A /* NewOrderDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewOrderDTORequest.h; sourceTree = "<group>"; };
 		31DCC3C821205FB60003F03A /* NewOrderDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewOrderDTORequest.m; sourceTree = "<group>"; };
+		CB1E65B79C66AD32A19160AF /* VerificationRequestDTORequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationRequestDTORequest.h; sourceTree = "<group>"; };
+		CB1E682A1FD0787458006780 /* VerificationRequestInfoDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationRequestInfoDTOResponse.h; sourceTree = "<group>"; };
+		CB1E68614AA73D3A932E7A42 /* VerificationRequestInfoDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationRequestInfoDTOResponse.m; sourceTree = "<group>"; };
+		CB1E68A55CEE7B348393428D /* VerificationRequestDTORequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationRequestDTORequest.m; sourceTree = "<group>"; };
+		CB1E6AA14844D9FD502C846D /* VerificationDTOResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationDTOResponse.h; sourceTree = "<group>"; };
+		CB1E6C9AA18186F3DF0F5744 /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		CB1E6F0EBAF3E2F2355828B5 /* VerificationDTOResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationDTOResponse.m; sourceTree = "<group>"; };
+		CB1E6F520F550352420D24C6 /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +291,7 @@
 			children = (
 				31DCC36421205FB60003F03A /* ResponseDTO */,
 				31DCC39C21205FB60003F03A /* RequestDTO */,
+				CB1E68E52A704B35C5E8411F /* ProfileVerificationAPI */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -489,6 +502,37 @@
 			path = TradeAPI;
 			sourceTree = "<group>";
 		};
+		CB1E667786303B9F18ADB537 /* DTORequest */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E65B79C66AD32A19160AF /* VerificationRequestDTORequest.h */,
+				CB1E68A55CEE7B348393428D /* VerificationRequestDTORequest.m */,
+			);
+			path = DTORequest;
+			sourceTree = "<group>";
+		};
+		CB1E67B4898CB056810C9402 /* DTOResponse */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E682A1FD0787458006780 /* VerificationRequestInfoDTOResponse.h */,
+				CB1E68614AA73D3A932E7A42 /* VerificationRequestInfoDTOResponse.m */,
+				CB1E6AA14844D9FD502C846D /* VerificationDTOResponse.h */,
+				CB1E6F0EBAF3E2F2355828B5 /* VerificationDTOResponse.m */,
+			);
+			path = DTOResponse;
+			sourceTree = "<group>";
+		};
+		CB1E68E52A704B35C5E8411F /* ProfileVerificationAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E667786303B9F18ADB537 /* DTORequest */,
+				CB1E67B4898CB056810C9402 /* DTOResponse */,
+				CB1E6C9AA18186F3DF0F5744 /* Document.m */,
+				CB1E6F520F550352420D24C6 /* Document.h */,
+			);
+			path = ProfileVerificationAPI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -608,6 +652,10 @@
 				31DCC3DF21205FB60003F03A /* AssetsDTOResponse.m in Sources */,
 				31DCC3D721205FB60003F03A /* UserInfoDTOResponse.m in Sources */,
 				31DCC3DA21205FB60003F03A /* SettingsDTOResponse.m in Sources */,
+				CB1E6B0176EB637746FBD576 /* VerificationRequestDTORequest.m in Sources */,
+				CB1E62D40F673598D2298282 /* VerificationRequestInfoDTOResponse.m in Sources */,
+				CB1E6A9ADBC475976D91B78B /* VerificationDTOResponse.m in Sources */,
+				CB1E6E57383F7711B3AA853C /* Document.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
