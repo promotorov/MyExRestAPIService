@@ -424,6 +424,51 @@ id<DTOResponse> dtoResponse;
     [getUploadingButton setTitle:@"Uploading" forState:UIControlStateNormal];
     getUploadingButton.frame = CGRectMake(200, 740, 150, 25);
     [self.view addSubview:getUploadingButton];
+
+    UIButton *createVerificationRequestButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [createVerificationRequestButton addTarget:self
+                           action:@selector(testVerificationRequest:)
+                 forControlEvents:UIControlEventTouchUpInside];
+    createVerificationRequestButton.backgroundColor =[UIColor blackColor];
+    [createVerificationRequestButton setTitle:@"VerificationRequest" forState:UIControlStateNormal];
+    createVerificationRequestButton.frame = CGRectMake(30, 770, 150, 25);
+    [self.view addSubview:createVerificationRequestButton];
+
+    UIButton *verifyButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [verifyButton addTarget:self
+                           action:@selector(testVerify:)
+                 forControlEvents:UIControlEventTouchUpInside];
+    verifyButton.backgroundColor =[UIColor blackColor];
+    [verifyButton setTitle:@"Verify" forState:UIControlStateNormal];
+    verifyButton.frame = CGRectMake(200, 770, 150, 25);
+    [self.view addSubview:verifyButton];
+}
+
+- (void) testVerify:(UIButton*)sender {
+    /*[_service getVerificationRequestInfoByUserUid:@"00000000-0000-0000-0000-000000000002" requestUid:@"333" verificationUid:@"444" successBlock:^(VerificationRequestInfoDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];*/
+    /*[_service getVerificationRequestInfoByUid:@"00000000-0000-0000-0000-000000000002" successBlock:^(VerificationRequestInfoDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];*/
+    [_service getLatestVerificationRequestInfoByUserId:@"00000000-0000-0000-0000-000000000002" kindString:@"kind" successBlock:^(VerificationRequestInfoDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testVerificationRequest:(UIButton *)sender {
+    VerificationRequestDTORequest *dto = [[VerificationRequestDTORequest alloc] init];
+    [_service createVerificationRequest:dto successBlock:^(VerificationRequestInfoDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
 }
 
 - (void) testReferralInfoById:(UIButton*)sender{

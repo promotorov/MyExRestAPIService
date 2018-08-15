@@ -5,6 +5,8 @@
 -(instancetype) init {
     if (self = [super init]) {
         self.kind = @"";
+        self.documents = [NSMutableArray new];
+        self.extraFields = [NSDictionary new];
     }
     return self;
 }

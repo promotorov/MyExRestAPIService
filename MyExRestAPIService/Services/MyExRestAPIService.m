@@ -856,6 +856,9 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
         if (httpResponse.statusCode == 401) {
             failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:code withMessageCode:@""]);
         }
+        else if (httpResponse.statusCode == 404) {
+            failureBlock([[ResponseError alloc] initWithMessage:@"Resource not found" withStatusCode:code withMessageCode:@""]);
+        }
         else if ([self isRequestDidCompleteWithServerError:httpResponse.statusCode]) {
             failureBlock([[ResponseError alloc] initWithMessage:@"ServerError" withStatusCode:code withMessageCode:@""]);
         }

@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.434062"
+            timestampString = "556024523.523839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "770"
-            endingLineNumber = "770"
-            landmarkName = "-testLoginCorrect:"
+            startingLineNumber = "793"
+            endingLineNumber = "793"
+            landmarkName = "-testDeleteCountry:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4345829"
+            timestampString = "556024523.524889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "772"
-            endingLineNumber = "772"
-            landmarkName = "-testLoginCorrect:"
+            startingLineNumber = "795"
+            endingLineNumber = "795"
+            landmarkName = "-testDeleteCountry:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4349951"
+            timestampString = "556024523.525617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "792"
-            endingLineNumber = "792"
-            landmarkName = "-testLoginInCorrect:"
+            startingLineNumber = "815"
+            endingLineNumber = "815"
+            landmarkName = "-testLoginCorrect:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.435403"
+            timestampString = "556024523.5263439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "794"
-            endingLineNumber = "794"
-            landmarkName = "-testLoginInCorrect:"
+            startingLineNumber = "817"
+            endingLineNumber = "817"
+            landmarkName = "-testLoginCorrect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,12 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.435786"
+            timestampString = "556024523.527055"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "795"
-            endingLineNumber = "795"
-            landmarkName = "-testLoginInCorrect:"
+            startingLineNumber = "818"
+            endingLineNumber = "818"
+            landmarkName = "-testLoginCorrect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.436169"
+            timestampString = "556024523.52782"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "780"
-            endingLineNumber = "780"
-            landmarkName = "-testLogout:"
+            startingLineNumber = "803"
+            endingLineNumber = "803"
+            landmarkName = "-testUser:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -202,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.436594"
+            timestampString = "556024523.5285881"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "782"
-            endingLineNumber = "782"
-            landmarkName = "-testLogout:"
+            startingLineNumber = "805"
+            endingLineNumber = "805"
+            landmarkName = "-testUser:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,28 +218,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.437005"
+            timestampString = "556024523.529317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "788"
-            endingLineNumber = "788"
-            landmarkName = "-testLoginInCorrect:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.437405"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "771"
-            endingLineNumber = "771"
+            startingLineNumber = "811"
+            endingLineNumber = "811"
             landmarkName = "-testLoginCorrect:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.530076"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "794"
+            endingLineNumber = "794"
+            landmarkName = "-testDeleteCountry:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -282,13 +282,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4378"
+            timestampString = "556024523.5308371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "769"
-            endingLineNumber = "769"
-            landmarkName = "-testLoginCorrect:"
-            landmarkType = "7">
+            startingLineNumber = "792"
+            endingLineNumber = "792"
+            landmarkName = "ViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -330,12 +330,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.43817"
+            timestampString = "556024523.5316139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "436"
             endingLineNumber = "436"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -346,12 +346,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.438592"
+            timestampString = "556024523.5324301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "436"
             endingLineNumber = "436"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -362,12 +362,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.438961"
+            timestampString = "556024523.53327"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "436"
             endingLineNumber = "436"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -378,12 +378,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.43935"
+            timestampString = "556024523.5340869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "437"
             endingLineNumber = "437"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -394,12 +394,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.439726"
+            timestampString = "556024523.534902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "436"
             endingLineNumber = "436"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -410,74 +410,42 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.44008"
+            timestampString = "556024523.535713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "551"
-            endingLineNumber = "551"
-            landmarkName = "-testReferralDetails:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4404581"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "551"
-            endingLineNumber = "551"
-            landmarkName = "-testReferralDetails:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4408489"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "569"
-            endingLineNumber = "569"
-            landmarkName = "-testPassword:"
+            startingLineNumber = "574"
+            endingLineNumber = "574"
+            landmarkName = "-testDeleteSetting:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__31-[ViewController testPassword:]_block_invoke"
+                  symbolName = "__36-[ViewController testDeleteSetting:]_block_invoke"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.603651"
+                  timestampString = "556024523.78712"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "570"
-                  endingLineNumber = "570"
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__31-[ViewController testPassword:]_block_invoke_2"
+                  symbolName = "__36-[ViewController testDeleteSetting:]_block_invoke_2"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.6077681"
+                  timestampString = "556024523.790729"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "572"
-                  endingLineNumber = "572"
+                  startingLineNumber = "577"
+                  endingLineNumber = "577"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -490,58 +458,42 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4412431"
+            timestampString = "556024523.536438"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "571"
-            endingLineNumber = "571"
-            landmarkName = "-testPassword:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.441721"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "587"
-            endingLineNumber = "587"
-            landmarkName = "-testAssetsInfo:"
+            startingLineNumber = "574"
+            endingLineNumber = "574"
+            landmarkName = "-testDeleteSetting:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__33-[ViewController testAssetsInfo:]_block_invoke"
+                  symbolName = "__36-[ViewController testDeleteSetting:]_block_invoke"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.62359"
+                  timestampString = "556024523.799222"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "588"
-                  endingLineNumber = "588"
-                  offsetFromSymbolStart = "52">
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__33-[ViewController testAssetsInfo:]_block_invoke_2"
+                  symbolName = "__36-[ViewController testDeleteSetting:]_block_invoke_2"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.626201"
+                  timestampString = "556024523.8031991"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "590"
-                  endingLineNumber = "590"
+                  startingLineNumber = "577"
+                  endingLineNumber = "577"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -554,13 +506,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.442264"
+            timestampString = "556024523.5371341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "589"
-            endingLineNumber = "589"
-            landmarkName = "-testAssetsInfo:"
+            startingLineNumber = "592"
+            endingLineNumber = "592"
+            landmarkName = "-testReferralDetails:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController testReferralDetails:]"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024523.832693"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "592"
+                  endingLineNumber = "592"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[ViewController testReferralDetails:]_block_invoke"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024523.835593"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "594"
+                  endingLineNumber = "594"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -570,44 +554,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.442721"
+            timestampString = "556024523.537832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "595"
-            endingLineNumber = "595"
-            landmarkName = "-testReferralInfo:"
+            startingLineNumber = "594"
+            endingLineNumber = "594"
+            landmarkName = "-testReferralDetails:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testReferralInfo:]_block_invoke"
+                  symbolName = "__38-[ViewController testReferralDetails:]_block_invoke"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.6380121"
+                  timestampString = "556024523.842437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "594"
+                  endingLineNumber = "594"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[ViewController testReferralDetails:]_block_invoke_2"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024523.845243"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "596"
                   endingLineNumber = "596"
                   offsetFromSymbolStart = "52">
                </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testReferralInfo:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.640586"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "598"
-                  endingLineNumber = "598"
-                  offsetFromSymbolStart = "52">
-               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -618,11 +602,139 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.443097"
+            timestampString = "556024523.538517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "597"
-            endingLineNumber = "597"
+            startingLineNumber = "610"
+            endingLineNumber = "610"
+            landmarkName = "-testPassword:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.539219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "612"
+            endingLineNumber = "612"
+            landmarkName = "-testPassword:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.540646"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "618"
+            endingLineNumber = "618"
+            landmarkName = "-testPassword:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.54188"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "620"
+            endingLineNumber = "620"
+            landmarkName = "-testConfirmEmail:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.542739"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "626"
+            endingLineNumber = "626"
+            landmarkName = "-testConfirmEmail:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.543516"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "628"
+            endingLineNumber = "628"
+            landmarkName = "-testConfirmEmail:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.544319"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "634"
+            endingLineNumber = "634"
+            landmarkName = "-testAssetsInfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5450571"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "636"
+            endingLineNumber = "636"
+            landmarkName = "-testAssetsInfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.545764"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "642"
+            endingLineNumber = "642"
             landmarkName = "-testReferralInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -634,45 +746,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.44348"
+            timestampString = "556024523.546464"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "603"
-            endingLineNumber = "603"
-            landmarkName = "-testUserSettings:"
+            startingLineNumber = "644"
+            endingLineNumber = "644"
+            landmarkName = "-testReferralInfo:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testUserSettings:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.652787"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "604"
-                  endingLineNumber = "604"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testUserSettings:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.655578"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "606"
-                  endingLineNumber = "606"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -682,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.443844"
+            timestampString = "556024523.547161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "605"
-            endingLineNumber = "605"
+            startingLineNumber = "652"
+            endingLineNumber = "652"
             landmarkName = "-testUserSettings:"
             landmarkType = "7">
          </BreakpointContent>
@@ -698,59 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.444225"
+            timestampString = "556024523.54787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "611"
-            endingLineNumber = "611"
-            landmarkName = "-testUser2FA:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__30-[ViewController testUser2FA:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.667438"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "612"
-                  endingLineNumber = "612"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__30-[ViewController testUser2FA:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.669989"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "614"
-                  endingLineNumber = "614"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.444593"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "613"
-            endingLineNumber = "613"
+            startingLineNumber = "654"
+            endingLineNumber = "654"
             landmarkName = "-testUser2FA:"
             landmarkType = "7">
          </BreakpointContent>
@@ -762,188 +794,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.444954"
+            timestampString = "556024523.548578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "619"
-            endingLineNumber = "619"
+            startingLineNumber = "660"
+            endingLineNumber = "660"
+            landmarkName = "-testUser2FA:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5492899"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "662"
+            endingLineNumber = "662"
             landmarkName = "-testAdd2FA:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29-[ViewController testAdd2FA:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.681514"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "620"
-                  endingLineNumber = "620"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29-[ViewController testAdd2FA:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.683949"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "622"
-                  endingLineNumber = "622"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.445323"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "621"
-            endingLineNumber = "621"
-            landmarkName = "-testAdd2FA:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.445686"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "629"
-            endingLineNumber = "629"
-            landmarkName = "-testResendEmail:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[ViewController testResendEmail:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.695528"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "630"
-                  endingLineNumber = "630"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[ViewController testResendEmail:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.698135"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "632"
-                  endingLineNumber = "632"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.446095"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "631"
-            endingLineNumber = "631"
-            landmarkName = "-testResendEmail:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.446485"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "637"
-            endingLineNumber = "637"
-            landmarkName = "-testUserOrders:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[ViewController testUserOrders:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.711594"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "638"
-                  endingLineNumber = "638"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[ViewController testUserOrders:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.715098"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "640"
-                  endingLineNumber = "640"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.446875"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "639"
-            endingLineNumber = "639"
-            landmarkName = "-testUserOrders:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -954,12 +826,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.447276"
+            timestampString = "556024523.549987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "643"
-            endingLineNumber = "643"
-            landmarkName = "-testCountry:"
+            startingLineNumber = "666"
+            endingLineNumber = "666"
+            landmarkName = "-testAdd2FA:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -970,12 +842,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.447618"
+            timestampString = "556024523.550688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "658"
-            endingLineNumber = "658"
-            landmarkName = "-testAddCountry:"
+            startingLineNumber = "681"
+            endingLineNumber = "681"
+            landmarkName = "-testUserOrders:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1018,12 +890,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.447976"
+            timestampString = "556024523.551386"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "660"
-            endingLineNumber = "660"
-            landmarkName = "-testAddCountry:"
+            startingLineNumber = "683"
+            endingLineNumber = "683"
+            landmarkName = "-testUserOrders:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1034,11 +906,107 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.448333"
+            timestampString = "556024523.552097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "558"
-            endingLineNumber = "558"
+            startingLineNumber = "581"
+            endingLineNumber = "581"
+            landmarkName = "-testPutSetting:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5528851"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "583"
+            endingLineNumber = "583"
+            landmarkName = "-testPutSetting:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.553973"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "436"
+            endingLineNumber = "436"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.554751"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "602"
+            endingLineNumber = "602"
+            landmarkName = "-testResetPassword:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController testResetPassword:]"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024523.939302"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "602"
+                  endingLineNumber = "602"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ViewController testResetPassword:]_block_invoke"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024523.941873"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "604"
+                  endingLineNumber = "604"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5554481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "604"
+            endingLineNumber = "604"
             landmarkName = "-testResetPassword:"
             landmarkType = "7">
             <Locations>
@@ -1050,11 +1018,11 @@
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.7306809"
+                  timestampString = "556024523.948414"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "559"
-                  endingLineNumber = "559"
+                  startingLineNumber = "604"
+                  endingLineNumber = "604"
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
@@ -1065,110 +1033,14 @@
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.733218"
+                  timestampString = "556024523.951005"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "561"
-                  endingLineNumber = "561"
+                  startingLineNumber = "606"
+                  endingLineNumber = "606"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.448716"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "560"
-            endingLineNumber = "560"
-            landmarkName = "-testResetPassword:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "436"
-            endingLineNumber = "436"
-            landmarkName = "-testReferralInfoById:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4494539"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "579"
-            endingLineNumber = "579"
-            landmarkName = "-testConfirmEmail:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testConfirmEmail:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.750386"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "580"
-                  endingLineNumber = "580"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testConfirmEmail:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.7529581"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "582"
-                  endingLineNumber = "582"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4498399"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "581"
-            endingLineNumber = "581"
-            landmarkName = "-testConfirmEmail:"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1178,12 +1050,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.450211"
+            timestampString = "556024523.556136"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "690"
-            endingLineNumber = "690"
-            landmarkName = "-testReferrals:"
+            startingLineNumber = "713"
+            endingLineNumber = "713"
+            landmarkName = "-testReplaceCountry:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1226,60 +1098,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4505841"
+            timestampString = "556024523.556831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "695"
-            endingLineNumber = "695"
-            landmarkName = "-testAssets:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29-[ViewController testAssets:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.764371"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "696"
-                  endingLineNumber = "696"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29-[ViewController testAssets:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.766821"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "698"
-                  endingLineNumber = "698"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.450946"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "697"
-            endingLineNumber = "697"
-            landmarkName = "-testAssets:"
+            startingLineNumber = "718"
+            endingLineNumber = "718"
+            landmarkName = "-testReplaceCountry:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1290,12 +1114,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.45135"
+            timestampString = "556024523.5575171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "706"
-            endingLineNumber = "706"
-            landmarkName = "-testOrderHistory:"
+            startingLineNumber = "720"
+            endingLineNumber = "720"
+            landmarkName = "-testReplaceCountry:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1306,12 +1130,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4517339"
+            timestampString = "556024523.558219"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "706"
-            endingLineNumber = "706"
-            landmarkName = "-testOrderHistory:"
+            startingLineNumber = "729"
+            endingLineNumber = "729"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.558941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "729"
+            endingLineNumber = "729"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5596811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "757"
+            endingLineNumber = "757"
+            landmarkName = "-testMakeOrder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1322,60 +1178,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.452107"
+            timestampString = "556024523.560403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "734"
-            endingLineNumber = "734"
-            landmarkName = "-testDeleteAllOrders:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[ViewController testDeleteAllOrders:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.789888"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "735"
-                  endingLineNumber = "735"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[ViewController testDeleteAllOrders:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.792403"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "737"
-                  endingLineNumber = "737"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4524879"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "736"
-            endingLineNumber = "736"
-            landmarkName = "-testDeleteAllOrders:"
+            startingLineNumber = "759"
+            endingLineNumber = "759"
+            landmarkName = "-testMakeOrder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1386,12 +1194,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.45284"
+            timestampString = "556024523.561115"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "745"
-            endingLineNumber = "745"
-            landmarkName = "-testDeleteOrder:"
+            startingLineNumber = "768"
+            endingLineNumber = "768"
+            landmarkName = "-testMakeOrder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1402,12 +1210,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.453207"
+            timestampString = "556024523.561828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "745"
-            endingLineNumber = "745"
-            landmarkName = "-testDeleteOrder:"
+            startingLineNumber = "768"
+            endingLineNumber = "768"
+            landmarkName = "-testMakeOrder:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1450,11 +1258,107 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4535559"
+            timestampString = "556024523.562523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "758"
-            endingLineNumber = "758"
+            startingLineNumber = "781"
+            endingLineNumber = "781"
+            landmarkName = "-testDeleteAllOrders:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.563219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "783"
+            endingLineNumber = "783"
+            landmarkName = "-testDeleteAllOrders:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.563934"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "793"
+            endingLineNumber = "793"
+            landmarkName = "-testDeleteCountry:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.56459"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "795"
+            endingLineNumber = "795"
+            landmarkName = "-testDeleteCountry:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ViewController testDeleteCountry:]_block_invoke"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.009172"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "796"
+                  endingLineNumber = "796"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ViewController testDeleteCountry:]_block_invoke_2"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.011728"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "798"
+                  endingLineNumber = "798"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5652471"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "803"
+            endingLineNumber = "803"
             landmarkName = "-testUser:"
             landmarkType = "7">
             <Locations>
@@ -1466,11 +1370,11 @@
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.804135"
+                  timestampString = "556024524.018517"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "759"
-                  endingLineNumber = "759"
+                  startingLineNumber = "804"
+                  endingLineNumber = "804"
                   offsetFromSymbolStart = "52">
                </Location>
                <Location
@@ -1481,11 +1385,11 @@
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.806597"
+                  timestampString = "556024524.021132"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "761"
-                  endingLineNumber = "761"
+                  startingLineNumber = "806"
+                  endingLineNumber = "806"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -1498,11 +1402,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.453918"
+            timestampString = "556024523.565905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "760"
-            endingLineNumber = "760"
+            startingLineNumber = "805"
+            endingLineNumber = "805"
             landmarkName = "-testUser:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1514,11 +1418,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.454264"
+            timestampString = "556024523.56663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "770"
-            endingLineNumber = "770"
+            startingLineNumber = "815"
+            endingLineNumber = "815"
             landmarkName = "-testLoginCorrect:"
             landmarkType = "7">
             <Locations>
@@ -1530,11 +1434,11 @@
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.818012"
+                  timestampString = "556024524.0328569"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "771"
-                  endingLineNumber = "771"
+                  startingLineNumber = "816"
+                  endingLineNumber = "816"
                   offsetFromSymbolStart = "52">
                </Location>
                <Location
@@ -1545,11 +1449,11 @@
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.820482"
+                  timestampString = "556024524.035391"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "773"
-                  endingLineNumber = "773"
+                  startingLineNumber = "818"
+                  endingLineNumber = "818"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -1562,11 +1466,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.454607"
+            timestampString = "556024523.567287"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "772"
-            endingLineNumber = "772"
+            startingLineNumber = "817"
+            endingLineNumber = "817"
             landmarkName = "-testLoginCorrect:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1574,144 +1478,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4549479"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "780"
-            endingLineNumber = "780"
-            landmarkName = "-testLogout:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29-[ViewController testLogout:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.836805"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "781"
-                  endingLineNumber = "781"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29-[ViewController testLogout:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.839234"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "783"
-                  endingLineNumber = "783"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4553339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "782"
-            endingLineNumber = "782"
-            landmarkName = "-testLogout:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.455676"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "792"
-            endingLineNumber = "792"
-            landmarkName = "-testLoginInCorrect:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[ViewController testLoginInCorrect:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.851738"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "793"
-                  endingLineNumber = "793"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[ViewController testLoginInCorrect:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.854407"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "795"
-                  endingLineNumber = "795"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.456066"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "794"
-            endingLineNumber = "794"
-            landmarkName = "-testLoginInCorrect:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.6553791"
+            timestampString = "556024523.568038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "784"
             endingLineNumber = "784"
-            landmarkName = "-doRequestWithJson:toURL:withRequestType:successBlock:failureBlock:"
+            landmarkName = "-verifyByVerificationUid:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1722,13 +1498,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.655442"
+            timestampString = "556024523.568097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "-getAllCountriesWithSearch:page:perPage:successBlock:failureBlock:"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -1785,28 +1561,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.655502"
+            timestampString = "556024523.568154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
             endingLineNumber = "63"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.655558"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "-init"
+            landmarkName = "-getAllCountriesWithSearch:page:perPage:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1817,12 +1577,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.6556129"
+            timestampString = "556024523.5682091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-getCountryById:successBlock:failureBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
+            timestampString = "556024523.568264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "783"
             endingLineNumber = "783"
-            landmarkName = "-doRequestWithJson:toURL:withRequestType:successBlock:failureBlock:"
+            landmarkName = "-verifyByVerificationUid:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1833,42 +1609,42 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.456531"
+            timestampString = "556024523.568319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "529"
-            endingLineNumber = "529"
-            landmarkName = "-testDeleteSetting:"
+            startingLineNumber = "552"
+            endingLineNumber = "552"
+            landmarkName = "-testDeleteAvatar:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__36-[ViewController testDeleteSetting:]_block_invoke"
+                  symbolName = "__35-[ViewController testDeleteAvatar:]_block_invoke"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.867404"
+                  timestampString = "556024524.047158"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "530"
-                  endingLineNumber = "530"
-                  offsetFromSymbolStart = "12">
+                  startingLineNumber = "553"
+                  endingLineNumber = "553"
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__36-[ViewController testDeleteSetting:]_block_invoke_2"
+                  symbolName = "__35-[ViewController testDeleteAvatar:]_block_invoke_2"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.8698829"
+                  timestampString = "556024524.049723"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "532"
-                  endingLineNumber = "532"
+                  startingLineNumber = "555"
+                  endingLineNumber = "555"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -1881,12 +1657,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.456929"
+            timestampString = "556024523.5689909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "531"
-            endingLineNumber = "531"
-            landmarkName = "-testDeleteSetting:"
+            startingLineNumber = "554"
+            endingLineNumber = "554"
+            landmarkName = "-testDeleteAvatar:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1897,12 +1673,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.656386"
+            timestampString = "556024523.569649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "737"
             endingLineNumber = "737"
-            landmarkName = "-makeRequestBody:"
+            landmarkName = "-getLatestVerificationRequestInfoByUserId:kindString:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1913,12 +1689,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.457281"
+            timestampString = "556024523.569707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "480"
-            endingLineNumber = "480"
-            landmarkName = "-testUploadRequest:"
+            startingLineNumber = "503"
+            endingLineNumber = "503"
+            landmarkName = "-testUpdateUser:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1929,12 +1705,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.457615"
+            timestampString = "556024523.570359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "478"
-            endingLineNumber = "478"
-            landmarkName = "-testUploadRequest:"
+            startingLineNumber = "501"
+            endingLineNumber = "501"
+            landmarkName = "-testUpdateUser:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1977,12 +1753,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.6579159"
+            timestampString = "556024523.571013"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "763"
             endingLineNumber = "763"
-            landmarkName = "-doRequestWithJson:toURL:withRequestType:successBlock:failureBlock:"
+            landmarkName = "-createVerificationRequest:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1993,12 +1769,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/Services/MyExRestAPIService.m"
-            timestampString = "556010091.6581219"
+            timestampString = "556024523.571071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "750"
             endingLineNumber = "750"
-            landmarkName = "-doRequestWithJson:toURL:withRequestType:successBlock:failureBlock:"
+            landmarkName = "-getLatestVerificationRequestInfoByUserId:kindString:successBlock:failureBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2009,139 +1785,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.457978"
+            timestampString = "556024523.5711271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "507"
-            endingLineNumber = "507"
-            landmarkName = "-testDeleteAvatar:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testDeleteAvatar:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.883021"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "508"
-                  endingLineNumber = "508"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testDeleteAvatar:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.88541"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "510"
-                  endingLineNumber = "510"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.458312"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "509"
-            endingLineNumber = "509"
-            landmarkName = "-testDeleteAvatar:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.458655"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "518"
-            endingLineNumber = "518"
-            landmarkName = "-testAddAvatar:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32-[ViewController testAddAvatar:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.9219919"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "519"
-                  endingLineNumber = "519"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32-[ViewController testAddAvatar:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.924517"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "521"
-                  endingLineNumber = "521"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.459065"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "520"
-            endingLineNumber = "520"
-            landmarkName = "-testAddAvatar:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.459408"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "492"
-            endingLineNumber = "492"
+            startingLineNumber = "530"
+            endingLineNumber = "530"
             landmarkName = "-testUploadDocument:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2153,11 +1801,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.459742"
+            timestampString = "556024523.571788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "502"
-            endingLineNumber = "502"
+            startingLineNumber = "532"
+            endingLineNumber = "532"
+            landmarkName = "-testUploadDocument:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.572427"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "541"
+            endingLineNumber = "541"
             landmarkName = "-testGetDocument:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2169,11 +1833,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.460078"
+            timestampString = "556024523.573061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "502"
-            endingLineNumber = "502"
+            startingLineNumber = "543"
+            endingLineNumber = "543"
             landmarkName = "-testGetDocument:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2181,64 +1845,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.460417"
+            timestampString = "556024523.573702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "671"
-            endingLineNumber = "671"
-            landmarkName = "-testReplaceCountry:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[ViewController testReplaceCountry:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.948235"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "672"
-                  endingLineNumber = "672"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__37-[ViewController testReplaceCountry:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.950932"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "674"
-                  endingLineNumber = "674"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.460783"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "673"
-            endingLineNumber = "673"
-            landmarkName = "-testReplaceCountry:"
+            startingLineNumber = "515"
+            endingLineNumber = "515"
+            landmarkName = "-testUpdateUser:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2249,45 +1865,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.461127"
+            timestampString = "556024523.574396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "645"
-            endingLineNumber = "645"
-            landmarkName = "-testCountry:"
+            startingLineNumber = "525"
+            endingLineNumber = "525"
+            landmarkName = "-testUploadRequest:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__30-[ViewController testCountry:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.963062"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "646"
-                  endingLineNumber = "646"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__30-[ViewController testCountry:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.965525"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "648"
-                  endingLineNumber = "648"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2297,11 +1881,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.461481"
+            timestampString = "556024523.5751131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "647"
-            endingLineNumber = "647"
+            startingLineNumber = "525"
+            endingLineNumber = "525"
+            landmarkName = "-testUploadRequest:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.575801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "694"
+            endingLineNumber = "694"
             landmarkName = "-testCountry:"
             landmarkType = "7">
          </BreakpointContent>
@@ -2313,12 +1913,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4618289"
+            timestampString = "556024523.5764591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "681"
-            endingLineNumber = "681"
-            landmarkName = "-testUserCountries:"
+            startingLineNumber = "696"
+            endingLineNumber = "696"
+            landmarkName = "-testAddCountry:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2329,295 +1929,55 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.462184"
+            timestampString = "556024523.5772361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "679"
-            endingLineNumber = "679"
-            landmarkName = "-testUserCountries:"
+            startingLineNumber = "668"
+            endingLineNumber = "668"
+            landmarkName = "-testAdd2FA:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.57837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "670"
+            endingLineNumber = "670"
+            landmarkName = "-testResendEmail:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.580597"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "704"
+            endingLineNumber = "704"
+            landmarkName = "-testAddCountry:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__36-[ViewController testUserCountries:]_block_invoke"
+                  symbolName = "__33-[ViewController testAddCountry:]_block_invoke"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.982244"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "680"
-                  endingLineNumber = "680"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__36-[ViewController testUserCountries:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012254.984671"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "682"
-                  endingLineNumber = "682"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.462534"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "750"
-            endingLineNumber = "750"
-            landmarkName = "-testDeleteCountry:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.462876"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "752"
-            endingLineNumber = "752"
-            landmarkName = "-testDeleteCountry:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.46321"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
-            landmarkName = "-testReferralInfoById:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4635431"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "432"
-            endingLineNumber = "432"
-            landmarkName = "-testReferralInfoById:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4638849"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "550"
-            endingLineNumber = "550"
-            landmarkName = "-testReferralDetails:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.464221"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "548"
-            endingLineNumber = "548"
-            landmarkName = "-testReferralDetails:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[ViewController testReferralDetails:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.006382"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "549"
-                  endingLineNumber = "549"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[ViewController testReferralDetails:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.008783"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "551"
-                  endingLineNumber = "551"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.464554"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "667"
-            endingLineNumber = "667"
-            landmarkName = "-testReplaceCountry:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.464901"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "689"
-            endingLineNumber = "689"
-            landmarkName = "-testReferrals:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.465317"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "686"
-            endingLineNumber = "686"
-            landmarkName = "-testReferrals:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.465701"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "687"
-            endingLineNumber = "687"
-            landmarkName = "-testReferrals:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32-[ViewController testReferrals:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.020279"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "688"
-                  endingLineNumber = "688"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32-[ViewController testReferrals:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.0227211"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "690"
-                  endingLineNumber = "690"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4660569"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "703"
-            endingLineNumber = "703"
-            landmarkName = "-testOrderHistory:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testOrderHistory:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.0290591"
+                  timestampString = "556024524.1405261"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "704"
@@ -2628,11 +1988,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testOrderHistory:]_block_invoke_2"
+                  symbolName = "__33-[ViewController testAddCountry:]_block_invoke_2"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.031557"
+                  timestampString = "556024524.143109"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "706"
@@ -2649,58 +2009,42 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.466408"
+            timestampString = "556024523.582718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "705"
-            endingLineNumber = "705"
-            landmarkName = "-testOrderHistory:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.466772"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "742"
-            endingLineNumber = "742"
-            landmarkName = "-testDeleteOrder:"
+            startingLineNumber = "702"
+            endingLineNumber = "702"
+            landmarkName = "-testAddCountry:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__34-[ViewController testDeleteOrder:]_block_invoke"
+                  symbolName = "-[ViewController testAddCountry:]"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.0434771"
+                  timestampString = "556024524.1496069"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "743"
-                  endingLineNumber = "743"
-                  offsetFromSymbolStart = "12">
+                  startingLineNumber = "702"
+                  endingLineNumber = "702"
+                  offsetFromSymbolStart = "211">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__34-[ViewController testDeleteOrder:]_block_invoke_2"
+                  symbolName = "__33-[ViewController testAddCountry:]_block_invoke"
                   moduleName = "MyExRestAPIService"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.046146"
+                  timestampString = "556024524.15213"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "745"
-                  endingLineNumber = "745"
+                  startingLineNumber = "704"
+                  endingLineNumber = "704"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -2709,208 +2053,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.467168"
+            timestampString = "556024523.584219"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "744"
-            endingLineNumber = "744"
-            landmarkName = "-testDeleteOrder:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.467536"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "736"
-            endingLineNumber = "736"
-            landmarkName = "-testDeleteAllOrders:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.468159"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "734"
-            endingLineNumber = "734"
-            landmarkName = "-testDeleteAllOrders:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[ViewController testDeleteAllOrders:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.063036"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "735"
-                  endingLineNumber = "735"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[ViewController testDeleteAllOrders:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.065582"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "737"
-                  endingLineNumber = "737"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4688359"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "758"
-            endingLineNumber = "758"
-            landmarkName = "-testUser:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__27-[ViewController testUser:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.072089"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "759"
-                  endingLineNumber = "759"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__27-[ViewController testUser:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.074544"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "761"
-                  endingLineNumber = "761"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.469515"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "760"
-            endingLineNumber = "760"
-            landmarkName = "-testUser:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.469937"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "466"
-            endingLineNumber = "466"
-            landmarkName = "-testUpdateUser:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[ViewController testUpdateUser:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.086015"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "467"
-                  endingLineNumber = "467"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[ViewController testUpdateUser:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.088509"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "469"
-                  endingLineNumber = "469"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.470306"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "468"
-            endingLineNumber = "468"
-            landmarkName = "-testUpdateUser:"
+            startingLineNumber = "773"
+            endingLineNumber = "773"
+            landmarkName = "-testMakeOrder:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2921,12 +2073,348 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.470663"
+            timestampString = "556024523.58567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "775"
+            endingLineNumber = "775"
+            landmarkName = "-testMakeOrder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.586593"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "435"
+            endingLineNumber = "435"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.587458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "432"
+            endingLineNumber = "432"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.588189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "573"
+            endingLineNumber = "573"
+            landmarkName = "-testDeleteSetting:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController testDeleteSetting:]"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.158842"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "573"
+                  endingLineNumber = "573"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ViewController testDeleteSetting:]_block_invoke"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.161476"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.588902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "571"
+            endingLineNumber = "571"
+            landmarkName = "-testDeleteSetting:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5895979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "690"
+            endingLineNumber = "690"
+            landmarkName = "-testCountry:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5903111"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "712"
+            endingLineNumber = "712"
+            landmarkName = "-testReplaceCountry:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5910389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "709"
+            endingLineNumber = "709"
+            landmarkName = "-testReplaceCountry:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.591737"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "710"
+            endingLineNumber = "710"
+            landmarkName = "-testReplaceCountry:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.592432"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "726"
+            endingLineNumber = "726"
+            landmarkName = "-testUserCountries:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.593143"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "728"
+            endingLineNumber = "728"
+            landmarkName = "-testUserCountries:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.594084"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "765"
+            endingLineNumber = "765"
+            landmarkName = "-testMakeOrder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.595125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "767"
+            endingLineNumber = "767"
+            landmarkName = "-testMakeOrder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.5958461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "759"
+            endingLineNumber = "759"
+            landmarkName = "-testMakeOrder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.596541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "757"
+            endingLineNumber = "757"
+            landmarkName = "-testMakeOrder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.597239"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "781"
+            endingLineNumber = "781"
+            landmarkName = "-testDeleteAllOrders:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.597962"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "783"
+            endingLineNumber = "783"
+            landmarkName = "-testDeleteAllOrders:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.598688"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "489"
+            endingLineNumber = "489"
+            landmarkName = "-testUploading:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.599388"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "491"
+            endingLineNumber = "491"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.600104"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "440"
             endingLineNumber = "440"
-            landmarkName = "-testUploading:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2937,12 +2425,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4710259"
+            timestampString = "556024523.600775"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "441"
             endingLineNumber = "441"
-            landmarkName = "-testUploading:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2953,12 +2441,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.47138"
+            timestampString = "556024523.601472"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "443"
             endingLineNumber = "443"
-            landmarkName = "-testUploading:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2969,108 +2457,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.47174"
+            timestampString = "556024523.6021349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "441"
             endingLineNumber = "441"
-            landmarkName = "-testUploading:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32-[ViewController testUploading:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.100005"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "442"
-                  endingLineNumber = "442"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__32-[ViewController testUploading:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.1025029"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "444"
-                  endingLineNumber = "444"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.4720941"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "449"
-            endingLineNumber = "449"
-            landmarkName = "-testDownloadLink:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testDownloadLink:]_block_invoke"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.108918"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "450"
-                  endingLineNumber = "450"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[ViewController testDownloadLink:]_block_invoke_2"
-                  moduleName = "MyExRestAPIService"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
-                  timestampString = "556012255.111374"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "452"
-                  endingLineNumber = "452"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.47245"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "451"
-            endingLineNumber = "451"
-            landmarkName = "-testDownloadLink:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3081,11 +2473,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.472805"
+            timestampString = "556024523.6027941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "446"
-            endingLineNumber = "446"
+            startingLineNumber = "472"
+            endingLineNumber = "472"
+            landmarkName = "-testVerificationRequest:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.6034811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "474"
+            endingLineNumber = "474"
+            landmarkName = "-testReferralInfoById:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.604123"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "464"
+            endingLineNumber = "464"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -3097,12 +2521,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.473171"
+            timestampString = "556024523.6047831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "443"
             endingLineNumber = "443"
-            landmarkName = "-testUploading:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3113,12 +2537,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.473525"
+            timestampString = "556024523.605425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "432"
             endingLineNumber = "432"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3129,12 +2553,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyExRestAPIService/ViewController.m"
-            timestampString = "556012254.473879"
+            timestampString = "556024523.6060669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "435"
             endingLineNumber = "435"
-            landmarkName = "-testReferralInfoById:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3152,6 +2576,198 @@
             endingLineNumber = "11"
             landmarkName = "-initFromDictionary:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.60682"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "468"
+            endingLineNumber = "468"
+            landmarkName = "-testVerificationRequest:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[ViewController testVerificationRequest:]_block_invoke"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.255877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "469"
+                  endingLineNumber = "469"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[ViewController testVerificationRequest:]_block_invoke_2"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.2583981"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "471"
+                  endingLineNumber = "471"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.6075211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "470"
+            endingLineNumber = "470"
+            landmarkName = "-testVerificationRequest:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.6082259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "451"
+            endingLineNumber = "451"
+            landmarkName = "-testVerify:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.608894"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "449"
+            endingLineNumber = "449"
+            landmarkName = "-testVerify:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.609514"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "454"
+            endingLineNumber = "454"
+            landmarkName = "-testVerify:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.610164"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "456"
+            endingLineNumber = "456"
+            landmarkName = "-testVerify:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.6108119"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "461"
+            endingLineNumber = "461"
+            landmarkName = "-testVerify:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyExRestAPIService/ViewController.m"
+            timestampString = "556024523.6114891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "459"
+            endingLineNumber = "459"
+            landmarkName = "-testVerify:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__29-[ViewController testVerify:]_block_invoke"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.301118"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "460"
+                  endingLineNumber = "460"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__29-[ViewController testVerify:]_block_invoke_2"
+                  moduleName = "MyExRestAPIService"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guestuser/Desktop/MyExRestAPIService/MyExRestAPIService/ViewController.m"
+                  timestampString = "556024524.303573"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "462"
+                  endingLineNumber = "462"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
