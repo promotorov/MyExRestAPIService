@@ -59,38 +59,6 @@ id<DTOResponse> dtoResponse;
     _service = [[MyExRestAPIService alloc] init];
     _cookie = [[CookieService alloc] init];
     [_cookie loadSavedCookies];
-    UILabel *loadedCookieNumber = [[UILabel alloc] init];
-    loadedCookieNumber.textColor = [UIColor blackColor];
-    [loadedCookieNumber setFrame:CGRectMake(30, 105, 250, 30)];
-    loadedCookieNumber.backgroundColor=[UIColor clearColor];
-    loadedCookieNumber.userInteractionEnabled=NO;
-    loadedCookieNumber.text= [NSString stringWithFormat:@"total loaded cookies: %li",
-                              [[NSHTTPCookieStorage sharedHTTPCookieStorage].cookies count]];
-    [self.view addSubview:loadedCookieNumber];
-    
-    pressedButton = [[UILabel alloc] init];
-    pressedButton.textColor = [UIColor blackColor];
-    [pressedButton setFrame:CGRectMake(290, 105, 100, 30)];
-    pressedButton.backgroundColor=[UIColor clearColor];
-    pressedButton.userInteractionEnabled=NO;
-    pressedButton.text = @"Nothing";
-    [self.view addSubview:pressedButton];
-    
-    logoutResponseStatus = [[UILabel alloc] init];
-    logoutResponseStatus.textColor = [UIColor blackColor];
-    [logoutResponseStatus setFrame:CGRectMake(290, 140, 100, 30)];
-    logoutResponseStatus.backgroundColor=[UIColor clearColor];
-    logoutResponseStatus.userInteractionEnabled=NO;
-    logoutResponseStatus.text = @"Nothing";
-    [self.view addSubview:logoutResponseStatus];
-    
-    userResponseStatus = [[UILabel alloc] init];
-    userResponseStatus.textColor = [UIColor blackColor];
-    [userResponseStatus setFrame:CGRectMake(290, 200, 100, 30)];
-    userResponseStatus.backgroundColor=[UIColor clearColor];
-    userResponseStatus.userInteractionEnabled=NO;
-    userResponseStatus.text = @"NothingP";
-    [self.view addSubview:userResponseStatus];
     
     UIButton *loginCorrectButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [loginCorrectButton addTarget:self
@@ -442,6 +410,33 @@ id<DTOResponse> dtoResponse;
     [verifyButton setTitle:@"Verify" forState:UIControlStateNormal];
     verifyButton.frame = CGRectMake(200, 770, 150, 25);
     [self.view addSubview:verifyButton];
+    
+    UIButton *getKeysButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [getKeysButton addTarget:self
+                     action:@selector(testKeys:)
+           forControlEvents:UIControlEventTouchUpInside];
+    getKeysButton.backgroundColor =[UIColor blackColor];
+    [getKeysButton setTitle:@"ApiKeys" forState:UIControlStateNormal];
+    getKeysButton.frame = CGRectMake(200, 130, 150, 25);
+    [self.view addSubview:getKeysButton];
+    
+    UIButton *addKeyButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [addKeyButton addTarget:self
+                      action:@selector(testAddKey:)
+            forControlEvents:UIControlEventTouchUpInside];
+    addKeyButton.backgroundColor =[UIColor blackColor];
+    [addKeyButton setTitle:@"AddKey" forState:UIControlStateNormal];
+    addKeyButton.frame = CGRectMake(200, 160, 150, 25);
+    [self.view addSubview:addKeyButton];
+    
+    UIButton *deleteKeyButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [deleteKeyButton addTarget:self
+                      action:@selector(testDeleteKey:)
+            forControlEvents:UIControlEventTouchUpInside];
+    deleteKeyButton.backgroundColor =[UIColor blackColor];
+    [deleteKeyButton setTitle:@"DeleteKey" forState:UIControlStateNormal];
+    deleteKeyButton.frame = CGRectMake(200, 190, 150, 25);
+    [self.view addSubview:deleteKeyButton];
 }
 
 - (void) testVerify:(UIButton*)sender {
@@ -465,6 +460,38 @@ id<DTOResponse> dtoResponse;
 - (void) testVerificationRequest:(UIButton *)sender {
     VerificationRequestDTORequest *dto = [[VerificationRequestDTORequest alloc] init];
     [_service createVerificationRequest:dto successBlock:^(VerificationRequestInfoDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testKeys:(UIButton *)sender {
+    [_service getApiKeysOnSuccessBlock:^(ApiKeysDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testAddKey:(UIButton *)sender {
+    NewKeyDTORequest *dto = [[NewKeyDTORequest alloc] init];
+    dto.name = @"Test Key 222";
+    dto.isInfo = @"true";
+    dto.isTrade = @"true";
+    dto.isWithdraw = @"true";
+    [dto.ipWhiteList addObject:@"69.89.31.226"];
+    [dto.ipWhiteList addObject:@"69.89.31.227"];
+    [dto.ipWhiteList addObject:@"69.89.31.228"];
+    [_service addApiKey:dto successBlock:^(NewKeyDTOResponse *dto) {
+        
+    } failureBlock:^(ResponseError *error) {
+        
+    }];
+}
+
+- (void) testDeleteKey:(UIButton *)sender {
+    [_service deleteApiKeyByPublicKey:@"03f46360-10b1-4a2a-a875-3a19291910ff" successBlock:^{
         
     } failureBlock:^(ResponseError *error) {
         

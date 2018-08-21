@@ -43,6 +43,9 @@
 #import "VerificationDTOResponse.h"
 #import "VerificationRequestDTORequest.h"
 #import "VerificationRequestInfoDTOResponse.h"
+#import "NewKeyDTOResponse.h"
+#import "NewKeyDTORequest.h"
+#import "ApiKeysDTOResponse.h"
 
 
 @interface MyExRestAPIService : NSObject {
@@ -223,6 +226,17 @@
                                        kindString:(NSString *)kindString
                                      successBlock:(void(^)(VerificationRequestInfoDTOResponse *dto))successBlock
                                      failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) getApiKeysOnSuccessBlock:(void(^)(ApiKeysDTOResponse *dto))successBlock
+                     failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) addApiKey:(NewKeyDTORequest*)dto
+      successBlock:(void(^)(NewKeyDTOResponse *dto))successBlock
+      failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) deleteApiKeyByPublicKey:(NSString*)publicKey
+                    successBlock:(void(^)(void))successBlock
+                    failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (BOOL) isRequestSuccess:(NSInteger)statusCode;
 

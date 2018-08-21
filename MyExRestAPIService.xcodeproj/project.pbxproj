@@ -22,7 +22,7 @@
 		313036F0212C506F00DA943F /* NewKeyDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036EF212C506F00DA943F /* NewKeyDTORequest.m */; };
 		313036F2212C531F00DA943F /* NewKeyDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036F1212C531F00DA943F /* NewKeyDTOResponse.m */; };
 		313036F6212C54FC00DA943F /* KeyDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036F5212C54FC00DA943F /* KeyDTOResponse.m */; };
-		313036F9212C55FD00DA943F /* AllKeysDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036F8212C55FD00DA943F /* AllKeysDTOResponse.m */; };
+		313036F9212C55FD00DA943F /* ApiKeysDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036F8212C55FD00DA943F /* ApiKeysDTOResponse.m */; };
 		31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34921205FA00003F03A /* AppDelegate.m */; };
 		31DCC35021205FA10003F03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC34E21205FA10003F03A /* Main.storyboard */; };
 		31DCC35221205FA10003F03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC35121205FA10003F03A /* Assets.xcassets */; };
@@ -98,8 +98,8 @@
 		313036F3212C532E00DA943F /* NewKeyDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewKeyDTOResponse.h; sourceTree = "<group>"; };
 		313036F4212C54EF00DA943F /* KeyDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyDTOResponse.h; sourceTree = "<group>"; };
 		313036F5212C54FC00DA943F /* KeyDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyDTOResponse.m; sourceTree = "<group>"; };
-		313036F7212C55F000DA943F /* AllKeysDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllKeysDTOResponse.h; sourceTree = "<group>"; };
-		313036F8212C55FD00DA943F /* AllKeysDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllKeysDTOResponse.m; sourceTree = "<group>"; };
+		313036F7212C55F000DA943F /* ApiKeysDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiKeysDTOResponse.h; sourceTree = "<group>"; };
+		313036F8212C55FD00DA943F /* ApiKeysDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiKeysDTOResponse.m; sourceTree = "<group>"; };
 		31DCC34521205FA00003F03A /* MyExRestAPIService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExRestAPIService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DCC34821205FA00003F03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31DCC34921205FA00003F03A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -277,8 +277,8 @@
 				313036F3212C532E00DA943F /* NewKeyDTOResponse.h */,
 				313036F4212C54EF00DA943F /* KeyDTOResponse.h */,
 				313036F5212C54FC00DA943F /* KeyDTOResponse.m */,
-				313036F7212C55F000DA943F /* AllKeysDTOResponse.h */,
-				313036F8212C55FD00DA943F /* AllKeysDTOResponse.m */,
+				313036F7212C55F000DA943F /* ApiKeysDTOResponse.h */,
+				313036F8212C55FD00DA943F /* ApiKeysDTOResponse.m */,
 			);
 			path = DTOResponse;
 			sourceTree = "<group>";
@@ -666,7 +666,7 @@
 				31DCC3C921205FB60003F03A /* CookieService.m in Sources */,
 				31DCC3E621205FB60003F03A /* WithdrawalDTORequest.m in Sources */,
 				31DCC3D221205FB60003F03A /* AddCountryDTOResponse.m in Sources */,
-				313036F9212C55FD00DA943F /* AllKeysDTOResponse.m in Sources */,
+				313036F9212C55FD00DA943F /* ApiKeysDTOResponse.m in Sources */,
 				31DCC3D321205FB60003F03A /* AllCountriesDTOResponse.m in Sources */,
 				31DCC3DD21205FB60003F03A /* MakeOrderDTOResponse.m in Sources */,
 				312D9FF42121601500518324 /* ViewController.m in Sources */,

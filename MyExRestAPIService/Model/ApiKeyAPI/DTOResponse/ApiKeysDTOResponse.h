@@ -2,7 +2,7 @@
 #import "DTOResponse.h"
 #import "KeyDTOResponse.h"
 
-@interface AllKeysDTOResponse : NSObject<DTOResponse>
+@interface ApiKeysDTOResponse : NSObject<DTOResponse>
 
 @property (nonatomic) NSMutableArray<KeyDTOResponse*> *keys;
 

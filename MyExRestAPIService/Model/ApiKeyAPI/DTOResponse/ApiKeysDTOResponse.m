@@ -1,6 +1,6 @@
-#import "AllKeysDTOResponse.h"
+#import "ApiKeysDTOResponse.h"
 
-@implementation AllKeysDTOResponse
+@implementation ApiKeysDTOResponse
 
 -(instancetype) initFromDictionary:(NSDictionary *)dictionary {
     if (self = [super init]) {

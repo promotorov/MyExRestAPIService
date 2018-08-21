@@ -33,6 +33,7 @@ static NSString *const DocumentUrl = @"api/documents";
 static NSString *const UploadDocumentRequestUrl = @"api/documents/upload_request";
 static NSString *const DownloadLinkUrl = @"download_link";
 static NSString *const VerificationRequestUrl = @"api/profile/verification_request";
+static NSString *const ApiKeyUrl = @"api/key";
 
 @implementation MyExRestAPIService
 
@@ -761,6 +762,54 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
             successBlock(dto);
     };
     [self doRequestWithJson:nil toURL:url withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+
+// ApiKeyAPI
+// +
+- (void) getApiKeysOnSuccessBlock:(void (^)(ApiKeysDTOResponse *))successBlock
+                     failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"getting api keys...");
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
+        ApiKeysDTOResponse *dto = [[ApiKeysDTOResponse alloc]
+                                    initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:nil toURL:ApiKeyUrl withRequestType:@"GET" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+// +
+- (void) addApiKey:(NewKeyDTORequest *)dto
+      successBlock:(void (^)(NewKeyDTOResponse *))successBlock
+      failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"adding a key...");
+    NSData *jsonData = [self makeRequestBody:dto];
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
+        NewKeyDTOResponse *dto = [[NewKeyDTOResponse alloc]
+                                   initFromDictionary:dictionary];
+        if (successBlock)
+            successBlock(dto);
+    };
+    [self doRequestWithJson:jsonData toURL:ApiKeyUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+// +
+- (void) deleteApiKeyByPublicKey:(NSString *)publicKey
+                    successBlock:(void (^)(void))successBlock
+                    failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"starting delete api key...");
+    if ([publicKey isBlank]) {
+        @throw [NSException exceptionWithName:@"Incorrect publicKey" reason:@"deleteApiKeyByPublicKey" userInfo:nil];
+    }
+    NSString *url = [NSString stringWithFormat:@"%@/%@", ApiKeyUrl, publicKey];
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
+        if (successBlock)
+            successBlock();
+    };
+    [self doRequestWithJson:nil toURL:url withRequestType:@"DELETE" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
 
 - (NSData*) makeRequestBody:(id <DTORequest>) dto {
