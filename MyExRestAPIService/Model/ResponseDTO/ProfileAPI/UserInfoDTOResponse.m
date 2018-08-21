@@ -21,7 +21,7 @@
         self.affiliate_id = (NSString*) dictionary[@"affiliate_id"];
         self.referral_id = (NSString*) dictionary[@"referral_id"];
         NSDictionary *assetsDictionary = dictionary[@"assets"];
-        self.assets = [[NSMutableArray alloc] initWithCapacity:[assetsDictionary count]];
+        self.assets = [[NSMutableArray<AssetDTOResponse*> alloc] initWithCapacity:[assetsDictionary count]];
         for (NSDictionary *subdict in assetsDictionary)
             [self.assets addObject:[[AssetDTOResponse alloc] initFromDictionary:subdict]];
     }

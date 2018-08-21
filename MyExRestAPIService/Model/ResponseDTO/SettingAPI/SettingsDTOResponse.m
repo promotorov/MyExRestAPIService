@@ -7,7 +7,7 @@
     if (self = [super init]) {
         dictionary = dictionary[@"data"];
         self.presets = dictionary[@"presets"];
-        self.favoriteMarkets = [[NSMutableArray alloc] initWithArray:dictionary[@"favoriteMarkets"]];
+        self.favoriteMarkets = [[NSMutableArray<NSString*> alloc] initWithArray:dictionary[@"favoriteMarkets"]];
     }
     return self;
 }

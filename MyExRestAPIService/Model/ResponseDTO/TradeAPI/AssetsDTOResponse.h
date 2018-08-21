@@ -4,6 +4,6 @@
 
 @interface AssetsDTOResponse : NSObject<DTOResponse>
 
-@property (nonatomic) NSMutableArray *assets;
+@property (nonatomic) NSMutableArray<AssetDTOResponse*> *assets;
 
 @end

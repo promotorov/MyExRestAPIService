@@ -3,6 +3,6 @@
 
 @interface DocumentsDTOResponse : NSObject<DTOResponse>
 
-@property (nonatomic) NSMutableArray *data;
+@property (nonatomic) NSMutableArray<NSString*> *data;
 
 @end

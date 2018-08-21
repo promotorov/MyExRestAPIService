@@ -579,7 +579,7 @@ id<DTOResponse> dtoResponse;
 
 - (void) testPutSetting:(UIButton*)sender{
     SettingDTORequest *dto = [[SettingDTORequest alloc] init];
-    dto.type = @"preset";
+    dto.type = @"favorite-market";
     dto.value = @"weight";
     [_service addUserSetting:dto successBlock:^{
         

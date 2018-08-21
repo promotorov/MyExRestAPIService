@@ -6,7 +6,7 @@
 
 @interface AllCountriesDTOResponse : NSObject<DTOResponse>
 
-@property (nonatomic) NSMutableArray *countries;
+@property (nonatomic) NSMutableArray<Country*> *countries;
 @property (nonatomic) Paging *paging;
 @property (nonatomic) Filters *filters;
 

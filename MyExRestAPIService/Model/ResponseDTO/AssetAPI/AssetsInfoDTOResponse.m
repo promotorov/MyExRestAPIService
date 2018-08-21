@@ -25,7 +25,7 @@
 {
     if (self = [super init]) {
         NSDictionary *assets = dictionary[@"data"];
-        self.assets = [[NSMutableArray alloc] initWithCapacity:[assets count]];
+        self.assets = [[NSMutableArray<AssetInfoDTOResponse*> alloc] initWithCapacity:[assets count]];
         for (NSDictionary *asset in assets)
             [self.assets addObject:[[AssetInfoDTOResponse alloc] initFromDictionary:asset]];
     }

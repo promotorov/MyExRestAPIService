@@ -4,6 +4,6 @@
 
 @interface UserOrdersDTOResponse : NSObject<DTOResponse>
 
-@property (nonatomic) NSMutableArray *orders;
+@property (nonatomic) NSMutableArray<OrderDTOResponse*> *orders;
 
 @end

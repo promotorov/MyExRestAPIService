@@ -4,6 +4,6 @@
 @interface SettingsDTOResponse : NSObject<DTOResponse>
 
 @property (nonatomic) NSString *presets;
-@property (nonatomic) NSMutableArray *favoriteMarkets;
+@property (nonatomic) NSMutableArray<NSString*> *favoriteMarkets;
 
 @end

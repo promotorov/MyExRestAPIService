@@ -23,7 +23,7 @@
     if (self = [super init]) {
         self.paging = [[Paging alloc] initFromDictionary:dictionary[@"paging"]];
         NSDictionary *referrals = dictionary[@"data"];
-        self.referrals = [[NSMutableArray alloc] initWithCapacity:[referrals count]];
+        self.referrals = [[NSMutableArray<Referral*> alloc] initWithCapacity:[referrals count]];
         self.filters = [[Filters alloc] initFromDictionary:dictionary[@"filters"]];
         for (NSDictionary *subdict in referrals)
             [self.referrals addObject:[[Referral alloc] initFromDictionary:subdict]];

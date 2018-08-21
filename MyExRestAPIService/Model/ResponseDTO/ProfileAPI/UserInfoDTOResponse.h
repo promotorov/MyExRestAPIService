@@ -5,7 +5,7 @@
 
 @interface UserInfoDTOResponse : NSObject<DTOResponse>
 
-@property (nonatomic) NSMutableArray *assets;
+@property (nonatomic) NSMutableArray<AssetDTOResponse*> *assets;
 @property (nonatomic) NSString *avatar_url;
 @property (nonatomic) NSString *userId;
 @property (nonatomic) NSString *email;

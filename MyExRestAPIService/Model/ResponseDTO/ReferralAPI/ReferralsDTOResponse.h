@@ -15,7 +15,7 @@
 
 @interface ReferralsDTOResponse : NSObject<DTOResponse>
 
-@property (nonatomic) NSMutableArray *referrals;
+@property (nonatomic) NSMutableArray<Referral*> *referrals;
 @property (nonatomic) Paging *paging;
 @property (nonatomic) Filters *filters;
 
