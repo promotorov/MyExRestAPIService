@@ -224,7 +224,6 @@
                                      successBlock:(void(^)(VerificationRequestInfoDTOResponse *dto))successBlock
                                      failureBlock:(void(^)(ResponseError *error))failureBlock;
 
-- (NSDictionary*) toDictionaryFromData:(NSData*)data;
 - (BOOL) isRequestSuccess:(NSInteger)statusCode;
 
 @end

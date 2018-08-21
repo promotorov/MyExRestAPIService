@@ -56,9 +56,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"getting user countries...");
     NSString *url = [NSString stringWithFormat:@"%@%@", UserCountriesUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", search, page, perPage]];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         AllCountriesDTOResponse *dto = [[AllCountriesDTOResponse alloc]
                                      initFromDictionary:dictionary];
         if (successBlock)
@@ -76,9 +75,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
         @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"getCountry" userInfo:nil];
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@", CountryUrl, countryId];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         GetCountryDTOResponse *dto = [[GetCountryDTOResponse alloc]
                                         initFromDictionary:dictionary];
         if (successBlock)
@@ -109,9 +107,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"starting add country...");
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         AddCountryDTOResponse *responseDto = [[AddCountryDTOResponse alloc]
                                       initFromDictionary:dictionary];
         if (successBlock)
@@ -126,9 +123,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"starting add or replace country...");
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         AddOrReplaceCountryDTOResponse *responseDto = [[AddOrReplaceCountryDTOResponse alloc]
                                                initFromDictionary:dictionary];
         if (successBlock)
@@ -195,9 +191,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                  failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting user's 2fa ...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         User2FADTOResponse *dto = [[User2FADTOResponse alloc]
                                    initFromDictionary:dictionary];
         if (successBlock)
@@ -210,9 +205,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                  failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"adding 2fa ...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+       NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         User2FADTOResponse *dto = [[User2FADTOResponse alloc]
                                     initFromDictionary:dictionary];
         if (successBlock)
@@ -225,9 +219,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                       failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"starting find user info ...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         UserInfoDTOResponse *dto = [[UserInfoDTOResponse alloc]
                                    initFromDictionary:dictionary];
         if (successBlock)
@@ -257,9 +250,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"starting find referrals...");
     NSString *url = [NSString stringWithFormat:@"%@%@", ReferralsUrl, [NSString stringWithFormat:@"?Search=%@&Page=%d&PerPage=%d", search, page, perPage]];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         ReferralsDTOResponse *dto = [[ReferralsDTOResponse alloc]
                                     initFromDictionary:dictionary];
         if (successBlock)
@@ -272,9 +264,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                           failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting referrals info...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         ReferralInfoDTOResponse *dto = [[ReferralInfoDTOResponse alloc]
                                     initFromDictionary:dictionary];
         if (successBlock)
@@ -292,9 +283,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
         @throw [NSException exceptionWithName:@"Incorrect userId" reason:@"getReferralDetails" userInfo:nil];
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@/details", ReferralDetailsUrl, userId];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         ReferralDetailsDTOResponse *dto = [[ReferralDetailsDTOResponse alloc]
                                         initFromDictionary:dictionary];
         if (successBlock)
@@ -312,9 +302,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
     if ([userId isBlank]) {
         @throw [NSException exceptionWithName:@"Incorrect counryId" reason:@"getReferralInfoById" userInfo:nil];
     }
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         ReferralInfoDTOResponse *dto = [[ReferralInfoDTOResponse alloc]
                                         initFromDictionary:dictionary];
         if (successBlock)
@@ -332,9 +321,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"creating an order ...");
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         MakeOrderDTOResponse *responseDto = [[MakeOrderDTOResponse alloc]
                                         initFromDictionary:dictionary];
         if (successBlock)
@@ -363,9 +351,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                           failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"start deleting orders ...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         DeletedOrdersDTOResponse *dto = [[DeletedOrdersDTOResponse alloc]
                                      initFromDictionary:dictionary];
         if (successBlock)
@@ -378,9 +365,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                         failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"starting find user orders...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         UserOrdersDTOResponse *dto = [[UserOrdersDTOResponse alloc]
                                          initFromDictionary:dictionary];
         if (successBlock)
@@ -396,9 +382,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"starting find user orders...");
     NSString *url = [NSString stringWithFormat:@"%@%@", OrderHistoryUrl, [NSString stringWithFormat:@"?offset=%d&limit=%d", offset, limit]];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         OrderHistoryDTOResponse *dto = [[OrderHistoryDTOResponse alloc]
                                       initFromDictionary:dictionary];
         if (successBlock)
@@ -411,9 +396,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                     failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting assets...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         AssetsDTOResponse *dto = [[AssetsDTOResponse alloc]
                                         initFromDictionary:dictionary];
         if (successBlock)
@@ -433,7 +417,6 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
     [_cookieService deleteAllCookies];
     [_cookieService saveAllCookies:storage];
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
         NSArray* authToken = [NSHTTPCookie
                               cookiesWithResponseHeaderFields:[response allHeaderFields]
@@ -443,7 +426,7 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
             [self->_cookieService saveAllCookies:storage];
         }
         
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         LoginDTOResponse *responseDto = [[LoginDTOResponse alloc]
                                   initFromDictionary:dictionary];
         if (successBlock)
@@ -471,9 +454,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                         failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting assets info...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         AssetsInfoDTOResponse *dto = [[AssetsInfoDTOResponse alloc]
                                   initFromDictionary:dictionary];
         if (successBlock)
@@ -503,9 +485,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"creating a wallet deposit...");
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         WalletDepositDTOResponse *responseDto = [[WalletDepositDTOResponse alloc]
                                       initFromDictionary:dictionary];
         if (successBlock)
@@ -520,9 +501,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                           failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"getting settings...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         SettingsDTOResponse *dto = [[SettingsDTOResponse alloc]
                                          initFromDictionary:dictionary];
         if (successBlock)
@@ -576,9 +556,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
                         failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"deletting avatars...");
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         DeleteAvatarsDTOResponse *dto = [[DeleteAvatarsDTOResponse alloc]
                                          initFromDictionary:dictionary];
         if (successBlock)
@@ -593,9 +572,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"creating upload avatar request...");
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         UploadRequestDTOResponse *responseDto = [[UploadRequestDTOResponse alloc]
                                                initFromDictionary:dictionary];
         if (successBlock)
@@ -612,9 +590,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"creating upload document request...");
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         UploadRequestDTOResponse *responseDto = [[UploadRequestDTOResponse alloc]
                                          initFromDictionary:dictionary];
         if (successBlock)
@@ -632,9 +609,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
         @throw [NSException exceptionWithName:@"Incorrect uploadUid" reason:@"getDocument" userInfo:nil];
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@/%@", DocumentUrl, uploadUid, @"link"];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         DocumentDTOResponse *dto = [[DocumentDTOResponse alloc]
                                          initFromDictionary:dictionary];
         if (successBlock)
@@ -654,9 +630,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
         @throw [NSException exceptionWithName:@"Incorrect uploadUid" reason:@"getUploadingInfo" userInfo:nil];
     }
     NSString *url = [NSString stringWithFormat:@"/%@", uploadUid];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         UploadingDTOResponse *dto = [[UploadingDTOResponse alloc]
                                      initFromDictionary:dictionary];
         if (successBlock)
@@ -671,9 +646,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"downloading link...");
     NSString *url = [NSString stringWithFormat:@"%@?uploadUid=%@", DownloadLinkUrl, uploadUid];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         DownloadLinkDTOResponse *dto = [[DownloadLinkDTOResponse alloc]
                                          initFromDictionary:dictionary];
         if (successBlock)
@@ -693,9 +667,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
         @throw [NSException exceptionWithName:@"Incorrect verificationUid" reason:@"getVerificationRequestInfo" userInfo:nil];
     }
     NSString *url = [NSString stringWithFormat:@"%@/%@", VerificationRequestUrl, uid];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         VerificationRequestInfoDTOResponse *dto = [[VerificationRequestInfoDTOResponse alloc]
                 initFromDictionary:dictionary];
         if (successBlock)
@@ -719,9 +692,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
     }
     NSString *url =
             [NSString stringWithFormat:@"api/profile/%@/verification_request/%@?verificationUid=%@", userUid, requestUid, verificationUid];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         VerificationRequestInfoDTOResponse *dto = [[VerificationRequestInfoDTOResponse alloc]
                 initFromDictionary:dictionary];
         if (successBlock)
@@ -744,9 +716,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
     }
     NSString *url =
             [NSString stringWithFormat:@"api/profile/%@/verification_request/latest/%@", userUid, kindString];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         VerificationRequestInfoDTOResponse *dto = [[VerificationRequestInfoDTOResponse alloc]
                 initFromDictionary:dictionary];
         if (successBlock)
@@ -761,9 +732,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 {
     NSLog(@"creating a verification request...");
     NSData *jsonData = [self makeRequestBody:dto];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         VerificationRequestInfoDTOResponse *responseDto = [[VerificationRequestInfoDTOResponse alloc]
                 initFromDictionary:dictionary];
         if (successBlock)
@@ -783,9 +753,8 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
     }
     NSString *url =
             [NSString stringWithFormat:@"%@/%@/verify", VerificationRequestUrl, uid];
-    __weak typeof(self) weakSelf = self;
     RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSDictionary *dictionary = [weakSelf toDictionaryFromData:data];
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         VerificationDTOResponse *dto = [[VerificationDTOResponse alloc]
                 initFromDictionary:dictionary];
         if (successBlock)
@@ -863,7 +832,7 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
             failureBlock([[ResponseError alloc] initWithMessage:@"ServerError" withStatusCode:code withMessageCode:@""]);
         }
         else {
-            NSDictionary *dictionary = [self toDictionaryFromData:data];
+            NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
             for (NSDictionary *subdict in dictionary[@"errors"]) {
                 NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
                 if (!subdict) {
@@ -883,8 +852,7 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
     [task resume];
 }
 
-
-- (NSDictionary*) toDictionaryFromData:(NSData*) data {
++ (NSDictionary*) toDictionaryFromData:(NSData*) data {
     NSError *error;
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
     if (!dictionary)
