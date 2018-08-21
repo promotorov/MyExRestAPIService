@@ -19,6 +19,10 @@
 		312DA01E21230E0400518324 /* UploadingDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA01D21230E0400518324 /* UploadingDTOResponse.m */; };
 		312DA02321230FC600518324 /* DocumentsDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA02221230FC600518324 /* DocumentsDTOResponse.m */; };
 		312DA025212310FB00518324 /* DownloadLinkDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DA024212310FB00518324 /* DownloadLinkDTOResponse.m */; };
+		313036F0212C506F00DA943F /* NewKeyDTORequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036EF212C506F00DA943F /* NewKeyDTORequest.m */; };
+		313036F2212C531F00DA943F /* NewKeyDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036F1212C531F00DA943F /* NewKeyDTOResponse.m */; };
+		313036F6212C54FC00DA943F /* KeyDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036F5212C54FC00DA943F /* KeyDTOResponse.m */; };
+		313036F9212C55FD00DA943F /* AllKeysDTOResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 313036F8212C55FD00DA943F /* AllKeysDTOResponse.m */; };
 		31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC34921205FA00003F03A /* AppDelegate.m */; };
 		31DCC35021205FA10003F03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC34E21205FA10003F03A /* Main.storyboard */; };
 		31DCC35221205FA10003F03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DCC35121205FA10003F03A /* Assets.xcassets */; };
@@ -88,6 +92,14 @@
 		312DA02221230FC600518324 /* DocumentsDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentsDTOResponse.m; sourceTree = "<group>"; };
 		312DA024212310FB00518324 /* DownloadLinkDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadLinkDTOResponse.m; sourceTree = "<group>"; };
 		312DA0262123110D00518324 /* DownloadLinkDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadLinkDTOResponse.h; sourceTree = "<group>"; };
+		313036EE212C506000DA943F /* NewKeyDTORequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewKeyDTORequest.h; sourceTree = "<group>"; };
+		313036EF212C506F00DA943F /* NewKeyDTORequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewKeyDTORequest.m; sourceTree = "<group>"; };
+		313036F1212C531F00DA943F /* NewKeyDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewKeyDTOResponse.m; sourceTree = "<group>"; };
+		313036F3212C532E00DA943F /* NewKeyDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewKeyDTOResponse.h; sourceTree = "<group>"; };
+		313036F4212C54EF00DA943F /* KeyDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyDTOResponse.h; sourceTree = "<group>"; };
+		313036F5212C54FC00DA943F /* KeyDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyDTOResponse.m; sourceTree = "<group>"; };
+		313036F7212C55F000DA943F /* AllKeysDTOResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllKeysDTOResponse.h; sourceTree = "<group>"; };
+		313036F8212C55FD00DA943F /* AllKeysDTOResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllKeysDTOResponse.m; sourceTree = "<group>"; };
 		31DCC34521205FA00003F03A /* MyExRestAPIService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExRestAPIService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DCC34821205FA00003F03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31DCC34921205FA00003F03A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -240,6 +252,37 @@
 			path = UploadAPI;
 			sourceTree = "<group>";
 		};
+		313036EB212C4FE700DA943F /* ApiKeyAPI */ = {
+			isa = PBXGroup;
+			children = (
+				313036ED212C501A00DA943F /* DTOResponse */,
+				313036EC212C501000DA943F /* DTORequest */,
+			);
+			path = ApiKeyAPI;
+			sourceTree = "<group>";
+		};
+		313036EC212C501000DA943F /* DTORequest */ = {
+			isa = PBXGroup;
+			children = (
+				313036EE212C506000DA943F /* NewKeyDTORequest.h */,
+				313036EF212C506F00DA943F /* NewKeyDTORequest.m */,
+			);
+			path = DTORequest;
+			sourceTree = "<group>";
+		};
+		313036ED212C501A00DA943F /* DTOResponse */ = {
+			isa = PBXGroup;
+			children = (
+				313036F1212C531F00DA943F /* NewKeyDTOResponse.m */,
+				313036F3212C532E00DA943F /* NewKeyDTOResponse.h */,
+				313036F4212C54EF00DA943F /* KeyDTOResponse.h */,
+				313036F5212C54FC00DA943F /* KeyDTOResponse.m */,
+				313036F7212C55F000DA943F /* AllKeysDTOResponse.h */,
+				313036F8212C55FD00DA943F /* AllKeysDTOResponse.m */,
+			);
+			path = DTOResponse;
+			sourceTree = "<group>";
+		};
 		31DCC33C21205FA00003F03A = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +332,7 @@
 		31DCC36321205FB60003F03A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				313036EB212C4FE700DA943F /* ApiKeyAPI */,
 				31DCC36421205FB60003F03A /* ResponseDTO */,
 				31DCC39C21205FB60003F03A /* RequestDTO */,
 				CB1E68E52A704B35C5E8411F /* ProfileVerificationAPI */,
@@ -612,6 +656,7 @@
 				31DCC3D021205FB60003F03A /* WalletDepositDTOResponse.m in Sources */,
 				31DCC3D421205FB60003F03A /* GetCountryDTOResponse.m in Sources */,
 				31DCC3E021205FB60003F03A /* OrderHistoryDTOResponse.m in Sources */,
+				313036F2212C531F00DA943F /* NewKeyDTOResponse.m in Sources */,
 				312DA02321230FC600518324 /* DocumentsDTOResponse.m in Sources */,
 				31DCC3E521205FB60003F03A /* WalletDepositDTORequest.m in Sources */,
 				31DCC3EC21205FB60003F03A /* PasswordReetDTORequest.m in Sources */,
@@ -621,6 +666,7 @@
 				31DCC3C921205FB60003F03A /* CookieService.m in Sources */,
 				31DCC3E621205FB60003F03A /* WithdrawalDTORequest.m in Sources */,
 				31DCC3D221205FB60003F03A /* AddCountryDTOResponse.m in Sources */,
+				313036F9212C55FD00DA943F /* AllKeysDTOResponse.m in Sources */,
 				31DCC3D321205FB60003F03A /* AllCountriesDTOResponse.m in Sources */,
 				31DCC3DD21205FB60003F03A /* MakeOrderDTOResponse.m in Sources */,
 				312D9FF42121601500518324 /* ViewController.m in Sources */,
@@ -644,6 +690,7 @@
 				31DCC3CE21205FB60003F03A /* ReferralsDTOResponse.m in Sources */,
 				31DCC3D821205FB60003F03A /* User2FADTOResponse.m in Sources */,
 				31DCC3DC21205FB60003F03A /* OrderDTOResponse.m in Sources */,
+				313036F6212C54FC00DA943F /* KeyDTOResponse.m in Sources */,
 				31DCC3CD21205FB60003F03A /* ReferralDetailsDTOResponse.m in Sources */,
 				312D9FFF2122B50900518324 /* AddAvatarDTORequest.m in Sources */,
 				31DCC34A21205FA00003F03A /* AppDelegate.m in Sources */,
@@ -653,6 +700,7 @@
 				31DCC3D721205FB60003F03A /* UserInfoDTOResponse.m in Sources */,
 				31DCC3DA21205FB60003F03A /* SettingsDTOResponse.m in Sources */,
 				CB1E6B0176EB637746FBD576 /* VerificationRequestDTORequest.m in Sources */,
+				313036F0212C506F00DA943F /* NewKeyDTORequest.m in Sources */,
 				CB1E62D40F673598D2298282 /* VerificationRequestInfoDTOResponse.m in Sources */,
 				CB1E6A9ADBC475976D91B78B /* VerificationDTOResponse.m in Sources */,
 				CB1E6E57383F7711B3AA853C /* Document.m in Sources */,
