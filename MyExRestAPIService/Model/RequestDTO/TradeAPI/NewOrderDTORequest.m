@@ -1,6 +1,6 @@
 #import "NewOrderDTORequest.h"
 
-@implementation OrderDTORequest
+@implementation NewOrderDTORequest
 
 -(instancetype) init {
     if (self = [super init]) {
@@ -16,38 +16,18 @@
 }
 
 -(NSDictionary *) toDictionary {
-    NSDictionary *dictionary = @{@"instrument":self.instrument,
+    NSDictionary *dictionary = @{
+                                 @"instrument":self.instrument,
                                  @"type":self.type,
                                  @"amount":@(self.amount),
                                  @"price":@(self.price),
                                  @"activationPrice":@(self.activationPrice),
                                  @"isLimit":self.isLimit,
-                                 @"isStop":self.isStop };
-    return dictionary;
-}
-
-@end
-
-
-@implementation NewOrderDTORequest
-
-- (instancetype) init {
-    if (self = [super init]) {
-        self.order = [[OrderDTORequest alloc] init];
-    }
-    return self;
-}
-
-- (instancetype) initWithOrder:(OrderDTORequest *)order {
-    if (self = [super init]) {
-        self.order = order;
-    }
-    return self;
-}
-
--(NSDictionary *) toDictionary {
-    NSDictionary *dictionary = @{@"order":[self.order toDictionary]};
-    return dictionary;
+                                 @"isStop":self.isStop
+                                 };
+    return @{
+             @"order":dictionary
+             };
 }
 
 @end

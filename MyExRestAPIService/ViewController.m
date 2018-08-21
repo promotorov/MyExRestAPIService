@@ -760,13 +760,13 @@ id<DTOResponse> dtoResponse;
     "activationPrice": 0,
     "isLimit": true,
     "isStop": true */
-    dto.order.instrument = @"ltc_btc";
-    dto.order.type = @"buy";
-    dto.order.amount = 2;
-    dto.order.price = 2;
-    dto.order.activationPrice = 2.1;
-    dto.order.isLimit = @"true";
-    dto.order.isStop = @"true";
+    dto.instrument = @"ltc_btc";
+    dto.type = @"buy";
+    dto.amount = 2;
+    dto.price = 2;
+    dto.activationPrice = 2.1;
+    dto.isLimit = @"true";
+    dto.isStop = @"true";
     [_service makeOrder:dto successBlock:^(MakeOrderDTOResponse *dto) {
         
     } failureBlock:^(ResponseError *error) {
