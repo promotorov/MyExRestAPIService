@@ -809,7 +809,9 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
     void (^requestDidCompleteBlock)(NSData *, NSURLResponse *, NSError *);
     requestDidCompleteBlock = ^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error && failureBlock) {
-            failureBlock([[ResponseError alloc] initWithMessage:@"UnknownError" withStatusCode:@"UnknownError" withMessageCode:@"UnknownError"]);
+            failureBlock([[ResponseError alloc] initWithMessage:error.description
+                                                 withStatusCode:nil
+                                                withMessageCode:[NSString stringWithFormat:@"%li", error.code]]);
             return;
         }
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
@@ -822,28 +824,20 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
         NSLog(@"%@", httpResponse);
         if (!failureBlock) return;
         NSString *code = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
-        if (httpResponse.statusCode == 401) {
-            failureBlock([[ResponseError alloc] initWithMessage:@"Unauthorized" withStatusCode:code withMessageCode:@""]);
+        if ([data bytes] == 0) {
+            failureBlock([[ResponseError alloc] initWithMessage:nil withStatusCode:code withMessageCode:nil]);
+            return;
         }
-        else if (httpResponse.statusCode == 404) {
-            failureBlock([[ResponseError alloc] initWithMessage:@"Resource not found" withStatusCode:code withMessageCode:@""]);
-        }
-        else if ([self isRequestDidCompleteWithServerError:httpResponse.statusCode]) {
-            failureBlock([[ResponseError alloc] initWithMessage:@"ServerError" withStatusCode:code withMessageCode:@""]);
-        }
-        else {
-            NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
-            for (NSDictionary *subdict in dictionary[@"errors"]) {
-                NSString *statusCode = [NSString stringWithFormat:@"%li", httpResponse.statusCode];
-                if (!subdict) {
-                    failureBlock([[ResponseError alloc] initWithMessage:@"" withStatusCode:statusCode withMessageCode:@""]);
-                    return;
-                }
-                NSString *message = (NSString*) subdict[@"message"];
-                NSString *messageCode = (NSString*) subdict[@"code"];
-                failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:statusCode withMessageCode:messageCode]);
-                break;
+        NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
+        for (NSDictionary *subdict in dictionary[@"errors"]) {
+            if (!subdict) {
+                failureBlock([[ResponseError alloc] initWithMessage:nil withStatusCode:code withMessageCode:nil]);
+                return;
             }
+            NSString *message = (NSString*) subdict[@"message"];
+            NSString *messageCode = (NSString*) subdict[@"code"];
+            failureBlock([[ResponseError alloc] initWithMessage:message withStatusCode:code withMessageCode:messageCode]);
+            break;
         }
     };
     
@@ -864,12 +858,6 @@ static NSString *const VerificationRequestUrl = @"api/profile/verification_reque
 - (BOOL) isRequestSuccess:(NSInteger) statusCode {
     unichar firstNumber = [[NSString stringWithFormat:@"%ld", statusCode] characterAtIndex:0];
     if (firstNumber == '2') return TRUE;
-    else return FALSE;
-}
-
-- (BOOL) isRequestDidCompleteWithServerError:(NSInteger) statusCode {
-    unichar firstNumber = [[NSString stringWithFormat:@"%ld", statusCode] characterAtIndex:0];
-    if (firstNumber == '5') return TRUE;
     else return FALSE;
 }
 
