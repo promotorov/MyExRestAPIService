@@ -46,17 +46,7 @@
 #import "NewKeyDTOResponse.h"
 #import "NewKeyDTORequest.h"
 #import "ApiKeysDTOResponse.h"
-
-/*
-// TODO
-// FileAPI --
-// TransferAPI --
-// BackofficeLoginAPI --
-// Extend ReferralAPI --
-// Test ProfileVerificationAPI --
-// Test WalletAPI --
-// Test ProfileAPI (password/email) --
-*/
+#import "LoginWith2faDTORequest.h"
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
@@ -157,6 +147,10 @@
 - (void) login:(LoginDTORequest *)dto
   successBlock:(void(^)(LoginDTOResponse *dto))successBlock
   failureBlock:(void(^)(ResponseError *error))failureBlock;
+
+- (void) loginWith2fa:(LoginWith2faDTORequest *)dto
+         successBlock:(void(^)(void))successBlock
+         failureBlock:(void(^)(ResponseError *error))failureBlock;
 
 - (void) logoutOnSuccessBlock:(void(^)(void))successBlock
                  failureBlock:(void(^)(ResponseError *error))failureBlock;

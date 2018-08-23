@@ -414,24 +414,36 @@ static NSString *const ApiKeyUrl = @"api/key";
   failureBlock:(void (^)(ResponseError *))failureBlock
 {
     NSLog(@"loggining...");
-    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
     [_cookieService deleteAllCookies];
-    [_cookieService saveAllCookies:storage];
+    [_cookieService saveAllCookies:[NSHTTPCookieStorage sharedHTTPCookieStorage]];
     NSData *jsonData = [self makeRequestBody:dto];
-    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response) {
-        NSArray* authToken = [NSHTTPCookie
-                              cookiesWithResponseHeaderFields:[response allHeaderFields]
-                              forURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@", SERVER_API_URL, SignInUrl]]];
-        if([authToken count] > 0) {
-            [storage setCookie:authToken[0]];
-            [self->_cookieService saveAllCookies:storage];
-        }
-        
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response)
+    {
         NSDictionary *dictionary = [MyExRestAPIService toDictionaryFromData:data];
         LoginDTOResponse *responseDto = [[LoginDTOResponse alloc]
-                                  initFromDictionary:dictionary];
+                                         initFromDictionary:dictionary];
+        if([responseDto.secondFactorRequired isEqualToString:@"0"]) {
+            [MyExRestAPIService saveCookies:response withCookieService:self->_cookieService];
+        }
         if (successBlock)
             successBlock(responseDto);
+    };
+    [self doRequestWithJson:jsonData toURL:SignInUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
+}
+//+-
+- (void) loginWith2fa:(LoginWith2faDTORequest *)dto
+         successBlock:(void (^)(void))successBlock
+         failureBlock:(void (^)(ResponseError *))failureBlock
+{
+    NSLog(@"loggining with 2fa...");
+    [_cookieService deleteAllCookies];
+    [_cookieService saveAllCookies:[NSHTTPCookieStorage sharedHTTPCookieStorage]];
+    NSData *jsonData = [self makeRequestBody:dto];
+    RequestDidCompleteSuccsess requestSuccessBlock = ^(NSData *data, NSHTTPURLResponse *response)
+    {
+        [MyExRestAPIService saveCookies:response withCookieService:self->_cookieService];
+        if (successBlock)
+            successBlock();
     };
     [self doRequestWithJson:jsonData toURL:SignInUrl withRequestType:@"POST" successBlock:requestSuccessBlock failureBlock:failureBlock];
 }
@@ -902,6 +914,18 @@ static NSString *const ApiKeyUrl = @"api/key";
         @throw [NSException exceptionWithName:@"IncorrectJSON" reason:@"JSON" userInfo:nil];
     NSLog(@"%@", dictionary);
     return dictionary;
+}
+
++ (void) saveCookies:(NSHTTPURLResponse*)response
+   withCookieService:(CookieService*)service {
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    NSArray* authToken = [NSHTTPCookie
+                          cookiesWithResponseHeaderFields:[response allHeaderFields]
+                          forURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@", SERVER_API_URL, SignInUrl]]];
+    if([authToken count] > 0) {
+        [storage setCookie:authToken[0]];
+        [service saveAllCookies:storage];
+    }
 }
 
 - (BOOL) isRequestSuccess:(NSInteger) statusCode {

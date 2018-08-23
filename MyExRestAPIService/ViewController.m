@@ -437,6 +437,15 @@ id<DTOResponse> dtoResponse;
     [deleteKeyButton setTitle:@"DeleteKey" forState:UIControlStateNormal];
     deleteKeyButton.frame = CGRectMake(200, 190, 150, 25);
     [self.view addSubview:deleteKeyButton];
+
+    UIButton *login2faButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [login2faButton addTarget:self
+                        action:@selector(testLogin2Fa:)
+              forControlEvents:UIControlEventTouchUpInside];
+    login2faButton.backgroundColor =[UIColor blackColor];
+    [login2faButton setTitle:@"LoginWith2FA" forState:UIControlStateNormal];
+    login2faButton.frame = CGRectMake(200, 220, 150, 25);
+    [self.view addSubview:login2faButton];
 }
 
 - (void) testVerify:(UIButton*)sender {
@@ -454,6 +463,17 @@ id<DTOResponse> dtoResponse;
         
     } failureBlock:^(ResponseError *error) {
         
+    }];
+}
+
+- (void) testLogin2Fa:(UIButton *)sender {
+    LoginWith2faDTORequest *dto = [[LoginWith2faDTORequest alloc] init];
+    dto.provider = @"ff";
+    dto.verificationCode = @"code";
+    [_service loginWith2fa:dto successBlock:^{
+
+    } failureBlock:^(ResponseError *error) {
+
     }];
 }
 

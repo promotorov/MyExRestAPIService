@@ -6,18 +6,15 @@
     if (self = [super init]) {
         self.email = @"";
         self.password = @"";
-        self.verificationCode = @"";
-        self.provider = @"";
     }
     return self;
 }
 
 -(NSDictionary *) toDictionary {
-    NSDictionary *dictionary = @{@"email":self.email,
-                                 @"password":self.password};
-                                 //@"provider":self.provider,
-                                 //@"verificationCode":self.verificationCode};
-    return dictionary;
+    return @{
+             @"email":self.email,
+             @"password":self.password
+             };
 }
 
 @end
