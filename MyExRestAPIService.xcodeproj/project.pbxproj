@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -283,6 +283,20 @@
 			path = DTOResponse;
 			sourceTree = "<group>";
 		};
+		313036FA212C66ED00DA943F /* FileAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FileAPI;
+			sourceTree = "<group>";
+		};
+		313036FB212C670400DA943F /* TransferAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TransferAPI;
+			sourceTree = "<group>";
+		};
 		31DCC33C21205FA00003F03A = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +346,8 @@
 		31DCC36321205FB60003F03A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				313036FB212C670400DA943F /* TransferAPI */,
+				313036FA212C66ED00DA943F /* FileAPI */,
 				313036EB212C4FE700DA943F /* ApiKeyAPI */,
 				31DCC36421205FB60003F03A /* ResponseDTO */,
 				31DCC39C21205FB60003F03A /* RequestDTO */,
@@ -608,11 +624,12 @@
 				TargetAttributes = {
 					31DCC34421205FA00003F03A = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 31DCC34021205FA00003F03A /* Build configuration list for PBXProject "MyExRestAPIService" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -846,10 +863,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNHZ2LR93M;
 				INFOPLIST_FILE = MyExRestAPIService/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qoden.MyExRestAPIService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -863,10 +877,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HNHZ2LR93M;
 				INFOPLIST_FILE = MyExRestAPIService/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qoden.MyExRestAPIService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

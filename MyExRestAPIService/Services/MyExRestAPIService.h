@@ -47,6 +47,16 @@
 #import "NewKeyDTORequest.h"
 #import "ApiKeysDTOResponse.h"
 
+/*
+// TODO
+// FileAPI --
+// TransferAPI --
+// BackofficeLoginAPI --
+// Extend ReferralAPI --
+// Test ProfileVerificationAPI --
+// Test WalletAPI --
+// Test ProfileAPI (password/email) --
+*/
 
 @interface MyExRestAPIService : NSObject {
     NSURLSession *_session;
